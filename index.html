@@ -1,0 +1,1229 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Sổ Tay Tiếng Thái</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Baloo+2:wght@500;600;700&family=Noto+Sans:wght@400;500;600&family=Noto+Sans+Thai+Looped:wght@400;500;600&display=swap">
+<style>
+/* Layout: 232px sidebar on the page colour, one big bordered panel on a dotted ground. Phones: sidebar becomes a bottom tab bar.
+   Edges are thick wine-brown lines with hard offset shadows; tone colours (5 hues) stay the system for all Thai text. */
+:root{
+  --page:#F4DCC0; --bg:#FFF3E2; --dot:#EBCBA6; --surface:#FFFAF3; --surface-2:#F8E4CC; --fg:#3F1A20; --muted:#7A5A55; --line:#E3C6A5;
+  --edge:#4B1E26; --ink:#4B1E26; --ink-fg:#FFF3E2; --accent:#C2472F; --accent-soft:#F7C8B0;
+  --t-mid:#6A6470; --t-low:#2F63B8; --t-fall:#C2284F; --t-high:#A85A00; --t-rise:#1F7A4D;
+  --c-mid:#0C7F82; --c-high:#8A3AA3; --c-low:#8F6209;
+  --ok:#1F7A4D; --bad:#C2284F;
+  --sh:3px 3px 0 var(--edge);
+  --f-ui:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-display:'Baloo 2','Be Vietnam Pro',system-ui,sans-serif;
+  --f-th:'Noto Sans Thai Looped','Noto Sans Thai',Tahoma,sans-serif;
+  --f-rom:'Noto Sans','Be Vietnam Pro',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --page:#1F0E12; --bg:#2B1419; --dot:#3B1E24; --surface:#381B21; --surface-2:#47242B; --fg:#FBE8D3; --muted:#CDA999; --line:#5C3A3F;
+    --edge:#D9A98A; --ink:#F0C7A5; --ink-fg:#2B1419; --accent:#FF9B7A; --accent-soft:#5A2B2B;
+    --t-mid:#B8B2C0; --t-low:#7FA9FF; --t-fall:#FF86A8; --t-high:#FFB45E; --t-rise:#5ED3A3;
+    --c-mid:#55D1D2; --c-high:#D99DEB; --c-low:#E6B455;
+    --ok:#5ED3A3; --bad:#FF86A8; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --page:#1F0E12; --bg:#2B1419; --dot:#3B1E24; --surface:#381B21; --surface-2:#47242B; --fg:#FBE8D3; --muted:#CDA999; --line:#5C3A3F;
+  --edge:#D9A98A; --ink:#F0C7A5; --ink-fg:#2B1419; --accent:#FF9B7A; --accent-soft:#5A2B2B;
+  --t-mid:#B8B2C0; --t-low:#7FA9FF; --t-fall:#FF86A8; --t-high:#FFB45E; --t-rise:#5ED3A3;
+  --c-mid:#55D1D2; --c-high:#D99DEB; --c-low:#E6B455;
+  --ok:#5ED3A3; --bad:#FF86A8; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--fg);font:15px/1.55 var(--f-ui);
+  padding-block:16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h2,h3,p{margin:0}
+h2{font-family:var(--f-display);font-size:1.3rem;font-weight:600;line-height:1.3;text-wrap:balance}
+h3{font-size:.95rem;font-weight:600;line-height:1.3}
+mark{background:var(--accent-soft);color:var(--fg);padding:0 .3em;border-radius:5px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:where(button,input,select,a):focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* shell */
+.app{display:grid;grid-template-columns:232px minmax(0,1fr);gap:20px;max-width:1240px;margin:0 auto;align-items:start}
+.side{position:sticky;top:16px;height:calc(100vh - 32px);display:flex;flex-direction:column;gap:4px;min-width:0}
+.brand{display:flex;align-items:center;gap:10px;padding:2px 6px 18px}
+.logo{width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--ink-fg);display:grid;place-items:center;font-family:var(--f-th);font-size:1.5rem;font-weight:600;flex:none}
+.bname{font-family:var(--f-display);font-weight:700;font-size:1.5rem;line-height:1;letter-spacing:-.01em}
+.bname u{text-decoration:underline wavy var(--accent);text-decoration-thickness:2px;text-underline-offset:6px}
+.sec-label{font-size:.72rem;font-weight:600;letter-spacing:.12em;color:var(--muted);padding:2px 10px 6px}
+.navv{display:flex;flex-direction:column;gap:4px}
+.nv{display:flex;align-items:center;gap:12px;width:100%;font:inherit;font-weight:500;padding:11px 14px;border-radius:12px;border:2px solid transparent;background:transparent;color:var(--muted);cursor:pointer;text-align:left}
+.nv svg{flex:none}
+.nv:hover{color:var(--fg);background:var(--surface-2)}
+.nv[aria-selected="true"]{background:var(--ink);color:var(--ink-fg);font-weight:600}
+.side-foot{margin-top:auto;display:flex;flex-direction:column;gap:12px}
+.mini{background:var(--surface);border:2px solid var(--edge);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;font-size:.85rem}
+.mini-t{display:flex;justify-content:space-between;gap:8px}
+.panel{background-color:var(--bg);background-image:radial-gradient(var(--dot) 1.5px,transparent 1.7px);background-size:22px 22px;
+  border:2px solid var(--edge);border-radius:24px;padding:28px;min-height:calc(100vh - 32px);min-width:0}
+.vhead{margin-bottom:20px;display:flex;flex-direction:column;gap:8px}
+.vhead h2{font-size:1.6rem}
+.vhead p{color:var(--muted);max-width:62ch}
+
+/* home */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:center;background:var(--surface);
+  border:2px solid var(--edge);border-radius:14px;box-shadow:4px 4px 0 var(--edge);padding:28px}
+.hero-h{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.5;margin-bottom:10px}
+.hero p{color:var(--muted);max-width:48ch;margin-bottom:18px}
+.hello{font:inherit;color:var(--fg);display:flex;flex-direction:column;align-items:center;gap:4px;padding:22px 12px;border-radius:18px;
+  border:2px solid var(--edge);background:var(--accent-soft);box-shadow:var(--sh);cursor:pointer;min-width:0}
+.hello .th{font-size:clamp(2.6rem,7vw,4.2rem);line-height:1.3}
+.hello .rom{font-size:1.3rem}
+.hello .vi{font-weight:400;font-size:.85rem}
+.shead{display:flex;align-items:center;gap:14px;margin:30px 0 6px}
+.shead::after{content:"";flex:1;border-top:2px solid var(--edge)}
+.sub{color:var(--muted);margin-bottom:14px;font-size:.9rem}
+.lessons{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.lesson{display:flex;align-items:center;gap:14px;text-align:left;font:inherit;color:var(--fg);padding:16px;border-radius:14px;
+  border:2px solid var(--edge);background:var(--surface);box-shadow:var(--sh);cursor:pointer;min-width:0}
+.lesson:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.lesson .ic{width:48px;height:48px;flex:none;border-radius:10px;background:var(--ink);color:var(--ink-fg);display:grid;place-items:center}
+.lesson strong{display:block;font-family:var(--f-display);font-size:1.05rem;font-weight:600;line-height:1.25}
+.lesson small{color:var(--muted);font-size:.85rem}
+.lesson.soon{border:2px dashed var(--line);box-shadow:none;cursor:default;background:transparent;color:var(--muted)}
+.lesson.soon:hover{transform:none}
+.lesson.soon .ic{background:transparent;color:var(--muted);border:2px solid var(--line)}
+
+/* shared parts */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:600;padding:9px 16px;border-radius:10px;
+  border:2px solid var(--edge);background:var(--surface);color:var(--fg);cursor:pointer;box-shadow:2px 2px 0 var(--edge)}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--edge)}
+.btn:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--edge)}
+.btn.primary{background:var(--ink);color:var(--ink-fg)}
+.btn.big{padding:12px 20px;font-size:1rem}
+.btn.wide{width:100%;padding:12px 14px}
+.btn.icon{padding:7px;line-height:0}
+.btn.ghost{border-color:transparent;background:transparent;box-shadow:none;color:var(--muted)}
+.btn.ghost:hover{color:var(--fg);border-color:var(--line);transform:none;box-shadow:none}
+.btn[disabled]{opacity:.5;cursor:default;transform:none}
+.btn.ok{color:var(--ok)}.btn.no{color:var(--bad)}
+input,select,textarea{font:inherit;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:10px;padding:8px 10px;width:100%;min-width:0}
+input[type="checkbox"]{width:18px;height:18px;accent-color:var(--accent)}
+input::placeholder{color:var(--muted);opacity:.85}
+label{font-size:.85rem;font-weight:500;color:var(--muted)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.bar .grow{flex:1 1 240px;min-width:0}
+.bar .field{min-width:0}
+.meta{color:var(--muted);font-size:.85rem;margin:4px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:16px}
+.card{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.th{font-family:var(--f-th);font-weight:500;line-height:1.35}
+.card .th{font-size:2rem}
+.rom{font-family:var(--f-rom);font-weight:600;font-size:1.05rem;overflow-wrap:anywhere}
+.dash{color:var(--muted);font-weight:400}
+.t-mid{color:var(--t-mid)}.t-low{color:var(--t-low)}.t-fall{color:var(--t-fall)}.t-high{color:var(--t-high)}.t-rise{color:var(--t-rise)}
+.line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pill{font-size:.72rem;padding:2px 9px;border-radius:99px;background:var(--surface-2);color:var(--muted);white-space:nowrap;border:1px solid var(--line)}
+.vi{font-weight:500}
+.ex{border-top:2px dashed var(--line);padding-top:8px;font-size:.88rem;color:var(--muted);display:flex;gap:8px;justify-content:space-between;align-items:flex-start}
+.ex .th{font-size:1.1rem;color:var(--fg)}
+.ex .rom{font-size:.88rem}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;padding-top:4px}
+.chip{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.82rem;font-weight:600;padding:4px 11px;border-radius:99px;
+  border:2px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.chip:hover{border-color:var(--edge);color:var(--fg)}
+.chip.on{background:var(--accent-soft);color:var(--fg);border-color:var(--edge)}
+.empty{padding:28px 16px;text-align:center;color:var(--muted);border:2px dashed var(--line);border-radius:14px}
+.form{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:16px;margin-bottom:16px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.form .full{grid-column:1/-1}
+.form .field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.form .hint{font-size:.82rem;color:var(--muted)}
+.form .prev{min-height:1.6em;font-family:var(--f-rom);font-weight:600}
+.err{color:var(--bad);font-size:.88rem;min-height:1.2em;font-weight:500}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* flashcards */
+.fc-top{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.chk{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:var(--fg);font-weight:500}
+.fcard{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;width:100%;min-height:300px;padding:24px 16px;
+  background:var(--surface);border:2px solid var(--edge);border-radius:20px;box-shadow:5px 5px 0 var(--edge);font:inherit;color:var(--fg);text-align:center;cursor:pointer}
+.fcard .th.big{font-size:4rem}
+.fcard .rom.big{font-size:2rem}
+.fcard .hint{font-size:.82rem;color:var(--muted)}
+.fcard .exb{border-top:2px dashed var(--line);padding-top:10px;margin-top:4px;display:flex;flex-direction:column;gap:2px;align-items:center;max-width:100%}
+.fcard .exb .th{font-size:1.3rem}
+.fcard .exb .rom{font-size:.95rem}
+.fcard .exb .vi{font-weight:400;color:var(--muted);font-size:.9rem}
+.fc-ctrl{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:18px}
+
+/* quiz */
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px;margin:14px 0}
+.mode{text-align:left;font:inherit;padding:12px 14px;border-radius:14px;border:2px solid var(--edge);background:var(--surface);color:var(--fg);cursor:pointer;display:flex;flex-direction:column;gap:2px;box-shadow:var(--sh)}
+.mode small{color:var(--muted)}
+.mode[aria-pressed="true"]{background:var(--accent-soft)}
+.prog{height:10px;background:var(--surface);border:2px solid var(--edge);border-radius:99px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.qhead{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:.88rem;margin-bottom:6px}
+.qhead+.prog{margin-bottom:16px}
+.qbox{background:var(--surface);border:2px solid var(--edge);border-radius:16px;box-shadow:var(--sh);padding:20px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:16px}
+.qbox .th{font-size:3rem}
+.qbox .ask{color:var(--muted);font-size:.9rem}
+.qbox .big-vi{font-size:1.6rem;font-weight:600;font-family:var(--f-display)}
+.opts{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.opt{display:flex;align-items:center;gap:10px;text-align:left;width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:2px solid var(--edge);background:var(--surface);color:var(--fg);cursor:pointer;min-width:0;box-shadow:2px 2px 0 var(--edge)}
+.opt:hover:not([aria-disabled="true"]){transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--edge)}
+.opt[aria-disabled="true"]{cursor:default}
+.opt.ok{background:color-mix(in srgb,var(--ok) 20%,var(--surface))}
+.opt.bad{background:color-mix(in srgb,var(--bad) 20%,var(--surface))}
+.opt .th{font-size:1.5rem}
+.optsvg{width:46px;flex:none;line-height:0}
+.fb{margin-top:16px;padding:12px 14px;border-radius:12px;background:var(--surface);border:2px solid var(--edge);display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.fb strong.ok{color:var(--ok)}.fb strong.bad{color:var(--bad)}
+.score{font-family:var(--f-display);font-size:3rem;font-weight:700;line-height:1.2}
+.wrong{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.wrong .it{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:8px 12px;background:var(--surface);border:2px solid var(--edge);border-radius:10px}
+.wrong .th{font-size:1.4rem}
+
+/* alphabet and tones */
+.sec{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+.sec:first-child{margin-top:0}
+.sec p.note{color:var(--muted);max-width:68ch}
+.cls3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.clsbox{background:var(--surface);border:2px solid var(--edge);border-top:6px solid var(--cls);border-radius:14px;box-shadow:var(--sh);padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.clsbox h3{color:var(--cls)}
+.letters{display:flex;flex-wrap:wrap;gap:4px 10px;font-family:var(--f-th);font-size:1.6rem;line-height:1.4}
+.letters .rare{opacity:.45}
+.cls-mid{--cls:var(--c-mid)}.cls-high{--cls:var(--c-high)}.cls-low{--cls:var(--c-low)}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pills .chip[aria-pressed="true"]{background:var(--accent-soft);color:var(--fg);border-color:var(--edge)}
+.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr))}
+.tile{font:inherit;color:var(--fg);text-align:center;background:var(--surface);border:2px solid var(--edge);border-top:6px solid var(--cls);border-radius:12px;box-shadow:var(--sh);padding:10px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0}
+.tile:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.tile .th.big{font-size:2.6rem}
+.tile .snd{font-weight:600;font-size:.9rem;color:var(--cls)}
+.tile .nm{display:flex;flex-direction:column;align-items:center}
+.tile .nm .th{font-size:1.1rem}
+.tile .nm .rom{font-size:.8rem}
+.tile .vi{font-size:.8rem;color:var(--muted);font-weight:400}
+.tcard{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tcard .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.tcard .hd h3{font-size:1.05rem}
+.tcard .mk{font-size:.82rem;color:var(--muted)}
+.tcard svg{width:100%;max-width:200px;height:auto}
+.tcard .eg{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-top:2px dashed var(--line);padding-top:8px}
+.tcard .eg .th{font-size:1.6rem}
+.gl{stroke:var(--line);stroke-width:1}
+.tblwrap{overflow-x:auto;border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+thead th{font-size:.82rem;color:var(--muted);font-weight:600}
+tbody th{font-family:var(--f-th);font-size:1.3rem;font-weight:500;white-space:nowrap}
+tbody th small{font-family:var(--f-ui);font-size:.78rem;color:var(--muted);margin-left:6px}
+td{font-weight:600}
+.toasts{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;pointer-events:none;
+  padding:12px max(16px,env(safe-area-inset-left,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px))}
+.toast{background:var(--ink);color:var(--ink-fg);padding:10px 16px;border-radius:99px;font-size:.9rem;max-width:100%;font-weight:500}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}.btn:hover,.lesson:hover,.opt:hover,.tile:hover{transform:none}}
+
+
+/* additions: vowels, scope bar, tone checker, callout */
+.cls-v{--cls:var(--accent)}
+.tile .pill{margin-top:2px}
+.tile .snd{overflow-wrap:anywhere}
+.scopebar{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.scopebar select{width:auto;max-width:100%}
+.tcbox{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:16px;display:grid;gap:16px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:start}
+.tcctl{display:flex;flex-direction:column;gap:14px;min-width:0}
+.tcctl .g{display:flex;flex-direction:column;gap:6px}
+.gl2{font-size:.85rem;font-weight:500;color:var(--muted)}
+.tcres{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:14px;border:2px dashed var(--line);border-radius:12px;min-width:0}
+.tcres svg{width:140px;max-width:100%;height:auto}
+.tcres .tn{font-family:var(--f-display);font-size:1.7rem;font-weight:700;line-height:1.2}
+.tcres .why{color:var(--muted);font-size:.88rem}
+.callout{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:14px 16px;display:flex;flex-direction:column;gap:8px;max-width:76ch}
+.callout p{max-width:none}
+tbody th .rl{display:block;font-family:var(--f-ui);font-size:.9rem;font-weight:600;white-space:normal}
+tbody th small{display:block;margin:0}
+thead th small{font-weight:400}
+@media (max-width:640px){.tcbox{grid-template-columns:minmax(0,1fr)}}
+
+/* phones: sidebar turns into a bottom tab bar */
+@media (max-width:860px){
+  body{padding-block:12px calc(88px + env(safe-area-inset-bottom,0px))}
+  .app{grid-template-columns:minmax(0,1fr)}
+  .side{position:fixed;left:0;right:0;bottom:0;top:auto;height:auto;z-index:20;background:var(--surface);border-top:2px solid var(--edge);
+    flex-direction:row;gap:0;padding:6px max(8px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-right,0px))}
+  .brand,.sec-label,.side-foot{display:none}
+  .navv{flex-direction:row;width:100%;gap:2px;overflow-x:auto}
+  .nv{flex:1 0 auto;min-width:58px;flex-direction:column;gap:2px;padding:6px 2px;font-size:.68rem;text-align:center;min-width:0;border-radius:10px;justify-content:center}
+  .nv span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  .panel{padding:16px;border-radius:18px;min-height:0}
+  .hero{grid-template-columns:minmax(0,1fr);padding:18px}
+  .vhead h2{font-size:1.4rem}
+  .toasts{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:480px){.fcard .th.big{font-size:3.2rem}.qbox .th{font-size:2.5rem}}
+/* Course */
+.backl{display:inline-flex;align-items:center;gap:4px;font:inherit;font-weight:600;color:var(--muted);background:none;border:0;padding:4px 0;margin-bottom:12px;cursor:pointer}
+.backl:hover{color:var(--fg)}
+.chero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;position:relative;margin-bottom:16px}
+.ccover{position:relative;width:132px;aspect-ratio:3/4;flex:none;border:3px solid var(--edge);border-radius:14px;box-shadow:var(--sh);overflow:hidden;background:var(--accent);color:#FFF3E2;display:grid;place-items:center;text-align:center}
+.cc-bg{position:absolute;inset:0;display:grid;place-items:center;font:700 3.6rem/1 var(--f-th);opacity:.16;letter-spacing:-.04em;word-break:break-all;padding:6px}
+.cc-t{position:relative;font:600 1.45rem/1.2 var(--f-th)}
+.cc-n{position:absolute;right:8px;bottom:6px;font:600 1.1rem var(--f-th);background:#4B1E26;color:#FFF3E2;border-radius:8px;padding:0 8px}
+.cmain{flex:1 1 260px;min-width:0}
+.cbadges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.cbadge{font-size:.78rem;font-weight:700;padding:3px 11px;border-radius:99px;background:var(--ink);color:var(--ink-fg);border:2px solid var(--edge)}
+.cbadge.o{background:var(--surface);color:var(--fg)}
+.ctitle{font-size:1.7rem;margin-bottom:4px}
+.csub{color:var(--muted);max-width:60ch}
+.ctabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.ctab{font:inherit;font-weight:600;padding:8px 18px;border-radius:99px;border:2px solid var(--edge);background:var(--surface);color:var(--fg);cursor:pointer}
+.ctab[aria-selected="true"]{background:var(--ink);color:var(--ink-fg);box-shadow:var(--sh)}
+.cprog{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:14px 16px;margin-bottom:18px;display:flex;flex-direction:column;gap:10px}
+.cprog-t{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.clabel{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 10px}
+.clist{display:flex;flex-direction:column;gap:10px}
+.crow{display:flex;align-items:center;gap:14px;text-align:left;font:inherit;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:12px 14px;cursor:pointer;width:100%}
+.crow:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.cnum{width:44px;height:44px;flex:none;border-radius:10px;background:var(--ink);color:var(--ink-fg);display:grid;place-items:center;font:700 1.15rem var(--f-display)}
+.cnum.big{width:56px;height:56px;font-size:1.5rem}
+.cinfo{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.cinfo strong{font-family:var(--f-display);font-size:1.02rem;font-weight:600;line-height:1.3}
+.cinfo small{color:var(--muted);font:400 .84rem var(--f-th);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cinfo em{font-style:normal;font-size:.82rem;color:var(--accent);font-weight:600}
+.cchk{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;flex:none;color:var(--ink-fg)}
+.cchk.on{background:var(--ok);border-color:var(--ok)}
+.cgo{color:var(--muted);flex:none;line-height:0}
+.cnote{margin-top:16px;color:var(--muted);font-size:.84rem;max-width:70ch}
+.lhead{display:flex;gap:16px;align-items:flex-start;margin-bottom:14px}
+.lkick{font-size:.76rem;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.ltitle{font-size:1.45rem}
+.lth{font:500 1.05rem var(--f-th);color:var(--muted)}
+.gl{display:flex;flex-direction:column;gap:14px}
+.gcard{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.gcard h3{display:flex;gap:10px;align-items:center;font-size:1.02rem}
+.gn{width:26px;height:26px;border-radius:8px;background:var(--accent);color:#FFF3E2;display:grid;place-items:center;font-size:.85rem;flex:none}
+.gex{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.gex .th{font-size:1.5rem}
+.gex .vi{color:var(--muted)}
+.rblock{margin-bottom:20px}
+.rblock h3{margin-bottom:2px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,128px),1fr));gap:10px;margin-top:10px}
+.tile{font:inherit;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:12px;box-shadow:var(--sh);padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;min-width:0;text-align:center}
+.tile .th{font-size:1.9rem;line-height:1.3}
+.tile .vi{font-size:.8rem;color:var(--muted)}
+.lfoot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:24px}
+@media (max-width:520px){.ccover{width:104px}.ctitle{font-size:1.4rem}.cinfo small{white-space:normal}}
+</style>
+
+<div class="app">
+  <aside class="side" id="side"></aside>
+  <main class="panel" id="view" role="tabpanel"></main>
+</div>
+<div class="toasts" aria-live="polite"><div class="toast" id="toast" hidden></div></div>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,r){return (r||document).querySelector(s)};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+var norm=function(s){return String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').replace(/Đ/g,'d').toLowerCase()};
+var shuffle=function(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a};
+var keepScroll=function(fn){var y=window.scrollY;fn();window.scrollTo(0,y)};
+
+/* ---------- Tones ---------- */
+/* Contours are drawn on a 1-5 pitch scale for standard (Bangkok) Thai. They are illustrations, not measurements. */
+var TONE_KEYS=['mid','low','fall','high','rise'];
+var TONES={
+  mid:{vi:'Ngang',en:'mid',th:'เสียงสามัญ',pa:'a',lv:[3,3],eg:['คา','khaa','mắc kẹt']},
+  low:{vi:'Thấp',en:'low',th:'เสียงเอก',pa:'à',lv:[2,1],eg:['ข่า','khàa','củ riềng']},
+  fall:{vi:'Rơi',en:'falling',th:'เสียงโท',pa:'â',lv:[4,5,1],eg:['ค่า','khâa','giá trị, phí']},
+  high:{vi:'Cao',en:'high',th:'เสียงตรี',pa:'á',lv:[4,5],eg:['ค้า','kháa','buôn bán']},
+  rise:{vi:'Lên',en:'rising',th:'เสียงจัตวา',pa:'ǎ',lv:[2,1,4.5],eg:['ขา','khǎa','cái chân']}
+};
+function toneOf(s){var d=String(s).normalize('NFD');
+  if(/̀/.test(d))return 'low'; if(/̂/.test(d))return 'fall'; if(/́/.test(d))return 'high'; if(/̌/.test(d))return 'rise'; return 'mid';}
+function sylls(rom){return String(rom).split(/[-\s]+/).filter(Boolean)}
+function romHTML(rom){
+  return String(rom).trim().split(/(\s+)/).map(function(w){
+    if(/^\s+$/.test(w))return ' ';
+    return w.split('-').filter(Boolean).map(function(s){return '<span class="t-'+toneOf(s)+'">'+esc(s)+'</span>'}).join('<span class="dash">-</span>');
+  }).join('');
+}
+function contour(key){
+  var lv=TONES[key].lv,n=lv.length,pts=[],i;
+  for(i=0;i<n;i++)pts.push((8+i*(84/(n-1)))+','+(52-(lv[i]-1)*11));
+  var grid='';for(i=1;i<=5;i++){var y=52-(i-1)*11;grid+='<line class="gl" x1="4" x2="96" y1="'+y+'" y2="'+y+'"/>'}
+  var last=pts[n-1].split(',');
+  return '<svg viewBox="0 0 100 60" role="img" aria-label="Đường cao độ thanh '+TONES[key].vi+'">'+grid+
+    '<polyline points="'+pts.join(' ')+'" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '<circle cx="'+last[0]+'" cy="'+last[1]+'" r="4" fill="currentColor"/></svg>';
+}
+/* Thai tone rule. cls: mid|high|low. type: live | ds (dead, short vowel or mid/high dead) | dl (dead, long vowel).
+   mark: none | ek | tho | tri | jat. Returns a tone key, or null when the mark is not used with that class. */
+function ruleTone(cls,type,mark){
+  if(mark==='ek')return cls==='low'?'fall':'low';
+  if(mark==='tho')return cls==='low'?'high':'fall';
+  if(mark==='tri')return cls==='mid'?'high':null;
+  if(mark==='jat')return cls==='mid'?'rise':null;
+  if(cls==='mid')return type==='live'?'mid':'low';
+  if(cls==='high')return type==='live'?'rise':'low';
+  if(type==='live')return 'mid';
+  return type==='dl'?'fall':'high';
+}
+
+/* ---------- Data ---------- */
+/* Romanisation: Paiboon style. Long monophthongs are doubled (aa, ii, ɛɛ), diphthongs ia, ʉa, ua are not. */
+var DEFAULTS=[
+ {id:'d01',th:'สวัสดี',rom:'sà-wàt-dii',pos:'câu chào',vi:'xin chào',ex:{th:'สวัสดีครับ',rom:'sà-wàt-dii khráp',vi:'Xin chào (nam nói). Nữ thêm ค่ะ khâ.'}},
+ {id:'d02',th:'ขอบคุณ',rom:'kɔ̀ɔp-khun',pos:'cụm từ',vi:'cảm ơn',ex:{th:'ขอบคุณมาก',rom:'kɔ̀ɔp-khun mâak',vi:'Cảm ơn rất nhiều.'}},
+ {id:'d03',th:'ใช่',rom:'châi',pos:'phó từ',vi:'vâng, đúng',ex:{th:'ใช่ ถูกแล้ว',rom:'châi thùuk lɛ́ɛo',vi:'Đúng rồi.'}},
+ {id:'d04',th:'ไม่',rom:'mâi',pos:'phó từ',vi:'không',ex:{th:'ไม่เป็นไร',rom:'mâi bpen rai',vi:'Không sao đâu.'}},
+ {id:'d05',th:'น้ำ',rom:'náam',pos:'danh từ',vi:'nước',ex:{th:'ขอน้ำหน่อย',rom:'kɔ̌ɔ náam nɔ̀ɔi',vi:'Cho tôi xin ít nước.'}},
+ {id:'d06',th:'กิน',rom:'gin',pos:'động từ',vi:'ăn',ex:{th:'กินข้าวหรือยัง',rom:'gin khâao rʉ̌ʉ yang',vi:'Ăn cơm chưa? (câu hỏi thăm quen thuộc)'}},
+ {id:'d07',th:'ข้าว',rom:'khâao',pos:'danh từ',vi:'cơm, gạo',ex:{th:'ข้าวผัด',rom:'khâao phàt',vi:'Cơm chiên.'}},
+ {id:'d08',th:'อร่อย',rom:'à-rɔ̂ɔi',pos:'tính từ',vi:'ngon',ex:{th:'อาหารอร่อยมาก',rom:'aa-hǎan à-rɔ̂ɔi mâak',vi:'Đồ ăn rất ngon.'}},
+ {id:'d09',th:'ดี',rom:'dii',pos:'tính từ',vi:'tốt, khỏe',ex:{th:'สบายดีไหม',rom:'sà-baai dii mǎi',vi:'Bạn khỏe không?'}},
+ {id:'d10',th:'บ้าน',rom:'bâan',pos:'danh từ',vi:'nhà',ex:{th:'ไปบ้านเพื่อน',rom:'bpai bâan phʉ̂an',vi:'Đến nhà bạn.'}},
+ {id:'d11',th:'เพื่อน',rom:'phʉ̂an',pos:'danh từ',vi:'bạn bè',ex:{th:'เพื่อนของฉัน',rom:'phʉ̂an kɔ̌ɔng chǎn',vi:'Bạn của tôi.'}},
+ {id:'d12',th:'รัก',rom:'rák',pos:'động từ',vi:'yêu',ex:{th:'ฉันรักคุณ',rom:'chǎn rák khun',vi:'Tôi yêu bạn.'}},
+ {id:'d13',th:'ไป',rom:'bpai',pos:'động từ',vi:'đi',ex:{th:'ไปไหน',rom:'bpai nǎi',vi:'Bạn đi đâu?'}},
+ {id:'d14',th:'มา',rom:'maa',pos:'động từ',vi:'đến',ex:{th:'มาแล้ว',rom:'maa lɛ́ɛo',vi:'Đến rồi.'}},
+ {id:'d15',th:'แมว',rom:'mɛɛo',pos:'danh từ',vi:'con mèo',ex:{th:'แมวน่ารัก',rom:'mɛɛo nâa-rák',vi:'Con mèo dễ thương.'}},
+ {id:'d16',th:'หมา',rom:'mǎa',pos:'danh từ',vi:'con chó',ex:{th:'หมาตัวใหญ่',rom:'mǎa dtua yài',vi:'Con chó to.'}},
+ {id:'d17',th:'สวย',rom:'sǔai',pos:'tính từ',vi:'đẹp',ex:{th:'สวยมาก',rom:'sǔai mâak',vi:'Rất đẹp.'}},
+ {id:'d18',th:'ร้อน',rom:'rɔ́ɔn',pos:'tính từ',vi:'nóng',ex:{th:'วันนี้ร้อน',rom:'wan-níi rɔ́ɔn',vi:'Hôm nay nóng.'}},
+ {id:'d19',th:'เท่าไหร่',rom:'thâo-rài',pos:'từ nghi vấn',vi:'bao nhiêu',ex:{th:'ราคาเท่าไหร่',rom:'raa-khaa thâo-rài',vi:'Giá bao nhiêu?'}}
+];
+/* Vocabulary by level. Each word: [Thai, romanisation, part of speech, Vietnamese]. */
+var LESSONS={
+ a1:{desc:'Những từ đầu tiên để chào hỏi, đếm số, nói về gia đình, đồ ăn và thời gian.',topics:[
+  {n:'Chào hỏi',w:[
+   ['สวัสดี','sà-wàt-dii','câu chào','xin chào'],
+   ['ขอบคุณ','kɔ̀ɔp-khun','cụm từ','cảm ơn'],
+   ['ขอโทษ','khɔ̌ɔ-thôot','cụm từ','xin lỗi'],
+   ['ไม่เป็นไร','mâi bpen rai','cụm từ','không sao đâu'],
+   ['ลาก่อน','laa-gɔ̀ɔn','câu chào','tạm biệt'],
+   ['ครับ','khráp','từ lịch sự','vâng (nam nói cuối câu)'],
+   ['ค่ะ','khâ','từ lịch sự','vâng (nữ nói cuối câu)'],
+   ['ใช่','châi','phó từ','vâng, đúng'],
+   ['ไม่ใช่','mâi châi','phó từ','không phải'],
+   ['สบายดีไหม','sà-baai dii mǎi','cụm từ','bạn khỏe không?']]},
+  {n:'Đại từ',w:[
+   ['ฉัน','chǎn','đại từ','tôi (thân mật)'],
+   ['ผม','phǒm','đại từ','tôi (nam nói)'],
+   ['คุณ','khun','đại từ','bạn, ông, bà'],
+   ['เขา','khǎo','đại từ','anh ấy, cô ấy'],
+   ['เรา','rao','đại từ','chúng ta, chúng tôi'],
+   ['พวกเขา','phûak-khǎo','đại từ','họ'],
+   ['นี่','nîi','đại từ','đây, này'],
+   ['นั่น','nân','đại từ','đó, kia'],
+   ['อะไร','à-rai','từ nghi vấn','cái gì'],
+   ['ใคร','khrai','từ nghi vấn','ai'],
+   ['ที่ไหน','thîi-nǎi','từ nghi vấn','ở đâu']]},
+  {n:'Số đếm 0 đến 10',w:[
+   ['ศูนย์','sǔun','số từ','số 0'],
+   ['หนึ่ง','nʉ̀ng','số từ','1'],
+   ['สอง','sɔ̌ɔng','số từ','2'],
+   ['สาม','sǎam','số từ','3'],
+   ['สี่','sìi','số từ','4'],
+   ['ห้า','hâa','số từ','5'],
+   ['หก','hòk','số từ','6'],
+   ['เจ็ด','jèt','số từ','7'],
+   ['แปด','bpɛ̀ɛt','số từ','8'],
+   ['เก้า','gâao','số từ','9'],
+   ['สิบ','sìp','số từ','10']]},
+  {n:'Gia đình và con người',w:[
+   ['พ่อ','phɔ̂ɔ','danh từ','bố'],
+   ['แม่','mɛ̂ɛ','danh từ','mẹ'],
+   ['พี่','phîi','danh từ','anh, chị'],
+   ['น้อง','nɔ́ɔng','danh từ','em'],
+   ['ลูก','lûuk','danh từ','con (của cha mẹ)'],
+   ['เพื่อน','phʉ̂an','danh từ','bạn bè'],
+   ['ผู้ชาย','phûu-chaai','danh từ','đàn ông'],
+   ['ผู้หญิง','phûu-yǐng','danh từ','phụ nữ'],
+   ['เด็ก','dèk','danh từ','trẻ em'],
+   ['ครู','khruu','danh từ','giáo viên'],
+   ['ชื่อ','chʉ̂ʉ','danh từ','tên']]},
+  {n:'Ăn uống',w:[
+   ['ข้าว','khâao','danh từ','cơm, gạo'],
+   ['น้ำ','náam','danh từ','nước'],
+   ['กาแฟ','gaa-fɛɛ','danh từ','cà phê'],
+   ['ชา','chaa','danh từ','trà'],
+   ['นม','nom','danh từ','sữa'],
+   ['ไข่','khài','danh từ','trứng'],
+   ['ไก่','gài','danh từ','gà'],
+   ['ปลา','bplaa','danh từ','cá'],
+   ['หมู','mǔu','danh từ','thịt heo'],
+   ['ผลไม้','phǒn-lá-máai','danh từ','trái cây'],
+   ['อาหาร','aa-hǎan','danh từ','đồ ăn'],
+   ['กิน','gin','động từ','ăn'],
+   ['ดื่ม','dʉ̀ʉm','động từ','uống'],
+   ['อร่อย','à-rɔ̂ɔi','tính từ','ngon']]},
+  {n:'Động từ cơ bản',w:[
+   ['ไป','bpai','động từ','đi'],
+   ['มา','maa','động từ','đến'],
+   ['อยู่','yùu','động từ','ở, đang ở'],
+   ['ชอบ','chɔ̂ɔp','động từ','thích'],
+   ['รัก','rák','động từ','yêu'],
+   ['ต้องการ','dtɔ̂ɔng-gaan','động từ','cần, muốn có'],
+   ['ซื้อ','sʉ́ʉ','động từ','mua'],
+   ['ขาย','khǎai','động từ','bán'],
+   ['ทำ','tham','động từ','làm'],
+   ['พูด','phûut','động từ','nói'],
+   ['เรียน','rian','động từ','học'],
+   ['ดู','duu','động từ','xem'],
+   ['นอน','nɔɔn','động từ','ngủ']]},
+  {n:'Tính từ thường gặp',w:[
+   ['ดี','dii','tính từ','tốt'],
+   ['ใหญ่','yài','tính từ','to, lớn'],
+   ['เล็ก','lék','tính từ','nhỏ'],
+   ['ร้อน','rɔ́ɔn','tính từ','nóng'],
+   ['หนาว','nǎao','tính từ','lạnh (thời tiết)'],
+   ['สวย','sǔai','tính từ','đẹp'],
+   ['ง่าย','ngâai','tính từ','dễ'],
+   ['ยาก','yâak','tính từ','khó'],
+   ['ใหม่','mài','tính từ','mới'],
+   ['เก่า','gào','tính từ','cũ'],
+   ['แพง','phɛɛng','tính từ','đắt'],
+   ['ถูก','thùuk','tính từ','rẻ; đúng']]},
+  {n:'Thời gian',w:[
+   ['วันนี้','wan-níi','danh từ','hôm nay'],
+   ['พรุ่งนี้','phrûng-níi','danh từ','ngày mai'],
+   ['เมื่อวาน','mʉ̂a-waan','danh từ','hôm qua'],
+   ['ตอนนี้','dtɔɔn-níi','phó từ','bây giờ'],
+   ['เช้า','cháao','danh từ','buổi sáng'],
+   ['บ่าย','bàai','danh từ','buổi chiều'],
+   ['เย็น','yen','danh từ','chiều tối; mát'],
+   ['กลางคืน','glaang-khʉʉn','danh từ','ban đêm']]}
+ ]},
+ a2:{desc:'Từ dùng khi mua sắm, đi lại, đi khám, nói về thời tiết, công việc và học tập.',topics:[
+  {n:'Mua sắm',w:[
+   ['ราคา','raa-khaa','danh từ','giá cả'],
+   ['ลดราคา','lót raa-khaa','cụm từ','giảm giá'],
+   ['เงิน','ngəən','danh từ','tiền'],
+   ['ตลาด','dtà-làat','danh từ','chợ'],
+   ['ร้านค้า','ráan-kháa','danh từ','cửa hàng'],
+   ['จ่าย','jàai','động từ','trả tiền'],
+   ['ถุง','thǔng','danh từ','cái túi'],
+   ['เสื้อ','sʉ̂a','danh từ','cái áo'],
+   ['กางเกง','gaang-geeng','danh từ','quần'],
+   ['รองเท้า','rɔɔng-tháao','danh từ','giày, dép']]},
+  {n:'Đi lại và địa điểm',w:[
+   ['รถ','rót','danh từ','xe'],
+   ['รถไฟ','rót-fai','danh từ','tàu hỏa'],
+   ['เครื่องบิน','khrʉ̂ang-bin','danh từ','máy bay'],
+   ['ถนน','thà-nǒn','danh từ','đường phố'],
+   ['เดิน','dəən','động từ','đi bộ'],
+   ['ขับรถ','khàp-rót','động từ','lái xe'],
+   ['สถานี','sà-thǎa-nii','danh từ','nhà ga, trạm'],
+   ['โรงแรม','roong-rɛɛm','danh từ','khách sạn'],
+   ['ห้องน้ำ','hɔ̂ɔng-náam','danh từ','nhà vệ sinh'],
+   ['ซ้าย','sáai','danh từ','bên trái'],
+   ['ขวา','khwǎa','danh từ','bên phải'],
+   ['ตรงไป','dtrong-bpai','cụm từ','đi thẳng']]},
+  {n:'Cơ thể và sức khỏe',w:[
+   ['หัว','hǔa','danh từ','cái đầu'],
+   ['ตา','dtaa','danh từ','mắt'],
+   ['หู','hǔu','danh từ','tai'],
+   ['ปาก','bpàak','danh từ','miệng'],
+   ['มือ','mʉʉ','danh từ','bàn tay'],
+   ['เท้า','tháao','danh từ','bàn chân'],
+   ['ท้อง','thɔ́ɔng','danh từ','bụng'],
+   ['ปวด','bpùat','động từ','đau'],
+   ['ไข้','khâi','danh từ','cơn sốt'],
+   ['ยา','yaa','danh từ','thuốc'],
+   ['หมอ','mɔ̌ɔ','danh từ','bác sĩ'],
+   ['โรงพยาบาล','roong-phá-yaa-baan','danh từ','bệnh viện'],
+   ['ไม่สบาย','mâi sà-baai','cụm từ','không khỏe']]},
+  {n:'Thời tiết và thiên nhiên',w:[
+   ['ฝน','fǒn','danh từ','mưa'],
+   ['ฝนตก','fǒn dtòk','cụm từ','trời mưa'],
+   ['แดด','dɛ̀ɛt','danh từ','nắng'],
+   ['ลม','lom','danh từ','gió'],
+   ['ท้องฟ้า','thɔ́ɔng-fáa','danh từ','bầu trời'],
+   ['ทะเล','thá-lee','danh từ','biển'],
+   ['ภูเขา','phuu-khǎo','danh từ','núi'],
+   ['แม่น้ำ','mɛ̂ɛ-náam','danh từ','sông'],
+   ['ต้นไม้','dtôn-máai','danh từ','cái cây'],
+   ['ดอกไม้','dɔ̀ɔk-máai','danh từ','bông hoa']]},
+  {n:'Công việc và học tập',w:[
+   ['งาน','ngaan','danh từ','công việc'],
+   ['ทำงาน','tham-ngaan','động từ','làm việc'],
+   ['บริษัท','bɔɔ-rí-sàt','danh từ','công ty'],
+   ['ประชุม','bprà-chum','động từ','họp'],
+   ['นักเรียน','nák-rian','danh từ','học sinh'],
+   ['โรงเรียน','roong-rian','danh từ','trường học'],
+   ['หนังสือ','nǎng-sʉ̌ʉ','danh từ','quyển sách'],
+   ['ปากกา','bpàak-gaa','danh từ','cây bút'],
+   ['สอบ','sɔ̀ɔp','động từ','thi'],
+   ['เวลา','wee-laa','danh từ','thời gian']]}
+ ]}
+};
+/* 44 consonants in alphabet order: letter, class, initial sound, final sound, mnemonic word, romanisation, meaning, obsolete flag */
+var CONS=[
+ ['ก','mid','g','k','ไก่','gài','con gà'],
+ ['ข','high','kh','k','ไข่','khài','quả trứng'],
+ ['ฃ','high','kh','k','ขวด','khùat','cái chai',1],
+ ['ค','low','kh','k','ควาย','khwaai','con trâu'],
+ ['ฅ','low','kh','k','คน','khon','con người',1],
+ ['ฆ','low','kh','k','ระฆัง','rá-khang','cái chuông'],
+ ['ง','low','ng','ng','งู','nguu','con rắn'],
+ ['จ','mid','j','t','จาน','jaan','cái đĩa'],
+ ['ฉ','high','ch','—','ฉิ่ง','chìng','chũm chọe'],
+ ['ช','low','ch','t','ช้าง','cháang','con voi'],
+ ['ซ','low','s','t','โซ่','sôo','sợi xích'],
+ ['ฌ','low','ch','—','เฌอ','chəə','cái cây (văn thơ)'],
+ ['ญ','low','y','n','หญิง','yǐng','phụ nữ'],
+ ['ฎ','mid','d','t','ชฎา','chá-daa','mão đội đầu'],
+ ['ฏ','mid','dt','t','ปฏัก','bpà-dtàk','gậy thúc voi'],
+ ['ฐ','high','th','t','ฐาน','thǎan','cái nền'],
+ ['ฑ','low','th','t','มณโฑ','mon-too','nàng Montho'],
+ ['ฒ','low','th','t','ผู้เฒ่า','phûu-thâo','người già'],
+ ['ณ','low','n','n','เณร','neen','chú tiểu'],
+ ['ด','mid','d','t','เด็ก','dèk','trẻ em'],
+ ['ต','mid','dt','t','เต่า','dtào','con rùa'],
+ ['ถ','high','th','t','ถุง','thǔng','cái túi'],
+ ['ท','low','th','t','ทหาร','thá-hǎan','người lính'],
+ ['ธ','low','th','t','ธง','thong','lá cờ'],
+ ['น','low','n','n','หนู','nǔu','con chuột'],
+ ['บ','mid','b','p','ใบไม้','bai-máai','chiếc lá'],
+ ['ป','mid','bp','p','ปลา','bplaa','con cá'],
+ ['ผ','high','ph','—','ผึ้ง','phʉ̂ng','con ong'],
+ ['ฝ','high','f','—','ฝา','fǎa','cái nắp'],
+ ['พ','low','ph','p','พาน','phaan','khay chân cao'],
+ ['ฟ','low','f','p','ฟัน','fan','cái răng'],
+ ['ภ','low','ph','p','สำเภา','sǎm-phao','thuyền buồm'],
+ ['ม','low','m','m','ม้า','máa','con ngựa'],
+ ['ย','low','y','y','ยักษ์','yák','quỷ khổng lồ'],
+ ['ร','low','r','n','เรือ','rʉa','con thuyền'],
+ ['ล','low','l','n','ลิง','ling','con khỉ'],
+ ['ว','low','w','w','แหวน','wɛ̌ɛn','chiếc nhẫn'],
+ ['ศ','high','s','t','ศาลา','sǎa-laa','chòi nghỉ chân'],
+ ['ษ','high','s','t','ฤๅษี','rʉʉ-sǐi','ẩn sĩ'],
+ ['ส','high','s','t','เสือ','sʉ̌a','con hổ'],
+ ['ห','high','h','—','หีบ','hìip','cái rương'],
+ ['ฬ','low','l','n','จุฬา','jù-laa','diều năm cánh'],
+ ['อ','mid','ʔ','—','อ่าง','àang','cái chậu'],
+ ['ฮ','low','h','—','นกฮูก','nók-hûuk','con cú']
+];
+var CLASSES={
+ mid:{vi:'Nhóm giữa',en:'mid class',letters:'กจฎฏดตบปอ'},
+ high:{vi:'Nhóm cao',en:'high class',letters:'ขฃฉฐถผฝศษสห'},
+ low:{vi:'Nhóm thấp',en:'low class',letters:'คฅฆงชซฌญฑฒณทธนพฟภมยรลวฬฮ'}
+};
+/* Vowels written on ก. Group: s short, l long, sp special short live vowels, c common combinations, m marks and spellings, r rare.
+   Entry: form, sound, group, example word, romanisation, meaning. A null example means the vowel has no everyday word. */
+var VOW=[
+ ['กะ','a','s','จะ','jà','sẽ'],
+ ['กา','aa','l','ตา','dtaa','mắt'],
+ ['กิ','i','s','กิน','gin','ăn'],
+ ['กี','ii','l','ดี','dii','tốt'],
+ ['กึ','ʉ','s','ลึก','lʉ́k','sâu'],
+ ['กือ','ʉʉ','l','มือ','mʉʉ','bàn tay'],
+ ['กุ','u','s','ลุง','lung','bác'],
+ ['กู','uu','l','หมู','mǔu','con heo'],
+ ['เกะ','e','s','เกะกะ','gè-gà','vướng víu'],
+ ['เก','ee','l','เล่น','lêen','chơi'],
+ ['แกะ','ɛ','s','แกะ','gɛ̀','con cừu'],
+ ['แก','ɛɛ','l','แม่','mɛ̂ɛ','mẹ'],
+ ['โกะ','o','s','โต๊ะ','dtó','cái bàn'],
+ ['โก','oo','l','โต','dtoo','lớn'],
+ ['เกาะ','ɔ','s','เกาะ','gɔ̀','hòn đảo'],
+ ['กอ','ɔɔ','l','ขอ','kɔ̌ɔ','xin'],
+ ['เกอะ','ə','s','เปอะเปื้อน','bpə̀-bpʉ̂an','dính bẩn'],
+ ['เกอ','əə','l','เธอ','thəə','cô ấy, bạn (thân mật)'],
+ ['เกียะ','ia','s','เปี๊ยะ','bpía','bánh pía'],
+ ['เกีย','ia','l','เรียน','rian','học'],
+ ['เกือะ','ʉa','s',null],
+ ['เกือ','ʉa','l','เรือ','rʉa','thuyền'],
+ ['กัวะ','ua','s','ผัวะ','phùa','bốp! (tượng thanh)'],
+ ['กัว','ua','l','ตัว','dtua','con; cơ thể'],
+ ['กำ','am','sp','ทำ','tham','làm'],
+ ['ไก','ai','sp','ไป','bpai','đi'],
+ ['ใก','ai','sp','ใจ','jai','tim, lòng'],
+ ['เกา','ao','sp','เรา','rao','chúng tôi'],
+ ['กาย','aai','c','ชาย','chaai','nam giới'],
+ ['กาว','aao','c','ขาว','khǎao','trắng'],
+ ['กอย','ɔɔi','c','น้อย','nɔ́ɔi','ít'],
+ ['เกย','əəi','c','เคย','khəəi','đã từng'],
+ ['กัย','ai','c','ภัย','phai','hiểm họa'],
+ ['กวย','uai','c','สวย','sǔai','đẹp'],
+ ['กิว','iu','c','ผิว','phǐu','làn da'],
+ ['เกียว','iao','c','เปรี้ยว','bprîao','chua'],
+ ['แกว','ɛɛo','c','แมว','mɛɛo','con mèo'],
+ ['เกือย','ʉai','c','เหนื่อย','nʉ̀ai','mệt'],
+ ['กั','a','m','กัน','gan','cùng nhau'],
+ ['ก็','rút ngắn','m','เด็ก','dèk','trẻ em'],
+ ['กว','ua','m','สวน','sǔan','vườn'],
+ ['กรร','an','m','บรรทัด','ban-thát','dòng kẻ'],
+ ['ฤ','rʉ','r','ฤดู','rʉ-duu','mùa'],
+ ['ฤๅ','rʉʉ','r','ฤๅษี','rʉʉ-sǐi','ẩn sĩ'],
+ ['ฦ','lʉ','r',null],
+ ['ฦๅ','lʉʉ','r',null]
+];
+var VGRP={s:'ngắn',l:'dài',sp:'ngắn, vần sống',c:'tổ hợp',m:'dạng viết',r:'hiếm'};
+
+/* ---------- State and storage ---------- */
+var COURSE=[{"n":1,"th":"รู้จักเพื่อน รู้จักพยัญชนะ","vi":"Làm quen bạn bè, làm quen phụ âm","desc":"Chào hỏi, giới thiệu tên, đếm số Thái và tên năm dấu thanh.","w":[["สวัสดี","sà-wàt-dii","câu chào","xin chào",1],["ครับ","khráp","từ lịch sự","vâng; ạ (nam nói)",1],["ค่ะ","khâ","từ lịch sự","vâng; ạ (nữ nói)",1],["ขอบคุณ","khɔ̀ɔp-khun","câu cảm ơn","cảm ơn",1],["ชื่อ","chʉ̂ʉ","danh từ","tên",1],["เพื่อน","phʉ̂an","danh từ","bạn bè",1],["ครู","khruu","danh từ","thầy cô giáo",1],["นักเรียน","nák-rian","danh từ","học sinh",1],["โรงเรียน","roong-rian","danh từ","trường học",1],["ฉัน","chǎn","đại từ","tôi, mình (thân mật)",1],["ผม","phǒm","đại từ","tôi (nam nói)",1],["เธอ","thəə","đại từ","cậu, bạn (thân mật)",1],["ชื่ออะไร","chʉ̂ʉ-à-rai","câu hỏi","tên là gì?",0],["สบายดีไหม","sà-baai-dii-mǎi","câu hỏi","khỏe không?",0],["ยินดี","yin-dii","tính từ","vui mừng",0],["ลาก่อน","laa-gɔ̀ɔn","câu chào","tạm biệt nhé",0],["ห้อง","hɔ̂ɔng","danh từ","phòng; lớp",1],["ชั้น","chán","danh từ","lớp (cấp lớp)",1],["ร้องเพลง","rɔ́ɔng-phleeng","động từ","hát",0],["ตัวเลข","dtua-lêek","danh từ","con số",1],["หนึ่ง","nʉ̀ng","số từ","một (๑)",1],["สอง","sɔ̌ɔng","số từ","hai (๒)",1],["สาม","sǎam","số từ","ba (๓)",1],["สี่","sìi","số từ","bốn (๔)",1],["ห้า","hâa","số từ","năm (๕)",1],["หก","hòk","số từ","sáu (๖)",1],["เจ็ด","jèt","số từ","bảy (๗)",1],["แปด","bpɛ̀ɛt","số từ","tám (๘)",1],["เก้า","gâao","số từ","chín (๙)",1],["สิบ","sìp","số từ","mười (๑๐)",1],["เอก","èek","danh từ","dấu mai ek (่)",1],["โท","thoo","danh từ","dấu mai tho (้)",1],["ตรี","dtrii","danh từ","dấu mai tri (๊)",1],["ฝึกเขียน","fʉ̀k-khǐan","động từ","tập viết",1],["วันนี้","wan-níi","danh từ","hôm nay",1],["พบ","phóp","động từ","gặp",1],["และ","lɛ́","liên từ","và",1],["ตี","dtii","động từ","đánh, gõ",1],["กลอง","glɔɔng","danh từ","cái trống",1],["ส่อง","sɔ̀ɔng","động từ","soi",1],["กระจก","grà-jòk","danh từ","cái gương",1],["ถือ","thʉ̌ʉ","động từ","cầm",1],["ปืน","bpʉʉn","danh từ","cây súng",1],["แฝด","fɛ̀ɛt","tính từ","sinh đôi",1],["ดิบ","dìp","tính từ","sống, xanh (chưa chín)",1],["ปวด","bpùat","động từ","đau",1],["โอย","ooi","thán từ","ôi chao",1],["ป๊อก","bpɔ́k","từ tượng thanh","bộp (tiếng gõ)",1],["แป๊ก","bpɛ́k","từ tượng thanh","tạch (tiếng nổ nhẹ)",1],["เสียง","sǐang","danh từ","âm thanh; giọng",1],["รูป","rûup","danh từ","hình; hình dạng",1],["สามัญ","sǎa-man","tính từ","thanh ngang (thanh thường)",1],["จัตวา","jàt-dtà-waa","danh từ","thanh hỏi-lên, dấu chattawa",1],["วรรณยุกต์","wan-ná-yúk","danh từ","dấu thanh, thanh điệu",1],["พยัญชนะ","phá-yan-chá-ná","danh từ","phụ âm",1],["สระ","sà-rà","danh từ","nguyên âm",1]],"g":[{"t":"Lời lịch sự cuối câu: ครับ / ค่ะ","d":"Người nói nam thêm ครับ (khráp) cuối câu, người nói nữ thêm ค่ะ (khâ) cho câu thường và คะ (khá) cho câu hỏi. Dùng cả khi chào và khi trả lời “vâng”.","ex":[["สวัสดีครับ","sà-wàt-dii khráp","Xin chào (nam nói)"],["สวัสดีค่ะ","sà-wàt-dii khâ","Xin chào (nữ nói)"]]},{"t":"Hỏi và nói tên","d":"Dùng ชื่อ (chʉ̂ʉ, “tên”) rồi đến tên người. Hỏi bằng ชื่อ + อะไร (à-rai, “gì”).","ex":[["ชื่ออะไร","chʉ̂ʉ à-rai","Tên là gì?"],["ฉันชื่อใบไม้","chǎn chʉ̂ʉ bai máai","Mình tên là Bai Mai"]]},{"t":"Hỏi thăm bằng ไหม","d":"Thêm ไหม (mǎi) cuối câu để biến câu thành câu hỏi có/không.","ex":[["สบายดีไหม","sà-baai dii mǎi","Bạn khỏe không?"]]}],"r":[{"t":"Số Thái ๑ đến ๑๐","d":"Chữ số Thái khác chữ số quen thuộc. Tập viết theo thứ tự rồi đọc to.","items":[["๑","nʉ̀ng","1"],["๒","sɔ̌ɔng","2"],["๓","sǎam","3"],["๔","sìi","4"],["๕","hâa","5"],["๖","hòk","6"],["๗","jèt","7"],["๘","bpɛ̀ɛt","8"],["๙","gâao","9"],["๑๐","sìp","10"]]},{"t":"Bốn dấu thanh viết trên chữ","d":"Thái có bốn dấu viết: mai ek, mai tho, mai tri, mai chattawa. Cùng một dấu có thể cho thanh khác nhau tùy nhóm phụ âm.","items":[["่","mai ek","dấu ek"],["้","mai tho","dấu tho"],["๊","mai dtrii","dấu tri (chỉ nhóm giữa)"],["๋","mai jàt-dtà-waa","dấu chattawa (chỉ nhóm giữa)"]]},{"t":"Đồng dao đếm số","d":"Bài đồng dao trong sách đếm từ một đến mười theo nhịp trống. Đọc theo nhịp, mỗi dòng kết thúc bằng tiếng trống “dtà-lɔ̂k bpɔ́k bpɛ́k”.","items":[["หนึ่ง สอง","nʉ̀ng sɔ̌ɔng","một, hai"],["สาม สี่","sǎam sìi","ba, bốn"],["ห้า หก","hâa hòk","năm, sáu"],["เจ็ด แปด","jèt bpɛ̀ɛt","bảy, tám"],["เก้า สิบ","gâao sìp","chín, mười"]]},{"t":"Luyện đánh vần với า","d":"Giữ nguyên nguyên âm า, đổi phụ âm đầu. Chú ý nhóm cao (ฝา ขา สา หา) cho thanh lên, nhóm giữa và thấp cho thanh ngang.","items":[["ปา","bpaa",""],["ฟา","faa",""],["ฝา","fǎa",""],["สา","sǎa",""],["ยา","yaa",""],["ฮา","haa",""],["ขา","khǎa",""],["คา","khaa",""],["ถา","thǎa",""],["นา","naa",""],["บา","baa",""],["ผา","phǎa",""],["ชา","chaa",""],["หา","hǎa",""],["ลา","laa",""],["กา","gaa",""],["จา","jaa",""],["ตา","dtaa",""],["ดา","daa",""],["อา","aa",""]]},{"t":"Luyện đánh vần với เ-า","d":"Cùng cách làm với vần เ-า (đọc “ao”).","items":[["เกา","gao",""],["เปา","bpao",""],["เจา","jao",""],["เตา","dtao",""],["เบา","bao",""],["เอา","ao",""]]}]},{"n":2,"th":"เรียนรู้คำ จำสระ","vi":"Học từ, nhớ nguyên âm (1)","desc":"Mười nguyên âm đơn đầu tiên cùng từ mẫu: อา อี อิ อึ อือ อุ อู เอ แอ โอ.","w":[["ปา","bpaa","động từ","ném",1],["มา","maa","động từ","đến",1],["ตา","dtaa","danh từ","mắt; ông ngoại",1],["ยา","yaa","danh từ","thuốc",1],["นา","naa","danh từ","ruộng",1],["ขา","khǎa","danh từ","chân",1],["หา","hǎa","động từ","tìm",1],["ปลา","bplaa","danh từ","con cá",1],["สี","sǐi","danh từ","màu",1],["ปี","bpii","danh từ","năm (thời gian)",1],["ดี","dii","tính từ","tốt",1],["ที่","thîi","danh từ","nơi, chỗ",1],["มีด","mîit","danh từ","con dao",1],["กิน","gin","động từ","ăn",1],["ปิด","bpìt","động từ","đóng",1],["ผิด","phìt","tính từ","sai",0],["ลึก","lʉ́k","tính từ","sâu",1],["มือ","mʉʉ","danh từ","bàn tay",1],["สุข","sùk","danh từ","hạnh phúc",1],["ปู","bpuu","danh từ","con cua",1],["หู","hǔu","danh từ","tai",1],["ดู","duu","động từ","xem",1],["เด็ก","dèk","danh từ","trẻ em",1],["เป็ด","bpèt","danh từ","con vịt",1],["เล่น","lêen","động từ","chơi",1],["เก็บ","gèp","động từ","nhặt; cất",1],["เท","thee","động từ","đổ",1],["แม่","mɛ̂ɛ","danh từ","mẹ",1],["แมว","mɛɛo","danh từ","con mèo",1],["แก้ว","gɛ̂ɛo","danh từ","cái ly",1],["โต","dtoo","tính từ","lớn",1],["โมง","moong","danh từ","giờ (đồng hồ)",1],["โต๊ะ","dtó","danh từ","cái bàn",1],["จาน","jaan","danh từ","cái đĩa",1],["งา","ngaa","danh từ","hạt mè; ngà",1],["ชา","chaa","danh từ","trà",1],["ทา","thaa","động từ","bôi",1],["ล้าง","láang","động từ","rửa",1],["ม้า","máa","danh từ","con ngựa",1],["ขาย","khǎai","động từ","bán",1],["ฝี","fǐi","danh từ","mụn nhọt",1],["ครีบ","khrîip","danh từ","vây cá",1],["ปี่","bpìi","danh từ","cây sáo",1],["ชี","chii","danh từ","nữ tu",1],["ซี","sii","danh từ","chữ C",1],["นี้","níi","đại từ","này",1],["หีบ","hìip","danh từ","cái rương",1],["บิน","bin","động từ","bay",1],["พริก","phrík","danh từ","ớt",1],["ติ","dtì","động từ","chê",1],["ซิ","sí","trợ từ","đi (thúc giục)",1],["วิชา","wí-chaa","danh từ","môn học",1],["ฉิ่ง","chìng","danh từ","chũm chọe",1],["นาฬิกา","naa-lí-gaa","danh từ","đồng hồ",0],["ตึก","dtʉ̀k","danh từ","tòa nhà",1],["ผึ้ง","phʉ̂ng","danh từ","con ong",1],["ถึง","thʉ̌ng","động từ","đến nơi",1],["บึง","bʉng","danh từ","đầm",1],["ขึ้น","khʉ̂n","động từ","lên",1],["อึ่งอ่าง","ʉ̀ng-àang","danh từ","ễnh ương",1],["ซื้อ","sʉ́ʉ","động từ","mua",1],["คือ","khʉʉ","động từ","là",1],["ฟืน","fʉʉn","danh từ","củi",1],["ยืน","yʉʉn","động từ","đứng",1],["พื้น","phʉ́ʉn","danh từ","sàn",1],["แกงจืด","gɛɛng-jʉ̀ʉt","danh từ","canh",1],["ลื่น","lʉ̂ʉn","tính từ","trơn",1],["ตุ่ม","dtùm","danh từ","cái chum",1],["ปลุก","bplùk","động từ","đánh thức",1],["ดุ","dù","tính từ","dữ",1],["ผุ","phù","tính từ","mục",1],["กุ้ง","gûng","danh từ","con tôm",1],["ฝุ่น","fùn","danh từ","bụi",1],["จูง","juung","động từ","dắt",1],["ปูน","bpuun","danh từ","xi măng",1],["งู","nguu","danh từ","con rắn",1],["ตู้","dtûu","danh từ","cái tủ",1],["ผู้หญิง","phûu-yǐng","danh từ","phụ nữ",1],["ผู้ชาย","phûu-chaai","danh từ","đàn ông",1],["ฝูง","fǔung","danh từ","bầy, đàn",1],["เกม","geem","danh từ","trò chơi",1],["เม่น","mên","danh từ","con nhím",1],["เพลง","phleeng","danh từ","bài hát",1],["เก๋ง","gěng","danh từ","xe con",1],["เค้ก","kéek","danh từ","bánh ngọt",1],["เข่ง","khèng","danh từ","cái giỏ tre",1],["เวที","wee-thii","danh từ","sân khấu",1],["กางเกง","gaang-geeng","danh từ","quần",1],["แก่","gɛ̀ɛ","tính từ","già",1],["แพ","phɛɛ","danh từ","bè",1],["แค","khɛɛ","phó từ","chỉ",1],["แห้ง","hɛ̂ɛng","tính từ","khô",1],["แป้ง","bpɛ̂ng","danh từ","bột",1],["แมงมุม","mɛɛng-mum","danh từ","con nhện",1],["กาแฟ","gaa-fɛɛ","danh từ","cà phê",1],["แว่นตา","wɛ̂n-dtaa","danh từ","kính mắt",1],["โบก","bòok","động từ","vẫy",1],["โป่ง","bpòong","tính từ","phồng",1],["โบ","boo","danh từ","cái nơ",1],["โซ่","sôo","danh từ","dây xích",1],["โค","khoo","danh từ","con bò",1],["ลูกโป่ง","lûuk-bpòong","danh từ","bóng bay",1],["ข้าวโพด","khâao-phôot","danh từ","bắp ngô",1],["แตงโม","dtɛɛng-moo","danh từ","dưa hấu",1],["โอ่ง","òong","danh từ","cái vại",1],["ปิ่นโต","bpìn-dtoo","danh từ","cặp lồng",1],["จิงโจ้","jing-jôo","danh từ","chuột túi",1],["โกโก้","goo-gôo","danh từ","ca cao",1]],"g":[{"t":"Ghép âm tiết: phụ âm đầu + nguyên âm + phụ âm cuối","d":"Một âm tiết gồm phụ âm đầu, nguyên âm và (có thể) phụ âm cuối. Ví dụ ก + า + น = กาน; ม + ี + ด = มีด.","ex":[["มือ","mʉʉ","bàn tay"],["มีด","mîit","con dao"]]},{"t":"Vị trí của nguyên âm","d":"Nguyên âm có thể đứng sau (อา), trên (อิ อี อึ อื), dưới (อุ อู), hoặc trước (เ แ โ ไ ใ) phụ âm đầu. Thứ tự đọc vẫn là phụ âm trước, nguyên âm sau.","ex":[["กา","gaa","con quạ"],["เก","gee","(âm mẫu)"]]},{"t":"Nguyên âm dài và ngắn","d":"Nguyên âm dài (อา อี อือ อู เอ แอ โอ) kéo dài hơn nguyên âm ngắn (อะ อิ อึ อุ). Độ dài ảnh hưởng đến thanh khi âm tiết kết thúc bằng p, t, k.","ex":[["ปิด","bpìt","đóng (ngắn)"],["มีด","mîit","con dao (dài)"]]}],"r":[{"t":"Nguyên âm ในบทนี้","d":"Nhìn hình dạng, nghe âm, rồi tìm từ chứa nguyên âm đó.","items":[["า","aa","(dài) ปลา"],["ี","ii","(dài) สี"],["ิ","i","(ngắn) กิน"],["ึ","ʉ","(ngắn) ลึก"],["ื","ʉʉ","(dài) มือ"],["ุ","u","(ngắn) สุข"],["ู","uu","(dài) ปู"],["เ","ee","(dài) เล่น"],["แ","ɛɛ","(dài) แม่"],["โ","oo","(dài) โต"]]}]},{"n":3,"th":"ชวนรู้เรื่องสระ","vi":"Cùng tìm hiểu nguyên âm (2)","desc":"Nguyên âm ghép เอีย เอือ, nguyên âm อำ, ไ- ใ- và เอา.","w":[["เสีย","sǐa","động từ","hỏng; mất",1],["เขียว","khǐao","tính từ","xanh lá",1],["เรียก","rîak","động từ","gọi",1],["เตียง","dtiang","danh từ","cái giường",1],["เที่ยว","thîao","động từ","đi chơi",1],["เหลือ","lʉ̌a","động từ","còn dư",1],["เมือง","mʉang","danh từ","thành phố; xứ",0],["เรือ","rʉa","danh từ","thuyền",1],["เหนือ","nʉ̌a","danh từ","phía bắc; trên",0],["เบื่อ","bʉ̀a","tính từ","chán",1],["เชื่อ","chʉ̂a","động từ","tin",0],["ทำ","tham","động từ","làm",1],["น้ำ","náam","danh từ","nước",1],["คำ","kham","danh từ","từ, chữ",1],["ดำ","dam","tính từ","đen",1],["จำ","jam","động từ","nhớ",1],["ไป","bpai","động từ","đi",1],["ไก่","gài","danh từ","con gà",1],["ไม้","máai","danh từ","gỗ; cây",1],["ใจ","jai","danh từ","tim; lòng",1],["ใหม่","mài","tính từ","mới",1],["ใคร","khrai","đại từ","ai",1],["ใส","sǎi","tính từ","trong (nước)",1],["เรา","rao","đại từ","chúng tôi",1],["เขา","khǎo","đại từ","anh ấy, cô ấy",1],["เอา","ao","động từ","lấy",1],["เจ้า","jâo","danh từ","chủ; ngài",1],["ข้าว","khâao","danh từ","cơm; gạo",1],["ขาว","khǎao","tính từ","trắng",1],["เก่า","gào","tính từ","cũ",1]],"g":[{"t":"Nguyên âm ghép เ-ีย, เ-ือ","d":"เ-ีย đọc “ia” và เ-ือ đọc “ʉa”. Hai âm này đều là nguyên âm đôi kéo dài, nên âm tiết kết thúc bằng p/t/k vẫn tính là vần chết dài.","ex":[["เรียน","rian","học"],["เรือ","rʉa","thuyền"]]},{"t":"ไ- và ใ-: cùng đọc “ai”","d":"Cả ไ và ใ đều đọc “ai”. Chỉ khoảng hai mươi từ viết ใ, nên cần học thuộc nhóm này (ใคร, ใจ, ใหม่, ใส, ใน, ให้, ใช้, ใหญ่…). Các từ còn lại dùng ไ.","ex":[["ใจ","jai","tim, lòng"],["ไป","bpai","đi"]]},{"t":"ำ đọc “am”","d":"Dấu ำ ghép từ ั (a) và ม (m), nên ทำ đọc “tham” chứ không phải “tha”.","ex":[["ทำ","tham","làm"],["น้ำ","náam","nước"]]},{"t":"เ-า đọc “ao”","d":"เอา, เรา, เขา đều đọc “ao”, vần sống ngắn.","ex":[["เราไป","rao bpai","Chúng ta đi"]]}],"r":[{"t":"Cặp dễ nhầm","d":"Cùng một chữ nhưng thanh khác nên nghĩa khác. Nghe thật kỹ rồi nhìn dấu và nhóm phụ âm.","items":[["ขาว","khǎao","trắng"],["ข้าว","khâao","cơm"],["เก่า","gào","cũ"],["เก้า","gâao","chín"],["ใหม่","mài","mới"],["ไม้","máai","gỗ"]]}]},{"n":4,"th":"สระไทย ใส่ใจจดจำ","vi":"Nguyên âm tiếng Thái, ghi nhớ kỹ","desc":"Nguyên âm ngắn, dạng rút gọn, dạng đổi hình và chữ ก็.","w":[["จะ","jà","phó từ","sẽ",1],["พระ","phrá","danh từ","nhà sư; Phật",1],["ผัก","phàk","danh từ","rau",1],["นก","nók","danh từ","con chim",1],["รถ","rót","danh từ","xe",1],["บ้าน","bâan","danh từ","nhà",1],["กับ","gàp","giới từ","với, cùng",1],["กัน","gan","phó từ","cùng nhau",1],["ฟัน","fan","danh từ","răng",1],["มัน","man","đại từ","nó",1],["ตั้ง","dtâng","động từ","đặt; dựng",1],["รัก","rák","động từ","yêu",1],["คน","khon","danh từ","người",1],["ลม","lom","danh từ","gió",1],["ตก","dtòk","động từ","rơi",1],["เห็น","hěn","động từ","thấy",1],["เล็ก","lék","tính từ","nhỏ",1],["เม็ด","mét","danh từ","hạt, viên",0],["เป็น","bpen","động từ","là",1],["เย็น","yen","tính từ","mát; buổi chiều",1],["แข็ง","khɛ̌ng","tính từ","cứng",1],["แพ้","phɛ́ɛ","động từ","thua",0],["แดง","dɛɛng","tính từ","đỏ",1],["เกาะ","gɔ̀","danh từ","hòn đảo",1],["ต้อง","dtɔ̂ɔng","trợ động từ","phải",1],["ยัง","yang","phó từ","vẫn, còn",1],["อยู่","yùu","động từ","ở; đang",1],["อยาก","yàak","động từ","muốn",1],["อย่า","yàa","phó từ","đừng",1],["อร่อย","à-rɔ̂ɔi","tính từ","ngon",0],["ก็","gɔ̂ɔ","liên từ","cũng; thì",1]],"g":[{"t":"Nguyên âm ngắn มี ะ","d":"Nguyên âm ngắn thường có ะ ở cuối (อะ เอะ แอะ โอะ เอาะ). Khi có phụ âm cuối, ะ biến mất: กะ + น → กัน.","ex":[["จะ","jà","sẽ"],["กัน","gan","cùng nhau"]]},{"t":"Dạng rút gọn và đổi hình","d":"Khi có phụ âm cuối, nhiều nguyên âm đổi dạng: เ-ะ → เ-็; แ-ะ → แ-็; โ-ะ → -; เ-าะ → -็อ… Cần nhớ dạng này để đọc và viết chính xác.","ex":[["เห็น","hěn","thấy"],["เล็ก","lék","nhỏ"]]},{"t":"ก็ đọc “gɔ̂ɔ”","d":"Chữ ก็ là từ đặc biệt: viết như ก + ็ nhưng đọc “gɔ̂ɔ”, nghĩa là “cũng”, “thì”.","ex":[["เขาก็ไป","khǎo gɔ̂ɔ bpai","Anh ấy cũng đi"]]},{"t":"อ dẫn ย: อย่า อยู่ อยาก อย่าง","d":"Chỉ bốn từ này dùng อ đứng trước ย để ย thành nhóm giữa; อ không đọc.","ex":[["อย่าไป","yàa bpai","Đừng đi"]]}],"r":[{"t":"Ngắn và dài","d":"Thử đọc từng cặp để nghe sự khác biệt về độ dài.","items":[["กา","gaa","quạ"],["กะ","gà","(âm mẫu ngắn)"],["เก","gee","(âm mẫu dài)"],["เกะ","gè","(âm mẫu ngắn)"]]}]},{"n":5,"th":"ครอบครัวช้าง","vi":"Gia đình nhà voi","desc":"Từ vựng gia đình, tiếng kêu động vật và các từ hỏi lý do.","w":[["พ่อ","phɔ̂ɔ","danh từ","bố",1],["ลูก","lûuk","danh từ","con (cái)",1],["ปู่","bpùu","danh từ","ông nội",1],["ย่า","yâa","danh từ","bà nội",1],["ยาย","yaai","danh từ","bà ngoại",1],["ลุง","lung","danh từ","bác (trai)",1],["ป้า","bpâa","danh từ","bác, dì (gái, chị bố/mẹ)",1],["น้า","náa","danh từ","cậu, dì (em mẹ)",1],["อา","aa","danh từ","chú, cô (em bố)",1],["พี่","phîi","danh từ","anh, chị",1],["น้อง","nɔ́ɔng","danh từ","em",1],["หลาน","lǎan","danh từ","cháu",0],["ครอบครัว","khrɔ̂ɔp-khrua","danh từ","gia đình",1],["ช้าง","cháang","danh từ","con voi",1],["กล้วย","glûai","danh từ","chuối",1],["อ้อย","ɔ̂ɔi","danh từ","mía",1],["ต้นไม้","dtôn-máai","danh từ","cây cối",1],["นม","nom","danh từ","sữa",1],["มี","mii","động từ","có",1],["ไม่","mâi","phó từ","không",1],["ทำไม","tham-mai","câu hỏi","tại sao",0],["เพราะ","phrɔ́","liên từ","bởi vì",1],["ชอบ","chɔ̂ɔp","động từ","thích",1],["แม่ค้า","mɛ̂ɛ-kháa","danh từ","cô bán hàng",1],["โฮ่ง","hôong","từ tượng thanh","gâu (chó sủa)",0],["เหมียว","mǐao","từ tượng thanh","meo (mèo kêu)",1]],"g":[{"t":"มี và ไม่มี","d":"มี (mii) là “có”. Thêm ไม่ (mâi) phía trước để phủ định: ไม่มี = “không có”.","ex":[["ผมมีน้อง","phǒm mii nɔ́ɔng","Tôi có em"],["ฉันไม่มีลุง","chǎn mâi mii lung","Mình không có bác"]]},{"t":"Hỏi lý do: ทำไม – เพราะ","d":"ทำไม (tham-mai) hỏi “tại sao”; trả lời bắt đầu bằng เพราะ (phrɔ́) “bởi vì”.","ex":[["ทำไม","tham-mai","Tại sao?"]]},{"t":"Từ tượng thanh","d":"Tiếng kêu của động vật dùng để đọc vui và luyện thanh: โฮ่ง (chó), เหมียว (mèo).","ex":[["เหมียว","mǐao","meo"]]}],"r":[{"t":"Cách gọi người thân","d":"Thái phân biệt bên nội và bên ngoại, anh chị và em, nên từ xưng hô nhiều hơn tiếng Việt ở một vài chỗ.","items":[["ปู่","bpùu","ông nội"],["ย่า","yâa","bà nội"],["ตา","dtaa","ông ngoại"],["ยาย","yaai","bà ngoại"]]}]},{"n":6,"th":"เพลงร้อง ทำนองไทย","vi":"Bài hát và đồng dao","desc":"Từ chỉ định, từ hỏi, từ về thiên nhiên và động vật trong bài hát.","w":[["นี่","nîi","đại từ","đây",1],["นั่น","nân","đại từ","đó",1],["โน่น","nôon","đại từ","kia",0],["ของ","khɔ̌ɔng","danh từ","đồ, của",1],["อะไร","à-rai","câu hỏi","gì",1],["ไหน","nǎi","câu hỏi","nào; đâu",1],["เท่าไร","thâo-rai","câu hỏi","bao nhiêu",0],["เต้น","dtên","động từ","nhảy",1],["รำ","ram","động từ","múa",1],["ปรบ","bpròp","động từ","vỗ (tay)",0],["ดอกไม้","dɔ̀ɔk-máai","danh từ","bông hoa",1],["ดาว","daao","danh từ","ngôi sao",1],["จันทร์","jan","danh từ","mặt trăng",0],["ฟ้า","fáa","danh từ","bầu trời",1],["เมฆ","mêek","danh từ","mây",1],["ฝน","fǒn","danh từ","mưa",1],["หมู","mǔu","danh từ","con heo",1],["หมา","mǎa","danh từ","con chó",1],["วัว","wua","danh từ","con bò",0],["ควาย","khwaai","danh từ","con trâu",0],["กบ","gòp","danh từ","con ếch",1],["ลิง","ling","danh từ","con khỉ",1]],"g":[{"t":"Chỉ định: นี่ นั่น โน่น","d":"นี่ (đây, gần), นั่น (đó, vừa tầm), โน่น (kia, xa). Dùng một mình hoặc đứng sau danh từ: บ้านนี้ = nhà này.","ex":[["นี่อะไร","nîi à-rai","Đây là gì?"],["นั่นปลา","nân bplaa","Đó là cá"]]},{"t":"Câu hỏi với ไหน","d":"ไหน (nǎi) hỏi “nào/đâu”. Đặt sau danh từ để chọn trong nhóm, hoặc dùng ที่ไหน “ở đâu”.","ex":[["ดาวไหน","daao nǎi","Ngôi sao nào?"]]},{"t":"Quyền sở hữu với ของ","d":"ของ (khɔ̌ɔng) vừa là “đồ vật” vừa là “của”: ของฉัน = của tôi.","ex":[["ของฉัน","khɔ̌ɔng chǎn","của tôi"]]}],"r":[{"t":"Hát theo nhịp","d":"Đồng dao Thái thường lặp lại âm và vần. Đọc chậm trước rồi tăng tốc.","items":[["ดาว","daao","sao"],["ฟ้า","fáa","trời"],["เมฆ","mêek","mây"],["ฝน","fǒn","mưa"]]}]},{"n":7,"th":"ใคร ทำอะไร","vi":"Ai làm gì","desc":"Động từ hằng ngày, bộ phận cơ thể và câu chủ ngữ + động từ.","w":[["นอน","nɔɔn","động từ","ngủ",1],["เดิน","dəən","động từ","đi bộ",1],["วิ่ง","wîng","động từ","chạy",1],["นั่ง","nâng","động từ","ngồi",1],["ว่ายน้ำ","wâai-náam","động từ","bơi",0],["วาด","wâat","động từ","vẽ",1],["อาบน้ำ","àap-náam","động từ","tắm",0],["แปรงฟัน","bpreeng-fan","động từ","đánh răng",0],["ช่วย","chûai","động từ","giúp",1],["ซ่อน","sɔ̂ɔn","động từ","giấu",0],["หัว","hǔa","danh từ","đầu",1],["เท้า","tháao","danh từ","bàn chân",1],["ปาก","bpàak","danh từ","miệng",0],["แขน","khɛ̌ɛn","danh từ","cánh tay",1],["ท้อง","thɔ́ɔng","danh từ","bụng",1],["เด็กชาย","dèk-chaai","danh từ","bé trai",0],["เด็กหญิง","dèk-yǐng","danh từ","bé gái",0],["อ่าน","àan","động từ","đọc",1],["เขียน","khǐan","động từ","viết",1]],"g":[{"t":"Thứ tự câu: chủ ngữ + động từ + tân ngữ","d":"Câu Thái cơ bản giống tiếng Việt: ai + làm gì + cái gì. Không chia động từ theo thì hay ngôi.","ex":[["ผมกินข้าว","phǒm gin khâao","Tôi ăn cơm"],["เด็กอ่านเขียน","dèk àan khǐan","Bé đọc và viết"]]},{"t":"Câu hỏi: ใคร ทำ อะไร","d":"ใคร (khrai) hỏi người, อะไร (à-rai) hỏi vật hoặc việc. Từ hỏi đứng ở đúng vị trí của câu trả lời.","ex":[["ใครซื้อ","khrai sʉ́ʉ","Ai mua?"]]}],"r":[{"t":"Bộ phận cơ thể","d":"Chỉ vào từng bộ phận khi đọc để nhớ nhanh hơn.","items":[["หัว","hǔa","đầu"],["มือ","mʉʉ","tay"],["เท้า","tháao","chân"],["ปาก","bpàak","miệng"]]}]},{"n":8,"th":"อ่านแจกลูกเป็นทำนอง คำคล้องจองน่ารัก รู้จักดูการ์ตูน","vi":"Đánh vần theo điệu và từ vần","desc":"Đánh vần nhóm thanh (ปา ป่า ป้า ป๊า ป๋า), cặp từ vần và đọc truyện tranh.","w":[["ป่า","bpàa","danh từ","rừng",1],["ป๊า","bpáa","danh từ","ba (cách gọi thân)",1],["ป๋า","bpǎa","danh từ","ba (cách gọi thân)",1],["ข่า","khàa","danh từ","củ riềng",1],["ข้า","khâa","đại từ","ta (cổ)",1],["คา","khaa","động từ","kẹt, dính",1],["ค่า","khâa","danh từ","giá, phí",0],["ค้า","kháa","động từ","buôn bán",1],["จุ","jù","động từ","chứa",1],["ให้","hâi","động từ","cho",1],["บัว","bua","danh từ","hoa sen",1],["เฮ","hee","thán từ","hoan hô",1],["เต","dtee","danh từ","tên riêng, tên âm mẫu",1]],"g":[{"t":"Đọc nhóm thanh: ปา ป่า ป้า ป๊า ป๋า","d":"Giữ nguyên phụ âm và nguyên âm, đổi dấu thanh để nghe đủ năm thanh. Nhóm giữa (ป) dùng được cả bốn dấu.","ex":[["ป่า","bpàa","rừng"],["ป้า","bpâa","bác gái"]]},{"t":"Nhóm cao và nhóm thấp đổi thanh khác nhau","d":"ขา ข่า ข้า (nhóm cao) cho rise, low, fall. คา ค่า ค้า (nhóm thấp) cho mid, fall, high. Cùng dấu nhưng thanh khác vì khác nhóm.","ex":[["ข่า","khàa","củ riềng"],["ค่า","khâa","giá, phí"]]},{"t":"Từ vần (คำคล้องจอง)","d":"Từ vần có nguyên âm và phụ âm cuối giống nhau, như สี–ดี, ปู–หู, ทา–มา, ใจ–ให้, บัว–หัว. Đọc thành cặp để nhớ vần.","ex":[["สี","sǐi","màu"],["ดี","dii","tốt"]]}],"r":[{"t":"Cặp từ vần","d":"Đọc thành tiếng và nhấn vào phần vần giống nhau.","items":[["สี","sǐi","màu"],["ดี","dii","tốt"],["ปู","bpuu","cua"],["หู","hǔu","tai"],["ทา","thaa","bôi"],["มา","maa","đến"],["บัว","bua","sen"],["หัว","hǔa","đầu"]]}]},{"n":9,"th":"เครื่องหมายสัญลักษณ์","vi":"Ký hiệu và biển báo","desc":"Biển báo thường gặp, từ cấm đoán và phương hướng.","w":[["ห้าม","hâam","động từ","cấm",1],["เข้า","khâo","động từ","vào",1],["ออก","ɔ̀ɔk","động từ","ra",1],["ทางเข้า","thaang-khâo","danh từ","lối vào",0],["ทางออก","thaang-ɔ̀ɔk","danh từ","lối ra",0],["ซ้าย","sáai","danh từ","trái",1],["ขวา","khwǎa","danh từ","phải",1],["ตรง","dtrong","tính từ","thẳng",1],["หยุด","yùt","động từ","dừng",1],["ระวัง","rá-wang","động từ","cẩn thận",1],["อันตราย","an-dtà-raai","tính từ","nguy hiểm",0],["ปลอดภัย","bplɔ̀ɔt-phai","tính từ","an toàn",0],["ห้องน้ำ","hɔ̂ɔng-náam","danh từ","nhà vệ sinh",1],["ชาย","chaai","danh từ","nam",1],["หญิง","yǐng","danh từ","nữ",1],["ไฟ","fai","danh từ","đèn; lửa",1],["ไฟแดง","fai-dɛɛng","danh từ","đèn đỏ",0],["ไฟเขียว","fai-khǐao","danh từ","đèn xanh",0],["ไฟเหลือง","fai-lʉ̌ang","danh từ","đèn vàng",0],["ทางม้าลาย","thaang-máa-laai","danh từ","vạch kẻ qua đường",1],["เครื่องหมาย","khrʉ̂ang-mǎai","danh từ","ký hiệu",1],["อ้าว","âao","thán từ","ôi, ủa",0],["โอ๊ย","óoi","thán từ","ối",1],["ว้าว","wáao","thán từ","ồ",0],["ทิ้งขยะ","thíng-khà-yà","động từ","vứt rác",0]],"g":[{"t":"ห้าม và อย่า","d":"ห้าม (hâam) là lời cấm trên biển báo hoặc quy định; อย่า (yàa) là lời khuyên hay nhắc nhở thân mật. Cả hai đặt trước động từ.","ex":[["ห้ามเข้า","hâam khâo","Cấm vào"],["อย่าไป","yàa bpai","Đừng đi"]]},{"t":"Thán từ thể hiện cảm xúc","d":"อ้าว, โอ๊ย, ว้าว diễn tả ngạc nhiên, đau, thích thú. Dấu thanh trên thán từ cho biết cách ngân.","ex":[["ว้าว","wáao","ồ!"]]},{"t":"Phương hướng: ซ้าย ขวา ตรง","d":"ไป + hướng: ไปซ้าย (đi trái), ไปขวา (đi phải), ตรงไป (đi thẳng).","ex":[["ไปซ้าย","bpai sáai","Đi bên trái"]]}],"r":[{"t":"Đèn giao thông","d":"Ba màu đèn đi cùng ba từ rất hay gặp.","items":[["แดง","dɛɛng","đỏ (dừng)"],["เหลือง","lʉ̌ang","vàng (chậm)"],["เขียว","khǐao","xanh (đi)"]]}]},{"n":10,"th":"ร้องเล่น เต้นกัน","vi":"Hát, chơi, nhảy","desc":"Câu đố อะไรเอ่ย, trò chơi, thứ tự và kể chuyện.","w":[["ทาย","thaai","động từ","đoán",1],["ตอบ","dtɔ̀ɔp","động từ","trả lời",1],["ถูก","thùuk","tính từ","đúng",1],["ชนะ","chá-ná","động từ","thắng",1],["ก่อน","gɔ̀ɔn","phó từ","trước",1],["หลัง","lǎng","phó từ","sau",1],["แล้ว","lɛ́ɛo","phó từ","rồi",1],["ต่อ","dtɔ̀ɔ","động từ","tiếp",1],["ครั้ง","khráng","danh từ","lần",1],["เสร็จ","sèt","động từ","xong",0],["เริ่ม","rə̂əm","động từ","bắt đầu",0],["เริ่มต้น","rə̂əm-dtôn","động từ","khởi đầu",0],["จบ","jòp","động từ","kết thúc",0],["ลำดับ","lam-dàp","danh từ","thứ tự",1],["เล่าเรื่อง","lâo-rʉ̂ang","động từ","kể chuyện",1],["อะไรเอ่ย","à-rai-ə̀əi","câu hỏi","cái gì nhỉ (mở đầu câu đố)",1],["สนุก","sà-nùk","tính từ","vui",1],["ปริศนา","bprìt-sà-nǎa","danh từ","câu đố",1]],"g":[{"t":"Câu đố: อะไรเอ่ย","d":"Câu đố Thái mở đầu bằng mô tả rồi hỏi “อะไรเอ่ย” (cái gì nhỉ). Người chơi trả lời bằng danh từ.","ex":[["ตัวเลข","dtua lêek","Con số"]]},{"t":"Thứ tự bằng ก่อน – แล้ว – หลัง","d":"ก่อน (trước), แล้ว (rồi), หลัง (sau) giúp kể việc theo thứ tự: อาบน้ำก่อน แล้วกิน.","ex":[["กินก่อน","gin gɔ̀ɔn","Ăn trước"]]},{"t":"Bắt đầu và kết thúc","d":"เริ่ม (bắt đầu) và จบ (kết thúc) đi với danh từ chỉ trò chơi hay câu chuyện.","ex":[["เริ่มเล่น","rə̂əm lêen","Bắt đầu chơi"]]}],"r":[{"t":"Chơi đoán từ","d":"Một người nói nghĩa, người kia đoán từ Thái.","items":[["ปลา","bplaa","cá"],["แมว","mɛɛo","mèo"],["ไก่","gài","gà"],["ช้าง","cháang","voi"]]}]}];
+var KEY='so-tay-tieng-thai-v1';
+var DB=(function(){
+  try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);
+    return {custom:Array.isArray(o.custom)?o.custom:[],known:(o.known&&typeof o.known==='object')?o.known:{},saved:(o.saved&&typeof o.saved==='object')?o.saved:{},cdone:(o.cdone&&typeof o.cdone==='object')?o.cdone:{}}}}catch(e){}
+  return {custom:[],known:{},saved:{},cdone:{}};
+})();
+function save(){try{localStorage.setItem(KEY,JSON.stringify(DB))}catch(e){}}
+
+var LW={};
+['a1','a2'].forEach(function(lv){var out=[],n=0;
+  LESSONS[lv].topics.forEach(function(t,ti){t.w.forEach(function(r){n++;out.push({id:lv+'-'+n,th:r[0],rom:r[1],pos:r[2],vi:r[3],topic:ti,lv:lv})})});
+  LW[lv]=out;});
+LW.k=[];COURSE.forEach(function(L,li){L.w.forEach(function(r){LW.k.push({id:'k-'+(LW.k.length+1),th:r[0],rom:r[1],pos:r[2],vi:r[3],b:r[4],topic:li,lv:'k'})})});
+function nbWords(){return DB.custom.slice().reverse().concat(DEFAULTS)}
+function everyWord(){return nbWords().concat(LW.a1,LW.a2,LW.k)}
+function countable(){return DB.custom.filter(function(w){return !w.src}).concat(DEFAULTS,LW.a1,LW.a2,LW.k)}
+function scopeWords(){var sc=S.scope;if(sc==='nb')return nbWords();if(sc==='k')return LW.k;if(/^k\d+$/.test(sc)){var n=parseInt(sc.slice(1),10);return LW.k.filter(function(w){return w.topic===n-1})}return LW[sc]}
+function byId(id){var a=everyWord();for(var i=0;i<a.length;i++)if(a[i].id===id)return a[i];return null}
+function knownIn(list){return list.filter(function(w){return DB.known[w.id]}).length}
+
+var S={course:{view:'home',skill:'vocab',n:1},tab:'home',q:'',filter:'all',formOpen:false,scope:'nb',level:'a1',topic:'all',
+  fc:{deck:[],i:0,flip:false,only:false},
+  quiz:{mode:'meaning',started:false,done:false,qs:[],i:0,score:0,picked:null,wrong:[]},
+  alpha:'all',vf:'all',tc:{cls:'low',type:'ds',mark:'none'}};
+
+/* ---------- Speech ---------- */
+var thVoice=null,voicesReady=false;
+function pickVoice(){
+  try{var vs=speechSynthesis.getVoices();
+    if(vs&&vs.length){voicesReady=true;thVoice=null;
+      for(var i=0;i<vs.length;i++){if(/^th([-_]|$)/i.test(vs[i].lang)){thVoice=vs[i];break}}}}catch(e){}
+}
+if('speechSynthesis' in window){pickVoice();try{speechSynthesis.addEventListener('voiceschanged',pickVoice)}catch(e){}}
+var tt;
+function toast(m){var el=$('#toast');el.textContent=m;el.hidden=false;clearTimeout(tt);tt=setTimeout(function(){el.hidden=true},3200)}
+function speak(text){
+  if(!('speechSynthesis' in window)){toast('Trình duyệt này chưa hỗ trợ đọc thành tiếng.');return}
+  pickVoice();
+  if(voicesReady&&!thVoice){toast('Thiết bị chưa có giọng tiếng Thái. Hãy thêm giọng Thai trong cài đặt ngôn ngữ của hệ thống.');return}
+  try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.lang='th-TH';u.rate=.8;if(thVoice)u.voice=thVoice;speechSynthesis.speak(u)}
+  catch(e){toast('Không phát được âm thanh.')}
+}
+
+/* ---------- Icons ---------- */
+function ico(d,s){s=s||18;return '<svg viewBox="0 0 24 24" width="'+s+'" height="'+s+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+d+'</svg>'}
+var I={
+ sound:ico('<path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/>'),
+ check:ico('<path d="m5 12 5 5 9-10"/>',16),
+ trash:ico('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',16),
+ plus:ico('<path d="M12 5v14M5 12h14"/>',16)
+};
+var BOOK='<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/>';
+var NI={
+ home:ico('<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>',22),
+ vocab:ico(BOOK,22),
+ notebook:ico('<path d="M6 3h12v18l-6-4-6 4z"/><path d="M12 7v5M9.5 9.5h5"/>',22),
+ cards:ico('<rect x="3" y="7" width="14" height="13" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/>',22),
+ quiz:ico('<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',22),
+ alpha:ico('<path d="M5 20 12 4l7 16M8.5 14h7"/>',22),
+ tones:ico('<path d="M3 15c3-8 6-8 9 0s6 8 9 0"/>',22),
+ book:ico(BOOK,24),
+ ear:ico('<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>',24),
+ lvl:ico(BOOK,24),
+ course:ico('<path d="M3 8l9-4 9 4-9 4z"/><path d="M7 10v5c0 1.5 2.2 3 5 3s5-1.500 5-3v-5"/><path d="M21 8v6"/>',22)
+};
+
+/* ---------- Navigation ---------- */
+var NAV=[['home','Trang chủ'],['course','Khóa học'],['vocab','Từ vựng'],['notebook','Sổ tay'],['cards','Thẻ nhớ'],['quiz','Trắc nghiệm'],['alpha','Chữ cái'],['tones','Thanh điệu']];
+var HEAD={
+ notebook:['Sổ tay từ vựng','Từ của bạn kèm phiên âm và câu ví dụ. Từ bạn thêm được lưu trong trình duyệt này.'],
+ cards:['Thẻ nhớ','Lật thẻ, nghe phát âm, rồi tự chấm xem mình đã nhớ chưa.'],
+ quiz:['Trắc nghiệm','Mỗi lượt tối đa 10 câu. Chọn bộ từ và kiểu bài bạn muốn luyện.'],
+ alpha:['Chữ cái','Đủ 44 phụ âm và các nguyên âm tiếng Thái, mỗi chữ có từ mẫu để nghe.'],
+ tones:['Thanh điệu','Năm thanh, bảng quy tắc đầy đủ và công cụ kiểm tra thanh của một âm tiết.']
+};
+function buildSide(){
+  $('#side').innerHTML=
+   '<div class="brand"><span class="logo" lang="th" aria-hidden="true">ก</span><span class="bname">Sổ tay <u>Thái</u></span></div>'+
+   '<div class="sec-label">HỌC TẬP</div>'+
+   '<nav class="navv" role="tablist" aria-orientation="vertical" aria-label="Các phần học">'+NAV.map(function(n){
+      return '<button class="nv" role="tab" id="tab-'+n[0]+'" data-a="tab" data-tab="'+n[0]+'" aria-selected="false">'+NI[n[0]]+'<span>'+n[1]+'</span></button>';
+   }).join('')+'</nav>'+
+   '<div class="side-foot"><div class="mini"><div class="mini-t"><span>Đã nhớ</span><b id="sp"></b></div><div class="prog"><i id="sbar"></i></div></div>'+
+   '<button class="btn primary wide" data-a="addWord">'+I.plus+' Thêm từ mới</button></div>';
+}
+function syncSide(){
+  NAV.forEach(function(n){var b=$('#tab-'+n[0]);if(b)b.setAttribute('aria-selected',String(S.tab===n[0]))});
+  var all=countable(),k=knownIn(all),sp=$('#sp'),bar=$('#sbar');
+  if(sp)sp.textContent=k+' / '+all.length+' từ';
+  if(bar)bar.style.width=(all.length?Math.round(k/all.length*100):0)+'%';
+}
+function viewHome(){
+  var a1=LW.a1.length,a2=LW.a2.length,nb=nbWords();
+  var live=[
+   ['course','','Khóa học tiếng Thái lớp 1',COURSE.length+' bài · '+LW.k.length+' từ · '+cDoneCount()+' bài đã xong'],
+   ['vocab','a1','Từ vựng A1',LESSONS.a1.topics.length+' chủ đề · '+a1+' từ'],
+   ['vocab','a2','Từ vựng A2',LESSONS.a2.topics.length+' chủ đề · '+a2+' từ'],
+   ['alpha','','Chữ cái','44 phụ âm và các nguyên âm'],
+   ['tones','','Thanh điệu','5 thanh, bảng quy tắc, công cụ kiểm tra'],
+   ['notebook','','Sổ tay từ vựng',nb.length+' từ · '+knownIn(nb)+' đã nhớ'],
+   ['cards','','Thẻ nhớ','Lật thẻ, nghe phát âm, tự chấm'],
+   ['quiz','','Trắc nghiệm','3 kiểu bài, 10 câu mỗi lượt']
+  ];
+  var soon=[['Từ vựng B1',NI.lvl],['Ngữ pháp',NI.book],['Nghe và nhắc lại',NI.ear]];
+  return '<section class="hero"><div><h2 class="hero-h"><mark>Học một từ, nhớ cả thanh điệu</mark></h2>'+
+    '<p>Ghi từ Thái vào sổ tay, nghe phát âm, rồi ôn lại bằng thẻ nhớ và trắc nghiệm. Mở là học, không cần cài gì.</p>'+
+    '<button class="btn primary big" data-a="go" data-tab="vocab" data-level="a1">'+NI.vocab+' Bắt đầu với A1</button></div>'+
+    '<button class="hello" data-a="say" data-t="สวัสดี" aria-label="Nghe từ สวัสดี"><span class="th" lang="th">สวัสดี</span><span class="rom">'+romHTML('sà-wàt-dii')+'</span><span class="vi">xin chào · chạm để nghe</span></button></section>'+
+   '<div class="shead"><h2>Bài học</h2></div><p class="sub">Chọn một phần để bắt đầu. Các ô nét đứt là phần dự kiến, chưa có trong bản thử.</p>'+
+   '<div class="lessons">'+live.map(function(l){
+      return '<button class="lesson" data-a="go" data-tab="'+l[0]+'" data-level="'+l[1]+'"><span class="ic">'+(l[0]==='vocab'?NI.lvl:NI[l[0]])+'</span><span><strong>'+l[2]+'</strong><small>'+l[3]+'</small></span></button>';
+   }).join('')+soon.map(function(s){
+      return '<div class="lesson soon" aria-disabled="true"><span class="ic">'+s[1]+'</span><span><strong>'+s[0]+'</strong><small>Sắp ra mắt</small></span></div>';
+   }).join('')+'</div>';
+}
+function render(){
+  syncSide();
+  var v=$('#view');
+  v.setAttribute('aria-labelledby','tab-'+S.tab);
+  var f={course:viewCourse,home:viewHome,vocab:viewVocab,notebook:viewNotebook,cards:viewCards,quiz:viewQuiz,alpha:viewAlpha,tones:viewTones}[S.tab];
+  var h=HEAD[S.tab];
+  if(S.tab==='vocab')h=['Từ vựng '+S.level.toUpperCase(),LESSONS[S.level].desc];
+  v.innerHTML=(h?'<header class="vhead"><h2><mark>'+h[0]+'</mark></h2><p>'+h[1]+'</p></header>':'')+f();
+  if(S.tab==='notebook')updateList();
+}
+function scopeOpts(){
+  return [['nb','Sổ tay của tôi ('+nbWords().length+' từ)'],['a1','Từ vựng A1 ('+LW.a1.length+' từ)'],['a2','Từ vựng A2 ('+LW.a2.length+' từ)'],['k','Khóa học lớp 1, tất cả ('+LW.k.length+' từ)']].concat(COURSE.map(function(L){return ['k'+L.n,'Khóa học · Bài '+L.n+' ('+L.w.length+' từ)']})).map(function(o){
+    return '<option value="'+o[0]+'"'+(S.scope===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('');
+}
+
+/* ---------- Notebook ---------- */
+function viewNotebook(){
+  return '<div class="bar">'+
+   '<div class="field grow"><label class="sr" for="q">Tìm từ</label><input id="q" type="search" placeholder="Tìm theo chữ Thái, phiên âm hoặc nghĩa" value="'+esc(S.q)+'" autocomplete="off"></div>'+
+   '<div class="field"><label class="sr" for="flt">Lọc theo trạng thái</label><select id="flt">'+
+     [['all','Tất cả'],['learning','Chưa nhớ'],['known','Đã nhớ']].map(function(o){return '<option value="'+o[0]+'"'+(S.filter===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+
+   '</select></div>'+
+   '<button class="btn primary" data-a="toggleForm" aria-expanded="'+S.formOpen+'">'+I.plus+' Thêm từ</button></div>'+
+   (S.formOpen?formHTML():'')+
+   '<p class="meta" id="nb-meta"></p><div class="grid" id="nb-list"></div>';
+}
+function formHTML(){
+  var pos=['danh từ','động từ','tính từ','phó từ','đại từ','câu chào','cụm từ'];
+  return '<form class="form" id="add-form" novalidate>'+
+   '<div class="field"><label for="f-th">Chữ Thái</label><input id="f-th" name="th" lang="th" placeholder="Ví dụ: สวัสดี" autocomplete="off"></div>'+
+   '<div class="field"><label for="f-rom">Phiên âm</label><input id="f-rom" name="rom" placeholder="sà-wàt-dii" autocomplete="off"></div>'+
+   '<div class="field"><label for="f-vi">Nghĩa tiếng Việt</label><input id="f-vi" name="vi" placeholder="xin chào" autocomplete="off"></div>'+
+   '<div class="field"><label for="f-pos">Loại từ</label><select id="f-pos" name="pos">'+pos.map(function(p){return '<option>'+p+'</option>'}).join('')+'</select></div>'+
+   '<div class="field full"><span class="hint">Thanh điệu được nhận từ dấu trên phiên âm: không dấu là ngang, ` là thấp, ^ là rơi, ´ là cao, ˇ là lên. Dùng dấu gạch nối giữa các âm tiết.</span><div class="prev" id="f-prev" aria-live="polite"></div></div>'+
+   '<div class="field"><label for="f-eth">Câu ví dụ (Thái, tùy chọn)</label><input id="f-eth" name="eth" lang="th" autocomplete="off"></div>'+
+   '<div class="field"><label for="f-erom">Phiên âm câu ví dụ</label><input id="f-erom" name="erom" autocomplete="off"></div>'+
+   '<div class="field"><label for="f-evi">Nghĩa câu ví dụ</label><input id="f-evi" name="evi" autocomplete="off"></div>'+
+   '<div class="full err" id="f-err" role="alert"></div>'+
+   '<div class="full actions"><button class="btn primary" type="submit">Lưu từ</button><button class="btn" type="button" data-a="toggleForm">Đóng</button></div>'+
+  '</form>';
+}
+function matchWord(w,q){
+  if(S.filter==='known'&&!DB.known[w.id])return false;
+  if(S.filter==='learning'&&DB.known[w.id])return false;
+  if(!q)return true;
+  return norm(w.th+' '+w.rom+' '+w.vi+' '+(w.pos||'')).indexOf(q)>-1;
+}
+function cardHTML(w){
+  var kn=!!DB.known[w.id],custom=String(w.id).charAt(0)==='u';
+  return '<article class="card">'+
+   '<div class="row"><div class="th" lang="th">'+esc(w.th)+'</div><button class="btn icon" data-a="say" data-t="'+esc(w.th)+'" aria-label="Nghe phát âm '+esc(w.th)+'">'+I.sound+'</button></div>'+
+   '<div class="rom">'+romHTML(w.rom)+'</div>'+
+   '<div class="line"><span class="pill">'+esc(w.pos||'từ')+'</span><span class="vi">'+esc(w.vi)+'</span></div>'+
+   (w.ex&&w.ex.th?'<div class="ex"><div><div class="th" lang="th">'+esc(w.ex.th)+'</div>'+(w.ex.rom?'<div class="rom">'+romHTML(w.ex.rom)+'</div>':'')+(w.ex.vi?'<div>'+esc(w.ex.vi)+'</div>':'')+'</div>'+
+     '<button class="btn icon ghost" data-a="say" data-t="'+esc(w.ex.th)+'" aria-label="Nghe câu ví dụ">'+I.sound+'</button></div>':'')+
+   '<div class="foot"><button class="chip'+(kn?' on':'')+'" data-a="known" data-id="'+esc(w.id)+'" aria-pressed="'+kn+'">'+I.check+(kn?'Đã nhớ':'Chưa nhớ')+'</button>'+
+   (custom?'<button class="btn icon ghost" data-a="del" data-id="'+esc(w.id)+'" aria-label="Xóa từ '+esc(w.th)+'">'+I.trash+'</button>':'')+'</div></article>';
+}
+function updateList(){
+  var list=$('#nb-list');if(!list)return;
+  var q=norm(S.q.trim()),all=nbWords(),ws=all.filter(function(w){return matchWord(w,q)});
+  list.innerHTML=ws.length?ws.map(cardHTML).join(''):'<div class="empty" style="grid-column:1/-1">Không có từ nào khớp. Thử bỏ bộ lọc hoặc thêm từ mới.</div>';
+  $('#nb-meta').textContent=ws.length+' / '+all.length+' từ · '+knownIn(all)+' đã nhớ';
+  syncSide();
+}
+
+/* ---------- Vocabulary by level ---------- */
+function lessonCard(w){
+  var kn=!!DB.known[w.id],sv=!!DB.saved[w.id];
+  return '<article class="card">'+
+   '<div class="row"><div class="th" lang="th">'+esc(w.th)+'</div><button class="btn icon" data-a="say" data-t="'+esc(w.th)+'" aria-label="Nghe phát âm '+esc(w.th)+'">'+I.sound+'</button></div>'+
+   '<div class="rom">'+romHTML(w.rom)+'</div>'+
+   '<div class="line"><span class="pill">'+esc(w.pos)+'</span>'+(w.lv==='k'&&!w.b?'<span class="pill">bổ sung</span>':'')+'<span class="vi">'+esc(w.vi)+'</span></div>'+
+   '<div class="foot"><button class="chip'+(kn?' on':'')+'" data-a="vknown" data-id="'+esc(w.id)+'" aria-pressed="'+kn+'">'+I.check+(kn?'Đã nhớ':'Chưa nhớ')+'</button>'+
+   '<button class="btn'+(sv?' ghost':'')+'" data-a="saveWord" data-id="'+esc(w.id)+'"'+(sv?' disabled':'')+'>'+(sv?'Đã lưu':I.plus+' Lưu vào sổ tay')+'</button></div></article>';
+}
+function viewVocab(){
+  var lv=S.level,L=LESSONS[lv],ws=LW[lv];
+  var shown=S.topic==='all'?ws:ws.filter(function(w){return w.topic===S.topic});
+  var lvPills=['a1','a2'].map(function(k){return '<button class="chip" data-a="level" data-l="'+k+'" aria-pressed="'+(lv===k)+'">Từ vựng '+k.toUpperCase()+'</button>'}).join('');
+  var tp='<button class="chip" data-a="topic" data-i="all" aria-pressed="'+(S.topic==='all')+'">Tất cả · '+ws.length+'</button>'+
+    L.topics.map(function(t,i){var n=ws.filter(function(w){return w.topic===i}).length;
+      return '<button class="chip" data-a="topic" data-i="'+i+'" aria-pressed="'+(S.topic===i)+'">'+esc(t.n)+' · '+n+'</button>'}).join('');
+  var title=S.topic==='all'?'Tất cả chủ đề':L.topics[S.topic].n;
+  return '<div class="sec"><div class="pills" role="group" aria-label="Chọn cấp độ">'+lvPills+'</div>'+
+   '<div class="pills" role="group" aria-label="Chọn chủ đề">'+tp+'</div>'+
+   '<div class="bar" style="margin:4px 0 0"><p class="meta" style="margin:0;flex:1 1 200px"><b>'+esc(title)+'</b> · '+shown.length+' từ · '+knownIn(shown)+' đã nhớ</p>'+
+   '<button class="btn" data-a="reviewCards">Ôn bằng thẻ nhớ</button><button class="btn" data-a="reviewQuiz">Làm trắc nghiệm</button></div>'+
+   '<div class="grid">'+shown.map(lessonCard).join('')+'</div></div>';
+}
+
+/* ---------- Flashcards ---------- */
+function deckWords(){
+  var all=scopeWords(),map={},i;for(i=0;i<all.length;i++)map[all[i].id]=all[i];
+  var ids=S.fc.deck.filter(function(id){return map[id]});
+  all.forEach(function(w){if(ids.indexOf(w.id)<0)ids.push(w.id)});
+  S.fc.deck=ids;
+  var ws=ids.map(function(id){return map[id]});
+  if(S.fc.only)ws=ws.filter(function(w){return !DB.known[w.id]});
+  return ws;
+}
+function viewCards(){
+  var ws=deckWords();
+  var top='<div class="fc-top"><div class="scopebar"><label for="fcscope">Bộ từ</label><select id="fcscope">'+scopeOpts()+'</select></div>'+
+    '<label class="chk"><input type="checkbox" id="fc-only"'+(S.fc.only?' checked':'')+'> Chỉ ôn từ chưa nhớ</label>'+
+    '<button class="btn" data-a="fcShuffle">Xáo trộn thẻ</button></div>';
+  if(!ws.length){
+    return top+'<div class="empty">'+(scopeWords().length?'Bạn đã đánh dấu nhớ hết các từ trong bộ này. Bỏ chọn “Chỉ ôn từ chưa nhớ” để xem lại toàn bộ, hoặc <button class="chip" data-a="resetKnown">đặt lại trạng thái đã nhớ</button>':'Bộ từ này đang trống. Hãy thêm từ vào sổ tay hoặc chọn bộ từ khác.')+'</div>';
+  }
+  if(S.fc.i>=ws.length)S.fc.i=0;
+  var w=ws[S.fc.i];
+  var face=S.fc.flip
+   ? '<span class="rom big">'+romHTML(w.rom)+'</span><span class="line" style="justify-content:center"><span class="pill">'+esc(w.pos||'từ')+'</span><span class="vi" style="font-size:1.3rem">'+esc(w.vi)+'</span></span>'+
+     (w.ex&&w.ex.th?'<span class="exb"><span class="th" lang="th">'+esc(w.ex.th)+'</span>'+(w.ex.rom?'<span class="rom">'+romHTML(w.ex.rom)+'</span>':'')+(w.ex.vi?'<span class="vi">'+esc(w.ex.vi)+'</span>':'')+'</span>':'')
+   : '<span class="th big" lang="th">'+esc(w.th)+'</span><span class="hint">Chạm vào thẻ để xem phiên âm và nghĩa</span>';
+  return top+'<div class="qhead" style="margin-bottom:8px"><span>Thẻ '+(S.fc.i+1)+' / '+ws.length+'</span><span>'+knownIn(scopeWords())+' từ đã nhớ</span></div>'+
+   '<button class="fcard" data-a="fcFlip" aria-label="Thẻ từ. Chạm để lật">'+face+'</button>'+
+   '<div class="fc-ctrl">'+
+    '<button class="btn" data-a="fcPrev">Trước</button>'+
+    '<button class="btn" data-a="say" data-t="'+esc(w.th)+'">'+I.sound+' Nghe</button>'+
+    '<button class="btn no" data-a="fcNo">Chưa nhớ</button>'+
+    '<button class="btn ok" data-a="fcYes">Đã nhớ</button>'+
+    '<button class="btn" data-a="fcNext">Sau</button></div>';
+}
+function fcMove(d){var n=deckWords().length;if(!n)return;S.fc.i=(S.fc.i+d+n)%n;S.fc.flip=false;render()}
+function fcMark(yes){
+  var ws=deckWords();if(!ws.length)return;
+  var w=ws[Math.min(S.fc.i,ws.length-1)];
+  if(yes)DB.known[w.id]=true;else delete DB.known[w.id];
+  save();S.fc.flip=false;
+  if(yes&&S.fc.only){var n=deckWords().length;if(S.fc.i>=n)S.fc.i=0;render()}else fcMove(1);
+}
+
+/* ---------- Quiz ---------- */
+var MODES=[
+ ['meaning','Thái → Việt','Nhìn chữ Thái, chọn nghĩa đúng.'],
+ ['thai','Việt → Thái','Đọc nghĩa tiếng Việt, chọn chữ Thái đúng.'],
+ ['tone','Thanh điệu','Nhìn và nghe một từ, chọn thanh điệu. Chỉ dùng từ một âm tiết.']
+];
+function pool(mode){var p=scopeWords();if(mode==='tone')p=p.filter(function(w){return sylls(w.rom).length===1});return p}
+function makeQs(mode){
+  var p=pool(mode),n=Math.min(10,p.length),picks=shuffle(p).slice(0,n),all=scopeWords();
+  return picks.map(function(w){
+    if(mode==='tone'){return {id:w.id,opts:TONE_KEYS.slice(),ans:TONE_KEYS.indexOf(toneOf(w.rom))}}
+    var others=shuffle(all.filter(function(x){return x.id!==w.id})).slice(0,3);
+    var opts=shuffle([w].concat(others));
+    return {id:w.id,opts:opts.map(function(x){return x.id}),ans:opts.indexOf(w)};
+  });
+}
+function viewQuiz(){
+  var Q=S.quiz;
+  if(!Q.started){
+    var need=Q.mode==='tone'?3:4,ok=pool(Q.mode).length>=need;
+    return '<div class="sec"><div class="scopebar"><label for="qscope">Bộ từ</label><select id="qscope">'+scopeOpts()+'</select></div>'+
+    '<h2>Chọn kiểu bài tập</h2><div class="modes">'+MODES.map(function(m){
+      return '<button class="mode" data-a="qMode" data-m="'+m[0]+'" aria-pressed="'+(Q.mode===m[0])+'"><strong>'+m[1]+'</strong><small>'+m[2]+'</small></button>';
+    }).join('')+'</div>'+
+    '<div class="actions"><button class="btn primary" data-a="qStart"'+(ok?'':' disabled')+'>Bắt đầu</button><span class="meta" style="margin:0">'+(ok?Math.min(10,pool(Q.mode).length)+' câu từ '+pool(Q.mode).length+' từ trong bộ này':'Bộ từ này chưa đủ từ cho kiểu bài này.')+'</span></div></div>';
+  }
+  if(Q.done){
+    var n=Q.qs.length,pct=Math.round(Q.score/n*100);
+    return '<div class="sec"><h2>Kết quả</h2><div class="score">'+Q.score+' / '+n+'</div>'+
+     '<p class="note">'+(pct===100?'Đúng hết. Thử kiểu bài khác để thêm thử thách.':pct>=70?'Khá tốt. Các từ sai bên dưới nên xem lại.':'Cần ôn thêm. Mở phần Thẻ nhớ để luyện các từ này.')+'</p>'+
+     (Q.wrong.length?'<div class="wrong">'+Q.wrong.map(function(id){var w=byId(id);if(!w)return '';
+        return '<div class="it"><span class="th" lang="th">'+esc(w.th)+'</span><span class="rom">'+romHTML(w.rom)+'</span><span>'+esc(w.vi)+'</span></div>'}).join('')+'</div>':'')+
+     '<div class="actions"><button class="btn primary" data-a="qStart">Làm lại</button><button class="btn" data-a="qReset">Đổi bộ từ hoặc kiểu bài</button></div></div>';
+  }
+  var q=Q.qs[Q.i],w=byId(q.id),answered=Q.picked!==null,mode=Q.mode;
+  var prompt;
+  if(mode==='thai')prompt='<span class="ask">Chữ Thái nào có nghĩa là</span><span class="big-vi">'+esc(w.vi)+'</span>';
+  else prompt='<span class="ask">'+(mode==='tone'?'Từ này mang thanh điệu nào?':'Từ này có nghĩa là gì?')+'</span><span class="th" lang="th">'+esc(w.th)+'</span>'+
+     '<button class="btn" data-a="say" data-t="'+esc(w.th)+'">'+I.sound+' Nghe</button>';
+  var opts=q.opts.map(function(o,i){
+    var cls='opt',inner;
+    if(mode==='tone')inner='<span class="optsvg t-'+o+'">'+contour(o)+'</span><span><strong>'+TONES[o].vi+'</strong> <small class="dash">('+TONES[o].en+')</small></span>';
+    else if(mode==='thai')inner='<span class="th" lang="th">'+esc(byId(o).th)+'</span>';
+    else inner='<span>'+esc(byId(o).vi)+'</span>';
+    if(answered){if(i===q.ans)cls+=' ok';else if(i===Q.picked)cls+=' bad'}
+    return '<button class="'+cls+'" data-a="qPick" data-i="'+i+'" aria-disabled="'+answered+'">'+inner+'</button>';
+  }).join('');
+  var fb='';
+  if(answered){var good=Q.picked===q.ans;
+    fb='<div class="fb"><span><strong class="'+(good?'ok':'bad')+'">'+(good?'Đúng':'Chưa đúng')+'.</strong> <span class="th" lang="th" style="font-size:1.2rem">'+esc(w.th)+'</span> <span class="rom">'+romHTML(w.rom)+'</span> · '+esc(w.vi)+'</span>'+
+       '<button class="btn primary" data-a="qNext">'+(Q.i+1>=Q.qs.length?'Xem kết quả':'Câu tiếp')+'</button></div>';}
+  return '<div class="qhead"><span>Câu '+(Q.i+1)+' / '+Q.qs.length+'</span><span>Đúng '+Q.score+'</span></div>'+
+    '<div class="prog"><i style="width:'+Math.round((Q.i+(answered?1:0))/Q.qs.length*100)+'%"></i></div>'+
+    '<div class="qbox">'+prompt+'</div><div class="opts">'+opts+'</div>'+fb;
+}
+
+/* ---------- Alphabet ---------- */
+function viewAlpha(){
+  var blocks=Object.keys(CLASSES).map(function(k){
+    var c=CLASSES[k],ls=Array.from(c.letters);
+    return '<div class="clsbox cls-'+k+'"><h3>'+c.vi+' <span class="dash">· '+c.en+' · '+ls.length+' chữ</span></h3><div class="letters" lang="th">'+
+      ls.map(function(l){return '<span'+(l==='ฃ'||l==='ฅ'?' class="rare" title="Không còn dùng"':'')+'>'+l+'</span>'}).join('')+'</div></div>';
+  }).join('');
+  var f=S.alpha,list=CONS.filter(function(c){return f==='all'||c[1]===f});
+  var pills=[['all','Tất cả'],['mid','Nhóm giữa'],['high','Nhóm cao'],['low','Nhóm thấp']].map(function(p){
+    return '<button class="chip" data-a="aFilter" data-f="'+p[0]+'" aria-pressed="'+(f===p[0])+'">'+p[1]+'</button>';
+  }).join('');
+  var tiles=list.map(function(c){
+    return '<button class="tile cls-'+c[1]+'" data-a="say" data-t="'+esc(c[4])+'" aria-label="Chữ '+c[0]+', nghe từ '+esc(c[4])+'">'+
+      '<span class="th big" lang="th">'+c[0]+'</span><span class="snd">đầu '+esc(c[2])+' · cuối '+esc(c[3])+'</span>'+
+      (c[7]?'<span class="pill">không còn dùng</span>':'')+
+      '<span class="nm"><span class="th" lang="th">'+esc(c[4])+'</span><span class="rom">'+romHTML(c[5])+'</span></span><span class="vi">'+esc(c[6])+'</span></button>';
+  }).join('');
+  var vf=S.vf,vl=VOW.filter(function(v){return vf==='all'||v[2]===vf});
+  var vpills=[['all','Tất cả'],['s','Ngắn'],['l','Dài'],['sp','Đặc biệt'],['c','Tổ hợp'],['m','Dạng viết'],['r','Hiếm']].map(function(p){
+    return '<button class="chip" data-a="vFilter" data-f="'+p[0]+'" aria-pressed="'+(vf===p[0])+'">'+p[1]+'</button>';
+  }).join('');
+  var vtiles=vl.map(function(v){
+    var ex=v[3];
+    return '<button class="tile cls-v" data-a="say" data-t="'+esc(ex||v[0])+'" aria-label="Nguyên âm '+esc(v[0])+'">'+
+      '<span class="th big" lang="th">'+v[0]+'</span><span class="snd">'+esc(v[1])+'</span><span class="pill">'+VGRP[v[2]]+'</span>'+
+      (ex?'<span class="nm"><span class="th" lang="th">'+esc(ex)+'</span><span class="rom">'+romHTML(v[4])+'</span></span><span class="vi">'+esc(v[5])+'</span>'
+         :'<span class="vi">Gần như không còn dùng trong từ thường gặp</span>')+'</button>';
+  }).join('');
+  return '<div class="sec"><h2>Ba nhóm phụ âm</h2>'+
+    '<p class="note">Tiếng Thái có 44 chữ phụ âm, đọc thành 21 âm đầu. Nhóm của phụ âm đầu cùng với dấu thanh và loại vần quyết định thanh điệu của âm tiết. Chữ ฃ và ฅ không còn dùng trong chữ viết hiện đại.</p>'+
+    '<div class="cls3">'+blocks+'</div></div>'+
+   '<div class="sec"><h2>44 phụ âm</h2><p class="note">Mỗi chữ có từ mẫu theo cách học truyền thống. Chạm vào ô để nghe từ mẫu. Màu viền là nhóm phụ âm, màu phiên âm là thanh điệu. “Đầu” là âm khi chữ đứng đầu âm tiết, “cuối” là âm khi chữ đứng cuối âm tiết, dấu gạch ngang nghĩa là chữ không làm phụ âm cuối. Chữ อ làm phụ âm đầu là âm tắc họng ʔ, như âm đầu của từ “ăn”.</p>'+
+    '<div class="pills" role="group" aria-label="Lọc theo nhóm">'+pills+'</div><div class="tiles">'+tiles+'</div></div>'+
+   '<div class="sec"><h2>Nguyên âm</h2><p class="note">Nguyên âm được viết quanh phụ âm, nên ở đây mỗi nguyên âm đặt trên chữ ก. Ngắn hay dài là điều quan trọng, vì nó quyết định vần chết hay vần sống và do đó quyết định thanh điệu. Với nguyên âm đôi ia, ʉa, ua, phiên âm không nhân đôi chữ cái, chỉ cột “ngắn, dài” cho biết độ dài. Dạng kín của ʉʉ viết là ื (ví dụ ยืน yʉʉn), dạng mở viết là ือ.</p>'+
+    '<div class="pills" role="group" aria-label="Lọc nguyên âm">'+vpills+'</div><div class="tiles">'+vtiles+'</div></div>';
+}
+
+/* ---------- Tones ---------- */
+var TCL={cls:{mid:'giữa',high:'cao',low:'thấp'},type:{live:'vần sống',ds:'vần chết, nguyên âm ngắn',dl:'vần chết, nguyên âm dài'},
+  mark:{none:'không có dấu',ek:'dấu ่ (mai ek)',tho:'dấu ้ (mai tho)',tri:'dấu ๊ (mai tri)',jat:'dấu ๋ (mai chattawa)'}};
+function toneName(k){return k?'<span class="t-'+k+'">'+TONES[k].vi+'</span>':'<span class="dash">—</span>'}
+function tcHTML(){
+  var c=S.tc,k=ruleTone(c.cls,c.type,c.mark);
+  function grp(key,label,opts){
+    return '<div class="g"><span class="gl2" id="g-'+key+'">'+label+'</span><div class="pills" role="group" aria-labelledby="g-'+key+'">'+opts.map(function(o){
+      return '<button class="chip" data-a="tc" data-k="'+key+'" data-v="'+o[0]+'" aria-pressed="'+(c[key]===o[0])+'">'+o[1]+'</button>'}).join('')+'</div></div>';
+  }
+  var why='Phụ âm đầu nhóm '+TCL.cls[c.cls]+', '+TCL.type[c.type]+', '+TCL.mark[c.mark]+'.';
+  var res=k?'<span class="tn t-'+k+'">'+TONES[k].vi+'</span><span class="t-'+k+'">'+contour(k)+'</span><span>'+TONES[k].th+' · '+TONES[k].en+'</span><span class="why">'+why+'</span>'
+    :'<span class="tn dash">Không dùng</span><span class="why">Dấu này chỉ dùng với phụ âm đầu nhóm giữa. Hãy đổi nhóm phụ âm hoặc đổi dấu.</span>';
+  return '<div class="tcbox"><div class="tcctl">'+
+    grp('cls','Nhóm phụ âm đầu',[['mid','Giữa'],['high','Cao'],['low','Thấp']])+
+    grp('type','Loại vần',[['live','Vần sống'],['ds','Chết, ngắn'],['dl','Chết, dài']])+
+    grp('mark','Dấu thanh',[['none','Không dấu'],['ek','ก่'],['tho','ก้'],['tri','ก๊'],['jat','ก๋']])+
+    '</div><div class="tcres" aria-live="polite">'+res+'</div></div>';
+}
+var EXS=[
+ ['ครับ','khráp','low','ds','none','ค nhóm thấp, vần chết ngắn'],
+ ['ค่ะ','khâ','low','ds','ek','ค nhóm thấp, dấu ่'],
+ ['ตก','dtòk','mid','ds','none','ต nhóm giữa, vần chết'],
+ ['ลูก','lûuk','low','dl','none','ล nhóm thấp, vần chết dài'],
+ ['กิน','gin','mid','live','none','ก nhóm giữa, vần sống'],
+ ['ม้า','máa','low','live','tho','ม nhóm thấp, dấu ้'],
+ ['หมา','mǎa','high','live','none','ห dẫn: ม tính như nhóm cao']
+];
+function viewTones(){
+  var cards=TONE_KEYS.map(function(k){var t=TONES[k];
+    return '<article class="tcard t-'+k+'"><div class="hd"><h3>'+t.vi+' <span class="dash">· '+t.en+'</span></h3><span class="th" lang="th" style="font-size:1rem;color:var(--muted)">'+t.th+'</span></div>'+
+     '<div class="mk">Trên phiên âm: <b>'+t.pa+'</b></div>'+contour(k)+
+     '<div class="eg"><span class="th" lang="th">'+t.eg[0]+'</span><span class="rom">'+romHTML(t.eg[1])+'</span><span style="color:var(--muted)">'+t.eg[2]+'</span>'+
+     '<button class="btn icon ghost" data-a="say" data-t="'+t.eg[0]+'" aria-label="Nghe '+t.eg[0]+'" style="margin-left:auto">'+I.sound+'</button></div></article>';
+  }).join('');
+  var marks=[['none','Không dấu',''],['ek','ก่','mai ek'],['tho','ก้','mai tho'],['tri','ก๊','mai tri'],['jat','ก๋','mai chattawa']];
+  var rows=[['Vần sống','nhóm giữa','mid','live'],['Vần sống','nhóm cao','high','live'],['Vần sống','nhóm thấp','low','live'],
+    ['Vần chết','nhóm giữa','mid','ds'],['Vần chết','nhóm cao','high','ds'],['Vần chết, nguyên âm ngắn','nhóm thấp','low','ds'],['Vần chết, nguyên âm dài','nhóm thấp','low','dl']];
+  var table='<div class="tblwrap"><table><thead><tr><th>Loại vần</th>'+marks.map(function(m){return '<th scope="col"><span class="th" lang="th" style="font-size:1.1rem">'+m[1]+'</span>'+(m[2]?'<br><small>'+m[2]+'</small>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
+    rows.map(function(r){return '<tr><th scope="row"><span class="rl">'+r[0]+'</span><small>'+r[1]+'</small></th>'+marks.map(function(m){return '<td>'+toneName(ruleTone(r[2],r[3],m[0]))+'</td>'}).join('')+'</tr>'}).join('')+
+    '</tbody></table></div>';
+  var exs='<div class="tblwrap"><table><thead><tr><th>Từ</th><th>Phiên âm</th><th>Cách xác định</th><th>Thanh</th></tr></thead><tbody>'+
+    EXS.map(function(e){var k=ruleTone(e[2],e[3],e[4]);
+      return '<tr><th scope="row"><span class="th" lang="th">'+e[0]+'</span> <button class="btn icon ghost" data-a="say" data-t="'+e[0]+'" aria-label="Nghe '+e[0]+'">'+I.sound+'</button></th><td>'+romHTML(e[1])+'</td><td style="font-weight:400">'+e[5]+'</td><td>'+toneName(k)+'</td></tr>'}).join('')+
+    '</tbody></table></div>';
+  var five=[['ไม่','mâi'],['ใช่','châi'],['ไม้','máai'],['ใหม่','mài'],['ไหม','mǎi']];
+  return '<div class="sec"><h2>Năm thanh điệu</h2>'+
+   '<p class="note">Cùng một âm tiết, đổi thanh là đổi nghĩa. Năm từ dưới đây chỉ khác nhau ở thanh điệu. Đường cong cho thấy cao độ giọng từ đầu đến cuối âm tiết theo giọng chuẩn Bangkok. Đó là hình minh họa, không phải số đo chính xác. Chữ Thái có bốn dấu thanh, nhưng dấu không trùng một-một với thanh: cùng một dấu cho ra thanh khác nhau tùy nhóm phụ âm.</p>'+
+   '<div class="grid">'+cards+'</div></div>'+
+   '<div class="sec"><h2>Kiểm tra thanh của một âm tiết</h2>'+
+   '<p class="note">Chọn nhóm phụ âm đầu, loại vần và dấu thanh để biết âm tiết mang thanh nào.</p>'+tcHTML()+'</div>'+
+   '<div class="sec"><h2>Bảng quy tắc</h2>'+
+   '<p class="note"><b>Vần sống</b> kết thúc bằng nguyên âm dài hoặc phụ âm m, n, ng, w, y. Bốn nguyên âm ngắn ก ำ, ไก, ใก, เกา cũng tính là vần sống. <b>Vần chết</b> kết thúc bằng p, t, k hoặc bằng nguyên âm ngắn không có phụ âm cuối. Ô gạch ngang nghĩa là dấu đó không dùng với nhóm phụ âm ấy. Bảng này đúng cho từ thuần Thái và phần lớn từ mượn.</p>'+table+
+   '<div class="callout"><h3>Hai trường hợp đặc biệt</h3>'+
+   '<p><b>Chữ ห dẫn.</b> Chữ ห đứng trước một phụ âm thấp như ง ญ น ม ย ร ล ว thì phụ âm thấp đó tính như nhóm cao. Ví dụ หมา mǎa (nhóm cao, vần sống, không dấu, nên lên), ใหม่ mài (nhóm cao, dấu ่, nên thấp).</p>'+
+   '<p><b>Chữ อ dẫn.</b> Chỉ có bốn từ: อย่า, อยู่, อยาก, อย่าง. Chữ ย trong các từ này tính như nhóm giữa, nên อย่า đọc yàa (nhóm giữa, dấu ่, nên thấp).</p>'+
+   '<p><b>Phụ âm đứng trước mang a ngầm.</b> Khi phụ âm nhóm cao hoặc giữa đứng trước một phụ âm thấp (ng, n, m, y, r, l, w) và ở giữa có âm a ngầm, âm tiết sau lấy thanh theo phụ âm đứng trước. Ví dụ ขนม khà-nǒm, ถนน thà-nǒn, ตลาด dtà-làat.</p></div></div>'+
+   '<div class="sec"><h2>Ví dụ áp dụng quy tắc</h2>'+exs+'</div>'+
+   '<div class="sec"><h2>Một câu có đủ năm thanh</h2>'+
+   '<p class="note">Câu này mọi người học tiếng Thái đều gặp. Cả năm âm tiết đều là mai, chỉ khác thanh.</p>'+
+   '<div class="callout"><div class="line" style="gap:14px"><span class="th" lang="th" style="font-size:1.7rem">ไม่ใช่ไม้ใหม่ไหม</span><button class="btn icon ghost" data-a="say" data-t="ไม่ใช่ไม้ใหม่ไหม" aria-label="Nghe cả câu">'+I.sound+'</button></div>'+
+   '<div class="rom">'+romHTML('mâi châi máai mài mǎi')+'</div><div>Không phải gỗ mới sao?</div>'+
+   '<div class="line">'+five.map(function(f){return '<span class="pill"><span lang="th">'+f[0]+'</span> '+f[1]+'</span>'}).join('')+'</div></div></div>';
+}
+
+/* ---------- Course ---------- */
+var CSK=[['vocab','Từ vựng'],['gram','Ngữ pháp'],['read','Đọc viết']];
+function cLessonWords(n){return LW.k.filter(function(w){return w.topic===n-1})}
+function cDoneCount(){var c=0;COURSE.forEach(function(L){if(DB.cdone[L.n])c++});return c}
+function cMeta(L,sk){
+  if(sk==='vocab')return L.w.length+' từ vựng';
+  if(sk==='gram')return L.g.length+' điểm ngữ pháp';
+  return L.r.length+' phần luyện';
+}
+function cTabs(sk,act){
+  return '<div class="ctabs" role="tablist" aria-label="Kỹ năng">'+CSK.map(function(k){
+    return '<button class="ctab" role="tab" data-a="'+act+'" data-sk="'+k[0]+'" aria-selected="'+(sk===k[0])+'">'+k[1]+'</button>'}).join('')+'</div>';
+}
+var CHK=ico('<path d="m5 12 5 5 9-10"/>',20),CHEV=ico('<path d="m9 6 6 6-6 6"/>',20),BACK=ico('<path d="m15 6-6 6 6 6"/>',18);
+function cCover(){
+  return '<div class="ccover" aria-hidden="true"><span class="cc-bg" lang="th">กขคงจ</span><span class="cc-t" lang="th">ภาษาไทย</span><span class="cc-n" lang="th">ป.1</span></div>';
+}
+function viewCourse(){
+  return S.course.view==='lesson'?viewCLesson():viewCHome();
+}
+function viewCHome(){
+  var sk=S.course.skill,done=cDoneCount(),tot=COURSE.length,nw=LW.k.length;
+  var list=COURSE.map(function(L){
+    var d=!!DB.cdone[L.n];
+    return '<button class="crow" data-a="cOpen" data-n="'+L.n+'"><span class="cnum">'+L.n+'</span><span class="cinfo"><strong>'+esc(L.vi)+'</strong><small lang="th">'+esc(L.th)+'</small><em>'+cMeta(L,sk)+'</em></span>'+
+      '<span class="cchk'+(d?' on':'')+'" aria-label="'+(d?'Đã hoàn thành':'Chưa hoàn thành')+'">'+(d?CHK:'')+'</span><span class="cgo">'+CHEV+'</span></button>';
+  }).join('');
+  return '<button class="backl" data-a="tab" data-tab="home">'+BACK+' Trang chủ</button>'+
+   '<section class="chero">'+cCover()+'<div class="cmain"><div class="cbadges"><span class="cbadge">Lớp 1</span><span class="cbadge o">'+tot+' bài</span><span class="cbadge o">'+nw+' từ</span></div>'+
+   '<h2 class="ctitle">Tiếng Thái lớp 1</h2><p class="csub">Khóa học theo sách giáo khoa tiếng Thái tiểu học, học kỳ 1: từ phụ âm, nguyên âm đến câu đơn giản.</p></div></section>'+
+   cTabs(sk,'cSkill')+
+   '<div class="cprog"><div class="cprog-t"><span>Tiến độ học</span><b>'+done+'/'+tot+' bài</b></div><div class="prog"><i style="width:'+Math.round(done/tot*100)+'%"></i></div></div>'+
+   '<h3 class="clabel">BÀI HỌC</h3><div class="clist">'+list+'</div>'+
+   '<p class="cnote">Nội dung dựa trên sách bài tập tiếng Thái lớp 1. Phiên âm và nghĩa tiếng Việt do Claude soạn, nên hãy nhờ người bản ngữ rà lại trước khi dùng nghiêm túc. Từ gắn nhãn “bổ sung” không có trong sách.</p>';
+}
+function viewCLesson(){
+  var n=S.course.n,L=COURSE[n-1],sk=S.course.skill,body='';
+  if(sk==='vocab'){
+    var ws=cLessonWords(n);
+    body='<div class="bar" style="margin:4px 0 12px"><p class="meta" style="margin:0;flex:1 1 200px"><b>'+ws.length+' từ</b> · '+knownIn(ws)+' đã nhớ</p>'+
+     '<button class="btn" data-a="cReviewCards">Ôn bằng thẻ nhớ</button><button class="btn" data-a="cReviewQuiz">Làm trắc nghiệm</button></div>'+
+     '<div class="grid">'+ws.map(lessonCard).join('')+'</div>';
+  }else if(sk==='gram'){
+    body='<div class="gl">'+L.g.map(function(g,i){
+      return '<article class="gcard"><h3><span class="gn">'+(i+1)+'</span>'+esc(g.t)+'</h3><p>'+esc(g.d)+'</p>'+g.ex.map(function(e){
+        return '<div class="gex"><div><div class="th" lang="th">'+esc(e[0])+'</div><div class="rom">'+romHTML(e[1])+'</div><div class="vi">'+esc(e[2])+'</div></div>'+
+          '<button class="btn icon ghost" data-a="say" data-t="'+esc(e[0])+'" aria-label="Nghe ví dụ">'+I.sound+'</button></div>'}).join('')+'</article>'}).join('')+'</div>';
+  }else{
+    body=L.r.map(function(r){
+      return '<section class="rblock"><h3>'+esc(r.t)+'</h3><p class="meta">'+esc(r.d)+'</p><div class="tiles">'+r.items.map(function(it){
+        var th=it[0],show=/^[ัิ-ฺ็-๎]$/.test(th)?'ก'+th:th;
+        return '<button class="tile" data-a="say" data-t="'+esc(show)+'"><span class="th" lang="th">'+esc(show)+'</span><span class="rom">'+romHTML(it[1])+'</span><span class="vi">'+esc(it[2]||'')+'</span></button>'}).join('')+'</div></section>'}).join('');
+  }
+  var d=!!DB.cdone[n];
+  return '<button class="backl" data-a="cBack">'+BACK+' Khóa học</button>'+
+   '<header class="lhead"><span class="cnum big">'+n+'</span><div><div class="lkick">BÀI '+n+'</div><h2 class="ltitle">'+esc(L.vi)+'</h2><p class="lth" lang="th">'+esc(L.th)+'</p><p class="meta">'+esc(L.desc)+'</p></div></header>'+
+   cTabs(sk,'cLSkill')+body+
+   '<div class="lfoot">'+(n>1?'<button class="btn" data-a="cOpen" data-n="'+(n-1)+'">'+BACK+' Bài '+(n-1)+'</button>':'<span></span>')+
+   '<button class="btn'+(d?'':' primary')+'" data-a="cDone">'+CHK+(d?' Bỏ đánh dấu hoàn thành':' Đánh dấu hoàn thành')+'</button>'+
+   (n<COURSE.length?'<button class="btn" data-a="cOpen" data-n="'+(n+1)+'">Bài '+(n+1)+' '+CHEV+'</button>':'<span></span>')+'</div>';
+}
+
+/* ---------- Events ---------- */
+document.addEventListener('click',function(e){
+  var el=e.target.closest('[data-a]');if(!el)return;
+  var a=el.dataset.a,d=el.dataset;
+  switch(a){
+    case 'tab':if(d.tab==='course')S.course.view='home';S.tab=d.tab;render();window.scrollTo(0,0);break;
+    case 'go':
+      if(d.tab==='course')S.course.view='home';
+      if(d.level){S.level=d.level;S.topic='all'}
+      S.tab=d.tab;render();window.scrollTo(0,0);break;
+    case 'say':speak(d.t);break;
+    case 'addWord':S.tab='notebook';S.formOpen=true;render();window.scrollTo(0,0);var ff=$('#f-th');if(ff)ff.focus();break;
+    case 'toggleForm':S.formOpen=!S.formOpen;render();if(S.formOpen){var f=$('#f-th');if(f)f.focus()}break;
+    case 'known':if(DB.known[d.id])delete DB.known[d.id];else DB.known[d.id]=true;save();updateList();break;
+    case 'vknown':if(DB.known[d.id])delete DB.known[d.id];else DB.known[d.id]=true;save();keepScroll(render);break;
+    case 'del':
+      var gone=DB.custom.filter(function(w){return w.id===d.id})[0];
+      if(gone&&gone.src)delete DB.saved[gone.src];
+      DB.custom=DB.custom.filter(function(w){return w.id!==d.id});delete DB.known[d.id];save();updateList();toast('Đã xóa từ.');break;
+    case 'saveWord':
+      var lw=byId(d.id);if(!lw||DB.saved[d.id])break;
+      DB.custom.push({id:'u'+Date.now().toString(36)+Math.floor(Math.random()*1000),th:lw.th,rom:lw.rom,vi:lw.vi,pos:lw.pos,src:lw.id});
+      DB.saved[d.id]=true;save();keepScroll(render);toast('Đã lưu “'+lw.th+'” vào sổ tay.');break;
+    case 'cSkill':S.course.skill=d.sk;keepScroll(render);break;
+    case 'cLSkill':S.course.skill=d.sk;keepScroll(render);break;
+    case 'cOpen':S.course.view='lesson';S.course.n=parseInt(d.n,10);S.tab='course';render();window.scrollTo(0,0);break;
+    case 'cBack':S.course.view='home';render();window.scrollTo(0,0);break;
+    case 'cDone':var cn=S.course.n;if(DB.cdone[cn])delete DB.cdone[cn];else DB.cdone[cn]=true;save();keepScroll(render);break;
+    case 'cReviewCards':S.scope='k'+S.course.n;S.fc={deck:[],i:0,flip:false,only:false};S.tab='cards';render();window.scrollTo(0,0);break;
+    case 'cReviewQuiz':S.scope='k'+S.course.n;S.quiz.started=false;S.quiz.done=false;S.tab='quiz';render();window.scrollTo(0,0);break;
+    case 'level':S.level=d.l;S.topic='all';keepScroll(render);break;
+    case 'topic':S.topic=d.i==='all'?'all':parseInt(d.i,10);keepScroll(render);break;
+    case 'reviewCards':S.scope=S.level;S.fc={deck:[],i:0,flip:false,only:false};S.tab='cards';render();window.scrollTo(0,0);break;
+    case 'reviewQuiz':S.scope=S.level;S.quiz.started=false;S.quiz.done=false;S.tab='quiz';render();window.scrollTo(0,0);break;
+    case 'fcFlip':S.fc.flip=!S.fc.flip;render();break;
+    case 'fcPrev':fcMove(-1);break;
+    case 'fcNext':fcMove(1);break;
+    case 'fcYes':fcMark(true);break;
+    case 'fcNo':fcMark(false);break;
+    case 'fcShuffle':S.fc.deck=shuffle(scopeWords().map(function(w){return w.id}));S.fc.i=0;S.fc.flip=false;render();break;
+    case 'resetKnown':scopeWords().forEach(function(w){delete DB.known[w.id]});save();S.fc.only=false;S.fc.i=0;render();break;
+    case 'qMode':S.quiz.mode=d.m;render();break;
+    case 'qStart':var m=S.quiz.mode;S.quiz={mode:m,started:true,done:false,qs:makeQs(m),i:0,score:0,picked:null,wrong:[]};render();break;
+    case 'qReset':S.quiz.started=false;S.quiz.done=false;render();break;
+    case 'qPick':
+      var Q=S.quiz;if(Q.picked!==null)break;
+      Q.picked=parseInt(d.i,10);var qq=Q.qs[Q.i];
+      if(Q.picked===qq.ans)Q.score++;else Q.wrong.push(qq.id);
+      render();break;
+    case 'qNext':
+      var Q2=S.quiz;Q2.i++;Q2.picked=null;if(Q2.i>=Q2.qs.length)Q2.done=true;render();window.scrollTo(0,0);break;
+    case 'aFilter':S.alpha=d.f;keepScroll(render);break;
+    case 'vFilter':S.vf=d.f;keepScroll(render);break;
+    case 'tc':S.tc[d.k]=d.v;keepScroll(render);break;
+  }
+});
+document.addEventListener('input',function(e){
+  var t=e.target;
+  if(t.id==='q'){S.q=t.value;updateList()}
+  else if(t.id==='f-rom'){var p=$('#f-prev');if(p)p.innerHTML=t.value.trim()?romHTML(t.value):''}
+});
+document.addEventListener('change',function(e){
+  var t=e.target;
+  if(t.id==='flt'){S.filter=t.value;updateList()}
+  else if(t.id==='fc-only'){S.fc.only=t.checked;S.fc.i=0;S.fc.flip=false;render();var c=$('#fc-only');if(c)c.focus()}
+  else if(t.id==='fcscope'){S.scope=t.value;S.fc={deck:[],i:0,flip:false,only:false};render();var s1=$('#fcscope');if(s1)s1.focus()}
+  else if(t.id==='qscope'){S.scope=t.value;S.quiz.started=false;S.quiz.done=false;render();var s2=$('#qscope');if(s2)s2.focus()}
+});
+document.addEventListener('submit',function(e){
+  if(e.target.id!=='add-form')return;
+  e.preventDefault();
+  var f=e.target,g=function(n){return f.elements[n].value.trim()};
+  var th=g('th'),rom=g('rom'),vi=g('vi'),err=$('#f-err');
+  if(!th||!rom||!vi){err.textContent='Hãy điền chữ Thái, phiên âm và nghĩa tiếng Việt.';return}
+  if(!/[฀-๿]/.test(th)){err.textContent='Ô “Chữ Thái” cần có ký tự tiếng Thái.';return}
+  var w={id:'u'+Date.now().toString(36)+Math.floor(Math.random()*1000),th:th,rom:rom,vi:vi,pos:g('pos')};
+  if(g('eth'))w.ex={th:g('eth'),rom:g('erom'),vi:g('evi')};
+  DB.custom.push(w);save();
+  S.formOpen=false;S.q='';S.filter='all';render();
+  toast('Đã thêm “'+th+'” vào sổ tay.');
+});
+document.addEventListener('keydown',function(e){
+  if(S.tab!=='cards')return;
+  var tag=(e.target&&e.target.tagName)||'';
+  if(tag==='INPUT'||tag==='SELECT'||tag==='TEXTAREA')return;
+  if(e.key==='ArrowRight'){fcMove(1)}else if(e.key==='ArrowLeft'){fcMove(-1)}
+});
+
+buildSide();
+render();
+})();
+
+</script>
+
+</body></html>
