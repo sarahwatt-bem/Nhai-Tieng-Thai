@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Sổ Tay Tiếng Thái</title>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><title>Sổ Tay Tiếng Thái</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Baloo+2:wght@500;600;700&family=Noto+Sans:wght@400;500;600&family=Noto+Sans+Thai+Looped:wght@400;500;600&display=swap">
 <style>
@@ -312,6 +311,123 @@ thead th small{font-weight:400}
 .tile .vi{font-size:.8rem;color:var(--muted)}
 .lfoot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:24px}
 @media (max-width:520px){.ccover{width:104px}.ctitle{font-size:1.4rem}.cinfo small{white-space:normal}}
+/* Course */
+.backl{display:inline-flex;align-items:center;gap:4px;font:inherit;font-weight:600;color:var(--muted);background:none;border:0;padding:4px 0;margin-bottom:12px;cursor:pointer}
+.backl:hover{color:var(--fg)}
+.chero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;position:relative;margin-bottom:16px}
+.ccover{position:relative;width:132px;aspect-ratio:3/4;flex:none;border:3px solid var(--edge);border-radius:14px;box-shadow:var(--sh);overflow:hidden;background:var(--accent);color:#FFF3E2;display:grid;place-items:center;text-align:center}
+.cc-bg{position:absolute;inset:0;display:grid;place-items:center;font:700 3.6rem/1 var(--f-th);opacity:.16;letter-spacing:-.04em;word-break:break-all;padding:6px}
+.cc-t{position:relative;font:600 1.45rem/1.2 var(--f-th)}
+.cc-n{position:absolute;right:8px;bottom:6px;font:600 1.1rem var(--f-th);background:#4B1E26;color:#FFF3E2;border-radius:8px;padding:0 8px}
+.cmain{flex:1 1 260px;min-width:0}
+.cbadges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.cbadge{font-size:.78rem;font-weight:700;padding:3px 11px;border-radius:99px;background:var(--ink);color:var(--ink-fg);border:2px solid var(--edge)}
+.cbadge.o{background:var(--surface);color:var(--fg)}
+.ctitle{font-size:1.7rem;margin-bottom:4px}
+.csub{color:var(--muted);max-width:60ch}
+.ctabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.ctab{font:inherit;font-weight:600;padding:8px 18px;border-radius:99px;border:2px solid var(--edge);background:var(--surface);color:var(--fg);cursor:pointer}
+.ctab[aria-selected="true"]{background:var(--ink);color:var(--ink-fg);box-shadow:var(--sh)}
+.cprog{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:14px 16px;margin-bottom:18px;display:flex;flex-direction:column;gap:10px}
+.cprog-t{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.clabel{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin:0 0 10px}
+.clist{display:flex;flex-direction:column;gap:10px}
+.crow{display:flex;align-items:center;gap:14px;text-align:left;font:inherit;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:12px 14px;cursor:pointer;width:100%}
+.crow:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--edge)}
+.cnum{width:44px;height:44px;flex:none;border-radius:10px;background:var(--ink);color:var(--ink-fg);display:grid;place-items:center;font:700 1.15rem var(--f-display)}
+.cnum.big{width:56px;height:56px;font-size:1.5rem}
+.cinfo{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.cinfo strong{font-family:var(--f-display);font-size:1.02rem;font-weight:600;line-height:1.3}
+.cinfo small{color:var(--muted);font:400 .84rem var(--f-th);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cinfo em{font-style:normal;font-size:.82rem;color:var(--accent);font-weight:600}
+.cchk{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;flex:none;color:var(--ink-fg)}
+.cchk.on{background:var(--ok);border-color:var(--ok)}
+.cgo{color:var(--muted);flex:none;line-height:0}
+.cnote{margin-top:16px;color:var(--muted);font-size:.84rem;max-width:70ch}
+.lhead{display:flex;gap:16px;align-items:flex-start;margin-bottom:14px}
+.lkick{font-size:.76rem;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.ltitle{font-size:1.45rem}
+.lth{font:500 1.05rem var(--f-th);color:var(--muted)}
+.gl{display:flex;flex-direction:column;gap:14px}
+.gcard{background:var(--surface);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.gcard h3{display:flex;gap:10px;align-items:center;font-size:1.02rem}
+.gn{width:26px;height:26px;border-radius:8px;background:var(--accent);color:#FFF3E2;display:grid;place-items:center;font-size:.85rem;flex:none}
+.gex{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.gex .th{font-size:1.5rem}
+.gex .vi{color:var(--muted)}
+.rblock{margin-bottom:20px}
+.rblock h3{margin-bottom:2px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,128px),1fr));gap:10px;margin-top:10px}
+.tile{font:inherit;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:12px;box-shadow:var(--sh);padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;min-width:0;text-align:center}
+.tile .th{font-size:1.9rem;line-height:1.3}
+.tile .vi{font-size:.8rem;color:var(--muted)}
+.lfoot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:24px}
+@media (max-width:520px){.ccover{width:104px}.ctitle{font-size:1.4rem}.cinfo small{white-space:normal}}
+/* Listening + Card Blast */
+.listen-ic{color:var(--accent);line-height:0;transform:scale(2.2);margin:12px 0}
+.bl-hud{display:flex;justify-content:space-between;gap:10px;font-weight:600;margin-bottom:8px}
+.hp{color:var(--bad);font-size:1.2rem;margin:0 2px}.hp.off{opacity:.2}
+.bl-arena{position:relative;height:min(46vh,340px);min-height:240px;overflow:hidden;background:var(--surface);border:2px solid var(--edge);border-radius:16px;box-shadow:var(--sh);margin-bottom:14px;
+ background-image:radial-gradient(color-mix(in srgb,var(--edge) 18%,transparent) 1px,transparent 1px);background-size:14px 14px}
+.bl-word{position:absolute;left:50%;top:0;transform:translateX(-50%);font:600 2.6rem/1.3 var(--f-th);padding:2px 22px;background:var(--bg);border:2px solid var(--edge);border-radius:14px;box-shadow:var(--sh);white-space:nowrap}
+.bl-word.hit{background:var(--ok);color:#fff;transform:translateX(-50%) scale(1.25);opacity:0;transition:transform .4s,opacity .4s}
+.bl-word.miss{background:var(--bad);color:#fff}
+.bl-floor{position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--bad);opacity:.55}
+.bl-opts .opt{display:flex;gap:10px;align-items:center}
+.bl-opts .k{width:26px;height:26px;border-radius:8px;background:var(--ink);color:var(--ink-fg);display:grid;place-items:center;font-size:.85rem;font-weight:700;flex:none}
+.bl-opts{grid-template-columns:repeat(2,1fr)}@media (max-width:420px){.bl-opts{grid-template-columns:1fr}.bl-word{font-size:2.1rem}}
+/* Flashcard v2 */
+.fcstage{--st:var(--accent);background:color-mix(in srgb,var(--st) 24%,var(--bg));border:3px solid var(--edge);border-radius:26px;box-shadow:var(--sh);padding:18px;margin-bottom:18px;
+ background-image:radial-gradient(color-mix(in srgb,var(--st) 40%,transparent) 1.2px,transparent 1.2px);background-size:16px 16px}
+.fcstage[data-c="1"]{--st:#C9922B}.fcstage[data-c="2"]{--st:#2F7F79}.fcstage[data-c="3"]{--st:#8A4A7C}
+.fcgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:22px;align-items:stretch}
+.fcpaper{position:relative;min-height:380px;display:flex;isolation:isolate}
+.fcpaper::after{content:"";position:absolute;inset:0;background:var(--surface);border:2px solid var(--edge);border-radius:20px;box-shadow:var(--sh);z-index:-1}
+.fcpaper::before{content:"";position:absolute;inset:-8px 14px auto -6px;height:100%;background:color-mix(in srgb,var(--st) 55%,var(--bg));border:2px solid var(--edge);border-radius:20px;transform:rotate(-2deg);z-index:-2}
+.fpflip{all:unset;box-sizing:border-box;flex:1;cursor:pointer;display:flex;padding:28px 22px 60px;border-radius:20px;min-width:0}
+.fpflip:focus-visible{outline:3px solid var(--st);outline-offset:3px}
+.fpbody{margin:auto;display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;width:100%;animation:fcin .25s ease-out}
+@keyframes fcin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.fp-lab{font-size:.74rem;letter-spacing:.14em;font-weight:700;color:var(--muted);align-self:flex-start;text-align:left}
+.fp-th{font-size:clamp(3.6rem,10vw,5.6rem);line-height:1.25;font-weight:600}.fp-th.s{font-size:3rem}
+.fp-rom{font-size:1.5rem}
+.fp-vi{font:600 1.9rem/1.3 var(--f-display)}.fp-vi.s{font-size:1.5rem}
+.fp-hint{color:var(--muted);font-size:.86rem;margin-top:8px}
+.fpsnd{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:2px solid var(--edge);background:var(--bg);color:var(--fg);display:grid;place-items:center;cursor:pointer}
+.fpsnd:hover{background:var(--st);color:#fff}
+.fptags{position:absolute;left:18px;bottom:16px;display:flex;gap:8px;flex-wrap:wrap;max-width:70%}
+.ftag{font-size:.76rem;font-weight:700;padding:3px 11px;border-radius:99px;background:var(--st);color:#fff;border:2px solid var(--edge)}
+.ftag.o{background:var(--surface);color:var(--fg)}.ftag.ok{background:var(--ok);color:#fff}
+.fpnum{position:absolute;right:16px;bottom:2px;font:800 5.2rem/1 var(--f-display);color:color-mix(in srgb,var(--st) 26%,transparent);pointer-events:none}
+.fcside{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fchead{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.fcsel{font:inherit;font-size:.84rem;padding:6px 10px;border:2px solid var(--edge);border-radius:99px;background:var(--surface);color:var(--fg);max-width:100%;min-width:0;flex:1 1 150px}
+.fcnum{font-size:.82rem;color:var(--muted);font-weight:600;white-space:nowrap}
+.fctitle{font-size:2.3rem;line-height:1.1}
+.fcdesc{color:var(--muted)}
+.fcstats{display:flex;gap:8px;flex-wrap:wrap}
+.st{font-size:.8rem;padding:4px 11px;border-radius:99px;background:var(--surface);border:2px solid var(--edge)}
+.st b{margin-left:4px}.st.ok b{color:var(--ok)}.st.rv b{color:var(--bad)}
+.fcrate{display:flex;flex-direction:column;gap:8px}
+.rt{display:flex;align-items:center;gap:12px;font:inherit;font-weight:600;color:var(--fg);background:var(--surface);border:2px solid var(--edge);border-radius:14px;padding:9px 12px;cursor:pointer;text-align:left;box-shadow:2px 2px 0 var(--edge)}
+.rt:hover{transform:translate(-1px,-1px)}
+.rt.on{outline:3px solid var(--st)}
+.rd{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.85rem;color:#fff;flex:none;background:var(--bad)}
+.rt.r2 .rd{background:#C9922B}.rt.r3 .rd{background:#2F7F79}.rt.r4 .rd{background:var(--ok)}
+.fcnav{display:flex;gap:8px;align-items:center}
+.btn.dark{background:var(--ink);color:var(--ink-fg);flex:1;justify-content:center}
+.btn.dark kbd{font:600 .72rem monospace;background:color-mix(in srgb,var(--ink-fg) 22%,transparent);padding:1px 7px;border-radius:6px;margin-left:8px}
+.fcopts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px;padding-top:14px;border-top:2px dashed color-mix(in srgb,var(--edge) 45%,transparent)}
+.fcopt-t{font-weight:700;margin-right:4px}
+.fcstage.big .fcgrid{grid-template-columns:1fr}.fcstage.big .fcpaper{min-height:520px}.fcstage.big .fp-th{font-size:clamp(5rem,16vw,9rem)}.fcstage.big .fcside{display:none}
+.fcmodes h3{margin-bottom:10px}
+.mrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,138px),1fr));gap:10px}
+.mcard{font:inherit;color:var(--fg);text-align:left;background:var(--surface);border:2px solid var(--edge);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:3px;cursor:pointer;box-shadow:var(--sh)}
+.mcard small{color:var(--muted);font-size:.78rem}
+.mcard.on{outline:3px solid var(--st,var(--accent));background:color-mix(in srgb,var(--accent) 14%,var(--surface))}
+.mcard.soon{opacity:.55;border-style:dashed;cursor:default;box-shadow:none}
+@media (max-width:1000px){.fcgrid{grid-template-columns:1fr}.fcpaper{min-height:340px}}
+@media (max-width:520px){.fcstage{padding:12px}.fp-th{font-size:3.6rem}.fctitle{font-size:1.8rem}}
 </style>
 
 <div class="app">
@@ -663,12 +779,12 @@ var VOW=[
 var VGRP={s:'ngắn',l:'dài',sp:'ngắn, vần sống',c:'tổ hợp',m:'dạng viết',r:'hiếm'};
 
 /* ---------- State and storage ---------- */
-var COURSE=[{"n":1,"th":"รู้จักเพื่อน รู้จักพยัญชนะ","vi":"Làm quen bạn bè, làm quen phụ âm","desc":"Chào hỏi, giới thiệu tên, đếm số Thái và tên năm dấu thanh.","w":[["สวัสดี","sà-wàt-dii","câu chào","xin chào",1],["ครับ","khráp","từ lịch sự","vâng; ạ (nam nói)",1],["ค่ะ","khâ","từ lịch sự","vâng; ạ (nữ nói)",1],["ขอบคุณ","khɔ̀ɔp-khun","câu cảm ơn","cảm ơn",1],["ชื่อ","chʉ̂ʉ","danh từ","tên",1],["เพื่อน","phʉ̂an","danh từ","bạn bè",1],["ครู","khruu","danh từ","thầy cô giáo",1],["นักเรียน","nák-rian","danh từ","học sinh",1],["โรงเรียน","roong-rian","danh từ","trường học",1],["ฉัน","chǎn","đại từ","tôi, mình (thân mật)",1],["ผม","phǒm","đại từ","tôi (nam nói)",1],["เธอ","thəə","đại từ","cậu, bạn (thân mật)",1],["ชื่ออะไร","chʉ̂ʉ-à-rai","câu hỏi","tên là gì?",0],["สบายดีไหม","sà-baai-dii-mǎi","câu hỏi","khỏe không?",0],["ยินดี","yin-dii","tính từ","vui mừng",0],["ลาก่อน","laa-gɔ̀ɔn","câu chào","tạm biệt nhé",0],["ห้อง","hɔ̂ɔng","danh từ","phòng; lớp",1],["ชั้น","chán","danh từ","lớp (cấp lớp)",1],["ร้องเพลง","rɔ́ɔng-phleeng","động từ","hát",0],["ตัวเลข","dtua-lêek","danh từ","con số",1],["หนึ่ง","nʉ̀ng","số từ","một (๑)",1],["สอง","sɔ̌ɔng","số từ","hai (๒)",1],["สาม","sǎam","số từ","ba (๓)",1],["สี่","sìi","số từ","bốn (๔)",1],["ห้า","hâa","số từ","năm (๕)",1],["หก","hòk","số từ","sáu (๖)",1],["เจ็ด","jèt","số từ","bảy (๗)",1],["แปด","bpɛ̀ɛt","số từ","tám (๘)",1],["เก้า","gâao","số từ","chín (๙)",1],["สิบ","sìp","số từ","mười (๑๐)",1],["เอก","èek","danh từ","dấu mai ek (่)",1],["โท","thoo","danh từ","dấu mai tho (้)",1],["ตรี","dtrii","danh từ","dấu mai tri (๊)",1],["ฝึกเขียน","fʉ̀k-khǐan","động từ","tập viết",1],["วันนี้","wan-níi","danh từ","hôm nay",1],["พบ","phóp","động từ","gặp",1],["และ","lɛ́","liên từ","và",1],["ตี","dtii","động từ","đánh, gõ",1],["กลอง","glɔɔng","danh từ","cái trống",1],["ส่อง","sɔ̀ɔng","động từ","soi",1],["กระจก","grà-jòk","danh từ","cái gương",1],["ถือ","thʉ̌ʉ","động từ","cầm",1],["ปืน","bpʉʉn","danh từ","cây súng",1],["แฝด","fɛ̀ɛt","tính từ","sinh đôi",1],["ดิบ","dìp","tính từ","sống, xanh (chưa chín)",1],["ปวด","bpùat","động từ","đau",1],["โอย","ooi","thán từ","ôi chao",1],["ป๊อก","bpɔ́k","từ tượng thanh","bộp (tiếng gõ)",1],["แป๊ก","bpɛ́k","từ tượng thanh","tạch (tiếng nổ nhẹ)",1],["เสียง","sǐang","danh từ","âm thanh; giọng",1],["รูป","rûup","danh từ","hình; hình dạng",1],["สามัญ","sǎa-man","tính từ","thanh ngang (thanh thường)",1],["จัตวา","jàt-dtà-waa","danh từ","thanh hỏi-lên, dấu chattawa",1],["วรรณยุกต์","wan-ná-yúk","danh từ","dấu thanh, thanh điệu",1],["พยัญชนะ","phá-yan-chá-ná","danh từ","phụ âm",1],["สระ","sà-rà","danh từ","nguyên âm",1]],"g":[{"t":"Lời lịch sự cuối câu: ครับ / ค่ะ","d":"Người nói nam thêm ครับ (khráp) cuối câu, người nói nữ thêm ค่ะ (khâ) cho câu thường và คะ (khá) cho câu hỏi. Dùng cả khi chào và khi trả lời “vâng”.","ex":[["สวัสดีครับ","sà-wàt-dii khráp","Xin chào (nam nói)"],["สวัสดีค่ะ","sà-wàt-dii khâ","Xin chào (nữ nói)"]]},{"t":"Hỏi và nói tên","d":"Dùng ชื่อ (chʉ̂ʉ, “tên”) rồi đến tên người. Hỏi bằng ชื่อ + อะไร (à-rai, “gì”).","ex":[["ชื่ออะไร","chʉ̂ʉ à-rai","Tên là gì?"],["ฉันชื่อใบไม้","chǎn chʉ̂ʉ bai máai","Mình tên là Bai Mai"]]},{"t":"Hỏi thăm bằng ไหม","d":"Thêm ไหม (mǎi) cuối câu để biến câu thành câu hỏi có/không.","ex":[["สบายดีไหม","sà-baai dii mǎi","Bạn khỏe không?"]]}],"r":[{"t":"Số Thái ๑ đến ๑๐","d":"Chữ số Thái khác chữ số quen thuộc. Tập viết theo thứ tự rồi đọc to.","items":[["๑","nʉ̀ng","1"],["๒","sɔ̌ɔng","2"],["๓","sǎam","3"],["๔","sìi","4"],["๕","hâa","5"],["๖","hòk","6"],["๗","jèt","7"],["๘","bpɛ̀ɛt","8"],["๙","gâao","9"],["๑๐","sìp","10"]]},{"t":"Bốn dấu thanh viết trên chữ","d":"Thái có bốn dấu viết: mai ek, mai tho, mai tri, mai chattawa. Cùng một dấu có thể cho thanh khác nhau tùy nhóm phụ âm.","items":[["่","mai ek","dấu ek"],["้","mai tho","dấu tho"],["๊","mai dtrii","dấu tri (chỉ nhóm giữa)"],["๋","mai jàt-dtà-waa","dấu chattawa (chỉ nhóm giữa)"]]},{"t":"Đồng dao đếm số","d":"Bài đồng dao trong sách đếm từ một đến mười theo nhịp trống. Đọc theo nhịp, mỗi dòng kết thúc bằng tiếng trống “dtà-lɔ̂k bpɔ́k bpɛ́k”.","items":[["หนึ่ง สอง","nʉ̀ng sɔ̌ɔng","một, hai"],["สาม สี่","sǎam sìi","ba, bốn"],["ห้า หก","hâa hòk","năm, sáu"],["เจ็ด แปด","jèt bpɛ̀ɛt","bảy, tám"],["เก้า สิบ","gâao sìp","chín, mười"]]},{"t":"Luyện đánh vần với า","d":"Giữ nguyên nguyên âm า, đổi phụ âm đầu. Chú ý nhóm cao (ฝา ขา สา หา) cho thanh lên, nhóm giữa và thấp cho thanh ngang.","items":[["ปา","bpaa",""],["ฟา","faa",""],["ฝา","fǎa",""],["สา","sǎa",""],["ยา","yaa",""],["ฮา","haa",""],["ขา","khǎa",""],["คา","khaa",""],["ถา","thǎa",""],["นา","naa",""],["บา","baa",""],["ผา","phǎa",""],["ชา","chaa",""],["หา","hǎa",""],["ลา","laa",""],["กา","gaa",""],["จา","jaa",""],["ตา","dtaa",""],["ดา","daa",""],["อา","aa",""]]},{"t":"Luyện đánh vần với เ-า","d":"Cùng cách làm với vần เ-า (đọc “ao”).","items":[["เกา","gao",""],["เปา","bpao",""],["เจา","jao",""],["เตา","dtao",""],["เบา","bao",""],["เอา","ao",""]]}]},{"n":2,"th":"เรียนรู้คำ จำสระ","vi":"Học từ, nhớ nguyên âm (1)","desc":"Mười nguyên âm đơn đầu tiên cùng từ mẫu: อา อี อิ อึ อือ อุ อู เอ แอ โอ.","w":[["ปา","bpaa","động từ","ném",1],["มา","maa","động từ","đến",1],["ตา","dtaa","danh từ","mắt; ông ngoại",1],["ยา","yaa","danh từ","thuốc",1],["นา","naa","danh từ","ruộng",1],["ขา","khǎa","danh từ","chân",1],["หา","hǎa","động từ","tìm",1],["ปลา","bplaa","danh từ","con cá",1],["สี","sǐi","danh từ","màu",1],["ปี","bpii","danh từ","năm (thời gian)",1],["ดี","dii","tính từ","tốt",1],["ที่","thîi","danh từ","nơi, chỗ",1],["มีด","mîit","danh từ","con dao",1],["กิน","gin","động từ","ăn",1],["ปิด","bpìt","động từ","đóng",1],["ผิด","phìt","tính từ","sai",0],["ลึก","lʉ́k","tính từ","sâu",1],["มือ","mʉʉ","danh từ","bàn tay",1],["สุข","sùk","danh từ","hạnh phúc",1],["ปู","bpuu","danh từ","con cua",1],["หู","hǔu","danh từ","tai",1],["ดู","duu","động từ","xem",1],["เด็ก","dèk","danh từ","trẻ em",1],["เป็ด","bpèt","danh từ","con vịt",1],["เล่น","lêen","động từ","chơi",1],["เก็บ","gèp","động từ","nhặt; cất",1],["เท","thee","động từ","đổ",1],["แม่","mɛ̂ɛ","danh từ","mẹ",1],["แมว","mɛɛo","danh từ","con mèo",1],["แก้ว","gɛ̂ɛo","danh từ","cái ly",1],["โต","dtoo","tính từ","lớn",1],["โมง","moong","danh từ","giờ (đồng hồ)",1],["โต๊ะ","dtó","danh từ","cái bàn",1],["จาน","jaan","danh từ","cái đĩa",1],["งา","ngaa","danh từ","hạt mè; ngà",1],["ชา","chaa","danh từ","trà",1],["ทา","thaa","động từ","bôi",1],["ล้าง","láang","động từ","rửa",1],["ม้า","máa","danh từ","con ngựa",1],["ขาย","khǎai","động từ","bán",1],["ฝี","fǐi","danh từ","mụn nhọt",1],["ครีบ","khrîip","danh từ","vây cá",1],["ปี่","bpìi","danh từ","cây sáo",1],["ชี","chii","danh từ","nữ tu",1],["ซี","sii","danh từ","chữ C",1],["นี้","níi","đại từ","này",1],["หีบ","hìip","danh từ","cái rương",1],["บิน","bin","động từ","bay",1],["พริก","phrík","danh từ","ớt",1],["ติ","dtì","động từ","chê",1],["ซิ","sí","trợ từ","đi (thúc giục)",1],["วิชา","wí-chaa","danh từ","môn học",1],["ฉิ่ง","chìng","danh từ","chũm chọe",1],["นาฬิกา","naa-lí-gaa","danh từ","đồng hồ",0],["ตึก","dtʉ̀k","danh từ","tòa nhà",1],["ผึ้ง","phʉ̂ng","danh từ","con ong",1],["ถึง","thʉ̌ng","động từ","đến nơi",1],["บึง","bʉng","danh từ","đầm",1],["ขึ้น","khʉ̂n","động từ","lên",1],["อึ่งอ่าง","ʉ̀ng-àang","danh từ","ễnh ương",1],["ซื้อ","sʉ́ʉ","động từ","mua",1],["คือ","khʉʉ","động từ","là",1],["ฟืน","fʉʉn","danh từ","củi",1],["ยืน","yʉʉn","động từ","đứng",1],["พื้น","phʉ́ʉn","danh từ","sàn",1],["แกงจืด","gɛɛng-jʉ̀ʉt","danh từ","canh",1],["ลื่น","lʉ̂ʉn","tính từ","trơn",1],["ตุ่ม","dtùm","danh từ","cái chum",1],["ปลุก","bplùk","động từ","đánh thức",1],["ดุ","dù","tính từ","dữ",1],["ผุ","phù","tính từ","mục",1],["กุ้ง","gûng","danh từ","con tôm",1],["ฝุ่น","fùn","danh từ","bụi",1],["จูง","juung","động từ","dắt",1],["ปูน","bpuun","danh từ","xi măng",1],["งู","nguu","danh từ","con rắn",1],["ตู้","dtûu","danh từ","cái tủ",1],["ผู้หญิง","phûu-yǐng","danh từ","phụ nữ",1],["ผู้ชาย","phûu-chaai","danh từ","đàn ông",1],["ฝูง","fǔung","danh từ","bầy, đàn",1],["เกม","geem","danh từ","trò chơi",1],["เม่น","mên","danh từ","con nhím",1],["เพลง","phleeng","danh từ","bài hát",1],["เก๋ง","gěng","danh từ","xe con",1],["เค้ก","kéek","danh từ","bánh ngọt",1],["เข่ง","khèng","danh từ","cái giỏ tre",1],["เวที","wee-thii","danh từ","sân khấu",1],["กางเกง","gaang-geeng","danh từ","quần",1],["แก่","gɛ̀ɛ","tính từ","già",1],["แพ","phɛɛ","danh từ","bè",1],["แค","khɛɛ","phó từ","chỉ",1],["แห้ง","hɛ̂ɛng","tính từ","khô",1],["แป้ง","bpɛ̂ng","danh từ","bột",1],["แมงมุม","mɛɛng-mum","danh từ","con nhện",1],["กาแฟ","gaa-fɛɛ","danh từ","cà phê",1],["แว่นตา","wɛ̂n-dtaa","danh từ","kính mắt",1],["โบก","bòok","động từ","vẫy",1],["โป่ง","bpòong","tính từ","phồng",1],["โบ","boo","danh từ","cái nơ",1],["โซ่","sôo","danh từ","dây xích",1],["โค","khoo","danh từ","con bò",1],["ลูกโป่ง","lûuk-bpòong","danh từ","bóng bay",1],["ข้าวโพด","khâao-phôot","danh từ","bắp ngô",1],["แตงโม","dtɛɛng-moo","danh từ","dưa hấu",1],["โอ่ง","òong","danh từ","cái vại",1],["ปิ่นโต","bpìn-dtoo","danh từ","cặp lồng",1],["จิงโจ้","jing-jôo","danh từ","chuột túi",1],["โกโก้","goo-gôo","danh từ","ca cao",1]],"g":[{"t":"Ghép âm tiết: phụ âm đầu + nguyên âm + phụ âm cuối","d":"Một âm tiết gồm phụ âm đầu, nguyên âm và (có thể) phụ âm cuối. Ví dụ ก + า + น = กาน; ม + ี + ด = มีด.","ex":[["มือ","mʉʉ","bàn tay"],["มีด","mîit","con dao"]]},{"t":"Vị trí của nguyên âm","d":"Nguyên âm có thể đứng sau (อา), trên (อิ อี อึ อื), dưới (อุ อู), hoặc trước (เ แ โ ไ ใ) phụ âm đầu. Thứ tự đọc vẫn là phụ âm trước, nguyên âm sau.","ex":[["กา","gaa","con quạ"],["เก","gee","(âm mẫu)"]]},{"t":"Nguyên âm dài và ngắn","d":"Nguyên âm dài (อา อี อือ อู เอ แอ โอ) kéo dài hơn nguyên âm ngắn (อะ อิ อึ อุ). Độ dài ảnh hưởng đến thanh khi âm tiết kết thúc bằng p, t, k.","ex":[["ปิด","bpìt","đóng (ngắn)"],["มีด","mîit","con dao (dài)"]]}],"r":[{"t":"Nguyên âm ในบทนี้","d":"Nhìn hình dạng, nghe âm, rồi tìm từ chứa nguyên âm đó.","items":[["า","aa","(dài) ปลา"],["ี","ii","(dài) สี"],["ิ","i","(ngắn) กิน"],["ึ","ʉ","(ngắn) ลึก"],["ื","ʉʉ","(dài) มือ"],["ุ","u","(ngắn) สุข"],["ู","uu","(dài) ปู"],["เ","ee","(dài) เล่น"],["แ","ɛɛ","(dài) แม่"],["โ","oo","(dài) โต"]]}]},{"n":3,"th":"ชวนรู้เรื่องสระ","vi":"Cùng tìm hiểu nguyên âm (2)","desc":"Nguyên âm ghép เอีย เอือ, nguyên âm อำ, ไ- ใ- và เอา.","w":[["เสีย","sǐa","động từ","hỏng; mất",1],["เขียว","khǐao","tính từ","xanh lá",1],["เรียก","rîak","động từ","gọi",1],["เตียง","dtiang","danh từ","cái giường",1],["เที่ยว","thîao","động từ","đi chơi",1],["เหลือ","lʉ̌a","động từ","còn dư",1],["เมือง","mʉang","danh từ","thành phố; xứ",0],["เรือ","rʉa","danh từ","thuyền",1],["เหนือ","nʉ̌a","danh từ","phía bắc; trên",0],["เบื่อ","bʉ̀a","tính từ","chán",1],["เชื่อ","chʉ̂a","động từ","tin",0],["ทำ","tham","động từ","làm",1],["น้ำ","náam","danh từ","nước",1],["คำ","kham","danh từ","từ, chữ",1],["ดำ","dam","tính từ","đen",1],["จำ","jam","động từ","nhớ",1],["ไป","bpai","động từ","đi",1],["ไก่","gài","danh từ","con gà",1],["ไม้","máai","danh từ","gỗ; cây",1],["ใจ","jai","danh từ","tim; lòng",1],["ใหม่","mài","tính từ","mới",1],["ใคร","khrai","đại từ","ai",1],["ใส","sǎi","tính từ","trong (nước)",1],["เรา","rao","đại từ","chúng tôi",1],["เขา","khǎo","đại từ","anh ấy, cô ấy",1],["เอา","ao","động từ","lấy",1],["เจ้า","jâo","danh từ","chủ; ngài",1],["ข้าว","khâao","danh từ","cơm; gạo",1],["ขาว","khǎao","tính từ","trắng",1],["เก่า","gào","tính từ","cũ",1]],"g":[{"t":"Nguyên âm ghép เ-ีย, เ-ือ","d":"เ-ีย đọc “ia” và เ-ือ đọc “ʉa”. Hai âm này đều là nguyên âm đôi kéo dài, nên âm tiết kết thúc bằng p/t/k vẫn tính là vần chết dài.","ex":[["เรียน","rian","học"],["เรือ","rʉa","thuyền"]]},{"t":"ไ- và ใ-: cùng đọc “ai”","d":"Cả ไ và ใ đều đọc “ai”. Chỉ khoảng hai mươi từ viết ใ, nên cần học thuộc nhóm này (ใคร, ใจ, ใหม่, ใส, ใน, ให้, ใช้, ใหญ่…). Các từ còn lại dùng ไ.","ex":[["ใจ","jai","tim, lòng"],["ไป","bpai","đi"]]},{"t":"ำ đọc “am”","d":"Dấu ำ ghép từ ั (a) và ม (m), nên ทำ đọc “tham” chứ không phải “tha”.","ex":[["ทำ","tham","làm"],["น้ำ","náam","nước"]]},{"t":"เ-า đọc “ao”","d":"เอา, เรา, เขา đều đọc “ao”, vần sống ngắn.","ex":[["เราไป","rao bpai","Chúng ta đi"]]}],"r":[{"t":"Cặp dễ nhầm","d":"Cùng một chữ nhưng thanh khác nên nghĩa khác. Nghe thật kỹ rồi nhìn dấu và nhóm phụ âm.","items":[["ขาว","khǎao","trắng"],["ข้าว","khâao","cơm"],["เก่า","gào","cũ"],["เก้า","gâao","chín"],["ใหม่","mài","mới"],["ไม้","máai","gỗ"]]}]},{"n":4,"th":"สระไทย ใส่ใจจดจำ","vi":"Nguyên âm tiếng Thái, ghi nhớ kỹ","desc":"Nguyên âm ngắn, dạng rút gọn, dạng đổi hình và chữ ก็.","w":[["จะ","jà","phó từ","sẽ",1],["พระ","phrá","danh từ","nhà sư; Phật",1],["ผัก","phàk","danh từ","rau",1],["นก","nók","danh từ","con chim",1],["รถ","rót","danh từ","xe",1],["บ้าน","bâan","danh từ","nhà",1],["กับ","gàp","giới từ","với, cùng",1],["กัน","gan","phó từ","cùng nhau",1],["ฟัน","fan","danh từ","răng",1],["มัน","man","đại từ","nó",1],["ตั้ง","dtâng","động từ","đặt; dựng",1],["รัก","rák","động từ","yêu",1],["คน","khon","danh từ","người",1],["ลม","lom","danh từ","gió",1],["ตก","dtòk","động từ","rơi",1],["เห็น","hěn","động từ","thấy",1],["เล็ก","lék","tính từ","nhỏ",1],["เม็ด","mét","danh từ","hạt, viên",0],["เป็น","bpen","động từ","là",1],["เย็น","yen","tính từ","mát; buổi chiều",1],["แข็ง","khɛ̌ng","tính từ","cứng",1],["แพ้","phɛ́ɛ","động từ","thua",0],["แดง","dɛɛng","tính từ","đỏ",1],["เกาะ","gɔ̀","danh từ","hòn đảo",1],["ต้อง","dtɔ̂ɔng","trợ động từ","phải",1],["ยัง","yang","phó từ","vẫn, còn",1],["อยู่","yùu","động từ","ở; đang",1],["อยาก","yàak","động từ","muốn",1],["อย่า","yàa","phó từ","đừng",1],["อร่อย","à-rɔ̂ɔi","tính từ","ngon",0],["ก็","gɔ̂ɔ","liên từ","cũng; thì",1]],"g":[{"t":"Nguyên âm ngắn มี ะ","d":"Nguyên âm ngắn thường có ะ ở cuối (อะ เอะ แอะ โอะ เอาะ). Khi có phụ âm cuối, ะ biến mất: กะ + น → กัน.","ex":[["จะ","jà","sẽ"],["กัน","gan","cùng nhau"]]},{"t":"Dạng rút gọn và đổi hình","d":"Khi có phụ âm cuối, nhiều nguyên âm đổi dạng: เ-ะ → เ-็; แ-ะ → แ-็; โ-ะ → -; เ-าะ → -็อ… Cần nhớ dạng này để đọc và viết chính xác.","ex":[["เห็น","hěn","thấy"],["เล็ก","lék","nhỏ"]]},{"t":"ก็ đọc “gɔ̂ɔ”","d":"Chữ ก็ là từ đặc biệt: viết như ก + ็ nhưng đọc “gɔ̂ɔ”, nghĩa là “cũng”, “thì”.","ex":[["เขาก็ไป","khǎo gɔ̂ɔ bpai","Anh ấy cũng đi"]]},{"t":"อ dẫn ย: อย่า อยู่ อยาก อย่าง","d":"Chỉ bốn từ này dùng อ đứng trước ย để ย thành nhóm giữa; อ không đọc.","ex":[["อย่าไป","yàa bpai","Đừng đi"]]}],"r":[{"t":"Ngắn và dài","d":"Thử đọc từng cặp để nghe sự khác biệt về độ dài.","items":[["กา","gaa","quạ"],["กะ","gà","(âm mẫu ngắn)"],["เก","gee","(âm mẫu dài)"],["เกะ","gè","(âm mẫu ngắn)"]]}]},{"n":5,"th":"ครอบครัวช้าง","vi":"Gia đình nhà voi","desc":"Từ vựng gia đình, tiếng kêu động vật và các từ hỏi lý do.","w":[["พ่อ","phɔ̂ɔ","danh từ","bố",1],["ลูก","lûuk","danh từ","con (cái)",1],["ปู่","bpùu","danh từ","ông nội",1],["ย่า","yâa","danh từ","bà nội",1],["ยาย","yaai","danh từ","bà ngoại",1],["ลุง","lung","danh từ","bác (trai)",1],["ป้า","bpâa","danh từ","bác, dì (gái, chị bố/mẹ)",1],["น้า","náa","danh từ","cậu, dì (em mẹ)",1],["อา","aa","danh từ","chú, cô (em bố)",1],["พี่","phîi","danh từ","anh, chị",1],["น้อง","nɔ́ɔng","danh từ","em",1],["หลาน","lǎan","danh từ","cháu",0],["ครอบครัว","khrɔ̂ɔp-khrua","danh từ","gia đình",1],["ช้าง","cháang","danh từ","con voi",1],["กล้วย","glûai","danh từ","chuối",1],["อ้อย","ɔ̂ɔi","danh từ","mía",1],["ต้นไม้","dtôn-máai","danh từ","cây cối",1],["นม","nom","danh từ","sữa",1],["มี","mii","động từ","có",1],["ไม่","mâi","phó từ","không",1],["ทำไม","tham-mai","câu hỏi","tại sao",0],["เพราะ","phrɔ́","liên từ","bởi vì",1],["ชอบ","chɔ̂ɔp","động từ","thích",1],["แม่ค้า","mɛ̂ɛ-kháa","danh từ","cô bán hàng",1],["โฮ่ง","hôong","từ tượng thanh","gâu (chó sủa)",0],["เหมียว","mǐao","từ tượng thanh","meo (mèo kêu)",1]],"g":[{"t":"มี và ไม่มี","d":"มี (mii) là “có”. Thêm ไม่ (mâi) phía trước để phủ định: ไม่มี = “không có”.","ex":[["ผมมีน้อง","phǒm mii nɔ́ɔng","Tôi có em"],["ฉันไม่มีลุง","chǎn mâi mii lung","Mình không có bác"]]},{"t":"Hỏi lý do: ทำไม – เพราะ","d":"ทำไม (tham-mai) hỏi “tại sao”; trả lời bắt đầu bằng เพราะ (phrɔ́) “bởi vì”.","ex":[["ทำไม","tham-mai","Tại sao?"]]},{"t":"Từ tượng thanh","d":"Tiếng kêu của động vật dùng để đọc vui và luyện thanh: โฮ่ง (chó), เหมียว (mèo).","ex":[["เหมียว","mǐao","meo"]]}],"r":[{"t":"Cách gọi người thân","d":"Thái phân biệt bên nội và bên ngoại, anh chị và em, nên từ xưng hô nhiều hơn tiếng Việt ở một vài chỗ.","items":[["ปู่","bpùu","ông nội"],["ย่า","yâa","bà nội"],["ตา","dtaa","ông ngoại"],["ยาย","yaai","bà ngoại"]]}]},{"n":6,"th":"เพลงร้อง ทำนองไทย","vi":"Bài hát và đồng dao","desc":"Từ chỉ định, từ hỏi, từ về thiên nhiên và động vật trong bài hát.","w":[["นี่","nîi","đại từ","đây",1],["นั่น","nân","đại từ","đó",1],["โน่น","nôon","đại từ","kia",0],["ของ","khɔ̌ɔng","danh từ","đồ, của",1],["อะไร","à-rai","câu hỏi","gì",1],["ไหน","nǎi","câu hỏi","nào; đâu",1],["เท่าไร","thâo-rai","câu hỏi","bao nhiêu",0],["เต้น","dtên","động từ","nhảy",1],["รำ","ram","động từ","múa",1],["ปรบ","bpròp","động từ","vỗ (tay)",0],["ดอกไม้","dɔ̀ɔk-máai","danh từ","bông hoa",1],["ดาว","daao","danh từ","ngôi sao",1],["จันทร์","jan","danh từ","mặt trăng",0],["ฟ้า","fáa","danh từ","bầu trời",1],["เมฆ","mêek","danh từ","mây",1],["ฝน","fǒn","danh từ","mưa",1],["หมู","mǔu","danh từ","con heo",1],["หมา","mǎa","danh từ","con chó",1],["วัว","wua","danh từ","con bò",0],["ควาย","khwaai","danh từ","con trâu",0],["กบ","gòp","danh từ","con ếch",1],["ลิง","ling","danh từ","con khỉ",1]],"g":[{"t":"Chỉ định: นี่ นั่น โน่น","d":"นี่ (đây, gần), นั่น (đó, vừa tầm), โน่น (kia, xa). Dùng một mình hoặc đứng sau danh từ: บ้านนี้ = nhà này.","ex":[["นี่อะไร","nîi à-rai","Đây là gì?"],["นั่นปลา","nân bplaa","Đó là cá"]]},{"t":"Câu hỏi với ไหน","d":"ไหน (nǎi) hỏi “nào/đâu”. Đặt sau danh từ để chọn trong nhóm, hoặc dùng ที่ไหน “ở đâu”.","ex":[["ดาวไหน","daao nǎi","Ngôi sao nào?"]]},{"t":"Quyền sở hữu với ของ","d":"ของ (khɔ̌ɔng) vừa là “đồ vật” vừa là “của”: ของฉัน = của tôi.","ex":[["ของฉัน","khɔ̌ɔng chǎn","của tôi"]]}],"r":[{"t":"Hát theo nhịp","d":"Đồng dao Thái thường lặp lại âm và vần. Đọc chậm trước rồi tăng tốc.","items":[["ดาว","daao","sao"],["ฟ้า","fáa","trời"],["เมฆ","mêek","mây"],["ฝน","fǒn","mưa"]]}]},{"n":7,"th":"ใคร ทำอะไร","vi":"Ai làm gì","desc":"Động từ hằng ngày, bộ phận cơ thể và câu chủ ngữ + động từ.","w":[["นอน","nɔɔn","động từ","ngủ",1],["เดิน","dəən","động từ","đi bộ",1],["วิ่ง","wîng","động từ","chạy",1],["นั่ง","nâng","động từ","ngồi",1],["ว่ายน้ำ","wâai-náam","động từ","bơi",0],["วาด","wâat","động từ","vẽ",1],["อาบน้ำ","àap-náam","động từ","tắm",0],["แปรงฟัน","bpreeng-fan","động từ","đánh răng",0],["ช่วย","chûai","động từ","giúp",1],["ซ่อน","sɔ̂ɔn","động từ","giấu",0],["หัว","hǔa","danh từ","đầu",1],["เท้า","tháao","danh từ","bàn chân",1],["ปาก","bpàak","danh từ","miệng",0],["แขน","khɛ̌ɛn","danh từ","cánh tay",1],["ท้อง","thɔ́ɔng","danh từ","bụng",1],["เด็กชาย","dèk-chaai","danh từ","bé trai",0],["เด็กหญิง","dèk-yǐng","danh từ","bé gái",0],["อ่าน","àan","động từ","đọc",1],["เขียน","khǐan","động từ","viết",1]],"g":[{"t":"Thứ tự câu: chủ ngữ + động từ + tân ngữ","d":"Câu Thái cơ bản giống tiếng Việt: ai + làm gì + cái gì. Không chia động từ theo thì hay ngôi.","ex":[["ผมกินข้าว","phǒm gin khâao","Tôi ăn cơm"],["เด็กอ่านเขียน","dèk àan khǐan","Bé đọc và viết"]]},{"t":"Câu hỏi: ใคร ทำ อะไร","d":"ใคร (khrai) hỏi người, อะไร (à-rai) hỏi vật hoặc việc. Từ hỏi đứng ở đúng vị trí của câu trả lời.","ex":[["ใครซื้อ","khrai sʉ́ʉ","Ai mua?"]]}],"r":[{"t":"Bộ phận cơ thể","d":"Chỉ vào từng bộ phận khi đọc để nhớ nhanh hơn.","items":[["หัว","hǔa","đầu"],["มือ","mʉʉ","tay"],["เท้า","tháao","chân"],["ปาก","bpàak","miệng"]]}]},{"n":8,"th":"อ่านแจกลูกเป็นทำนอง คำคล้องจองน่ารัก รู้จักดูการ์ตูน","vi":"Đánh vần theo điệu và từ vần","desc":"Đánh vần nhóm thanh (ปา ป่า ป้า ป๊า ป๋า), cặp từ vần và đọc truyện tranh.","w":[["ป่า","bpàa","danh từ","rừng",1],["ป๊า","bpáa","danh từ","ba (cách gọi thân)",1],["ป๋า","bpǎa","danh từ","ba (cách gọi thân)",1],["ข่า","khàa","danh từ","củ riềng",1],["ข้า","khâa","đại từ","ta (cổ)",1],["คา","khaa","động từ","kẹt, dính",1],["ค่า","khâa","danh từ","giá, phí",0],["ค้า","kháa","động từ","buôn bán",1],["จุ","jù","động từ","chứa",1],["ให้","hâi","động từ","cho",1],["บัว","bua","danh từ","hoa sen",1],["เฮ","hee","thán từ","hoan hô",1],["เต","dtee","danh từ","tên riêng, tên âm mẫu",1]],"g":[{"t":"Đọc nhóm thanh: ปา ป่า ป้า ป๊า ป๋า","d":"Giữ nguyên phụ âm và nguyên âm, đổi dấu thanh để nghe đủ năm thanh. Nhóm giữa (ป) dùng được cả bốn dấu.","ex":[["ป่า","bpàa","rừng"],["ป้า","bpâa","bác gái"]]},{"t":"Nhóm cao và nhóm thấp đổi thanh khác nhau","d":"ขา ข่า ข้า (nhóm cao) cho rise, low, fall. คา ค่า ค้า (nhóm thấp) cho mid, fall, high. Cùng dấu nhưng thanh khác vì khác nhóm.","ex":[["ข่า","khàa","củ riềng"],["ค่า","khâa","giá, phí"]]},{"t":"Từ vần (คำคล้องจอง)","d":"Từ vần có nguyên âm và phụ âm cuối giống nhau, như สี–ดี, ปู–หู, ทา–มา, ใจ–ให้, บัว–หัว. Đọc thành cặp để nhớ vần.","ex":[["สี","sǐi","màu"],["ดี","dii","tốt"]]}],"r":[{"t":"Cặp từ vần","d":"Đọc thành tiếng và nhấn vào phần vần giống nhau.","items":[["สี","sǐi","màu"],["ดี","dii","tốt"],["ปู","bpuu","cua"],["หู","hǔu","tai"],["ทา","thaa","bôi"],["มา","maa","đến"],["บัว","bua","sen"],["หัว","hǔa","đầu"]]}]},{"n":9,"th":"เครื่องหมายสัญลักษณ์","vi":"Ký hiệu và biển báo","desc":"Biển báo thường gặp, từ cấm đoán và phương hướng.","w":[["ห้าม","hâam","động từ","cấm",1],["เข้า","khâo","động từ","vào",1],["ออก","ɔ̀ɔk","động từ","ra",1],["ทางเข้า","thaang-khâo","danh từ","lối vào",0],["ทางออก","thaang-ɔ̀ɔk","danh từ","lối ra",0],["ซ้าย","sáai","danh từ","trái",1],["ขวา","khwǎa","danh từ","phải",1],["ตรง","dtrong","tính từ","thẳng",1],["หยุด","yùt","động từ","dừng",1],["ระวัง","rá-wang","động từ","cẩn thận",1],["อันตราย","an-dtà-raai","tính từ","nguy hiểm",0],["ปลอดภัย","bplɔ̀ɔt-phai","tính từ","an toàn",0],["ห้องน้ำ","hɔ̂ɔng-náam","danh từ","nhà vệ sinh",1],["ชาย","chaai","danh từ","nam",1],["หญิง","yǐng","danh từ","nữ",1],["ไฟ","fai","danh từ","đèn; lửa",1],["ไฟแดง","fai-dɛɛng","danh từ","đèn đỏ",0],["ไฟเขียว","fai-khǐao","danh từ","đèn xanh",0],["ไฟเหลือง","fai-lʉ̌ang","danh từ","đèn vàng",0],["ทางม้าลาย","thaang-máa-laai","danh từ","vạch kẻ qua đường",1],["เครื่องหมาย","khrʉ̂ang-mǎai","danh từ","ký hiệu",1],["อ้าว","âao","thán từ","ôi, ủa",0],["โอ๊ย","óoi","thán từ","ối",1],["ว้าว","wáao","thán từ","ồ",0],["ทิ้งขยะ","thíng-khà-yà","động từ","vứt rác",0]],"g":[{"t":"ห้าม và อย่า","d":"ห้าม (hâam) là lời cấm trên biển báo hoặc quy định; อย่า (yàa) là lời khuyên hay nhắc nhở thân mật. Cả hai đặt trước động từ.","ex":[["ห้ามเข้า","hâam khâo","Cấm vào"],["อย่าไป","yàa bpai","Đừng đi"]]},{"t":"Thán từ thể hiện cảm xúc","d":"อ้าว, โอ๊ย, ว้าว diễn tả ngạc nhiên, đau, thích thú. Dấu thanh trên thán từ cho biết cách ngân.","ex":[["ว้าว","wáao","ồ!"]]},{"t":"Phương hướng: ซ้าย ขวา ตรง","d":"ไป + hướng: ไปซ้าย (đi trái), ไปขวา (đi phải), ตรงไป (đi thẳng).","ex":[["ไปซ้าย","bpai sáai","Đi bên trái"]]}],"r":[{"t":"Đèn giao thông","d":"Ba màu đèn đi cùng ba từ rất hay gặp.","items":[["แดง","dɛɛng","đỏ (dừng)"],["เหลือง","lʉ̌ang","vàng (chậm)"],["เขียว","khǐao","xanh (đi)"]]}]},{"n":10,"th":"ร้องเล่น เต้นกัน","vi":"Hát, chơi, nhảy","desc":"Câu đố อะไรเอ่ย, trò chơi, thứ tự và kể chuyện.","w":[["ทาย","thaai","động từ","đoán",1],["ตอบ","dtɔ̀ɔp","động từ","trả lời",1],["ถูก","thùuk","tính từ","đúng",1],["ชนะ","chá-ná","động từ","thắng",1],["ก่อน","gɔ̀ɔn","phó từ","trước",1],["หลัง","lǎng","phó từ","sau",1],["แล้ว","lɛ́ɛo","phó từ","rồi",1],["ต่อ","dtɔ̀ɔ","động từ","tiếp",1],["ครั้ง","khráng","danh từ","lần",1],["เสร็จ","sèt","động từ","xong",0],["เริ่ม","rə̂əm","động từ","bắt đầu",0],["เริ่มต้น","rə̂əm-dtôn","động từ","khởi đầu",0],["จบ","jòp","động từ","kết thúc",0],["ลำดับ","lam-dàp","danh từ","thứ tự",1],["เล่าเรื่อง","lâo-rʉ̂ang","động từ","kể chuyện",1],["อะไรเอ่ย","à-rai-ə̀əi","câu hỏi","cái gì nhỉ (mở đầu câu đố)",1],["สนุก","sà-nùk","tính từ","vui",1],["ปริศนา","bprìt-sà-nǎa","danh từ","câu đố",1]],"g":[{"t":"Câu đố: อะไรเอ่ย","d":"Câu đố Thái mở đầu bằng mô tả rồi hỏi “อะไรเอ่ย” (cái gì nhỉ). Người chơi trả lời bằng danh từ.","ex":[["ตัวเลข","dtua lêek","Con số"]]},{"t":"Thứ tự bằng ก่อน – แล้ว – หลัง","d":"ก่อน (trước), แล้ว (rồi), หลัง (sau) giúp kể việc theo thứ tự: อาบน้ำก่อน แล้วกิน.","ex":[["กินก่อน","gin gɔ̀ɔn","Ăn trước"]]},{"t":"Bắt đầu và kết thúc","d":"เริ่ม (bắt đầu) và จบ (kết thúc) đi với danh từ chỉ trò chơi hay câu chuyện.","ex":[["เริ่มเล่น","rə̂əm lêen","Bắt đầu chơi"]]}],"r":[{"t":"Chơi đoán từ","d":"Một người nói nghĩa, người kia đoán từ Thái.","items":[["ปลา","bplaa","cá"],["แมว","mɛɛo","mèo"],["ไก่","gài","gà"],["ช้าง","cháang","voi"]]}]}];
+var COURSE=[{"n":1,"th":"รู้จักเพื่อน รู้จักพยัญชนะ","vi":"Làm quen bạn bè, làm quen phụ âm","desc":"Chào hỏi, giới thiệu tên, đếm số Thái và tên năm dấu thanh.","w":[["สวัสดี","sà-wàt-dii","câu chào","xin chào",1],["ครับ","khráp","từ lịch sự","vâng; ạ (nam nói)",1],["ค่ะ","khâ","từ lịch sự","vâng; ạ (nữ nói)",1],["ขอบคุณ","khɔ̀ɔp-khun","câu cảm ơn","cảm ơn",1],["ชื่อ","chʉ̂ʉ","danh từ","tên",1],["เพื่อน","phʉ̂an","danh từ","bạn bè",1],["ครู","khruu","danh từ","thầy cô giáo",1],["นักเรียน","nák-rian","danh từ","học sinh",1],["โรงเรียน","roong-rian","danh từ","trường học",1],["ฉัน","chǎn","đại từ","tôi, mình (thân mật)",1],["ผม","phǒm","đại từ","tôi (nam nói)",1],["เธอ","thəə","đại từ","cậu, bạn (thân mật)",1],["ชื่ออะไร","chʉ̂ʉ-à-rai","câu hỏi","tên là gì?",0],["สบายดีไหม","sà-baai-dii-mǎi","câu hỏi","khỏe không?",0],["ยินดี","yin-dii","tính từ","vui mừng",0],["ลาก่อน","laa-gɔ̀ɔn","câu chào","tạm biệt nhé",0],["ห้อง","hɔ̂ɔng","danh từ","phòng; lớp",1],["ชั้น","chán","danh từ","lớp (cấp lớp)",1],["ร้องเพลง","rɔ́ɔng-phleeng","động từ","hát",0],["ตัวเลข","dtua-lêek","danh từ","con số",1],["หนึ่ง","nʉ̀ng","số từ","một (๑)",1],["สอง","sɔ̌ɔng","số từ","hai (๒)",1],["สาม","sǎam","số từ","ba (๓)",1],["สี่","sìi","số từ","bốn (๔)",1],["ห้า","hâa","số từ","năm (๕)",1],["หก","hòk","số từ","sáu (๖)",1],["เจ็ด","jèt","số từ","bảy (๗)",1],["แปด","bpɛ̀ɛt","số từ","tám (๘)",1],["เก้า","gâao","số từ","chín (๙)",1],["สิบ","sìp","số từ","mười (๑๐)",1],["เอก","èek","danh từ","dấu mai ek (่)",1],["โท","thoo","danh từ","dấu mai tho (้)",1],["ตรี","dtrii","danh từ","dấu mai tri (๊)",1],["ฝึกเขียน","fʉ̀k-khǐan","động từ","tập viết",1],["วันนี้","wan-níi","danh từ","hôm nay",1],["พบ","phóp","động từ","gặp",1],["และ","lɛ́","liên từ","và",1],["ตี","dtii","động từ","đánh, gõ",1],["กลอง","glɔɔng","danh từ","cái trống",1],["ส่อง","sɔ̀ɔng","động từ","soi",1],["กระจก","grà-jòk","danh từ","cái gương",1],["ถือ","thʉ̌ʉ","động từ","cầm",1],["ปืน","bpʉʉn","danh từ","cây súng",1],["แฝด","fɛ̀ɛt","tính từ","sinh đôi",1],["ดิบ","dìp","tính từ","sống, xanh (chưa chín)",1],["ปวด","bpùat","động từ","đau",1],["โอย","ooi","thán từ","ôi chao",1],["ป๊อก","bpɔ́k","từ tượng thanh","bộp (tiếng gõ)",1],["แป๊ก","bpɛ́k","từ tượng thanh","tạch (tiếng nổ nhẹ)",1],["เสียง","sǐang","danh từ","âm thanh; giọng",1],["รูป","rûup","danh từ","hình; hình dạng",1],["สามัญ","sǎa-man","tính từ","thanh ngang (thanh thường)",1],["จัตวา","jàt-dtà-waa","danh từ","thanh hỏi-lên, dấu chattawa",1],["วรรณยุกต์","wan-ná-yúk","danh từ","dấu thanh, thanh điệu",1],["พยัญชนะ","phá-yan-chá-ná","danh từ","phụ âm",1],["สระ","sà-rà","danh từ","nguyên âm",1]],"g":[{"t":"Lời lịch sự cuối câu: ครับ / ค่ะ","d":"Người nói nam thêm ครับ (khráp) cuối câu, người nói nữ thêm ค่ะ (khâ) cho câu thường và คะ (khá) cho câu hỏi. Dùng cả khi chào và khi trả lời “vâng”.","ex":[["สวัสดีครับ","sà-wàt-dii khráp","Xin chào (nam nói)"],["สวัสดีค่ะ","sà-wàt-dii khâ","Xin chào (nữ nói)"]]},{"t":"Hỏi và nói tên","d":"Dùng ชื่อ (chʉ̂ʉ, “tên”) rồi đến tên người. Hỏi bằng ชื่อ + อะไร (à-rai, “gì”).","ex":[["ชื่ออะไร","chʉ̂ʉ à-rai","Tên là gì?"],["ฉันชื่อใบไม้","chǎn chʉ̂ʉ bai máai","Mình tên là Bai Mai"]]},{"t":"Hỏi thăm bằng ไหม","d":"Thêm ไหม (mǎi) cuối câu để biến câu thành câu hỏi có/không.","ex":[["สบายดีไหม","sà-baai dii mǎi","Bạn khỏe không?"]]}],"r":[{"t":"Số Thái ๑ đến ๑๐","d":"Chữ số Thái khác chữ số quen thuộc. Tập viết theo thứ tự rồi đọc to.","items":[["๑","nʉ̀ng","1"],["๒","sɔ̌ɔng","2"],["๓","sǎam","3"],["๔","sìi","4"],["๕","hâa","5"],["๖","hòk","6"],["๗","jèt","7"],["๘","bpɛ̀ɛt","8"],["๙","gâao","9"],["๑๐","sìp","10"]]},{"t":"Bốn dấu thanh viết trên chữ","d":"Thái có bốn dấu viết: mai ek, mai tho, mai tri, mai chattawa. Cùng một dấu có thể cho thanh khác nhau tùy nhóm phụ âm.","items":[["่","mai ek","dấu ek"],["้","mai tho","dấu tho"],["๊","mai dtrii","dấu tri (chỉ nhóm giữa)"],["๋","mai jàt-dtà-waa","dấu chattawa (chỉ nhóm giữa)"]]},{"t":"Đồng dao đếm số","d":"Bài đồng dao trong sách đếm từ một đến mười theo nhịp trống. Đọc theo nhịp, mỗi dòng kết thúc bằng tiếng trống “dtà-lɔ̂k bpɔ́k bpɛ́k”.","items":[["หนึ่ง สอง","nʉ̀ng sɔ̌ɔng","một, hai"],["สาม สี่","sǎam sìi","ba, bốn"],["ห้า หก","hâa hòk","năm, sáu"],["เจ็ด แปด","jèt bpɛ̀ɛt","bảy, tám"],["เก้า สิบ","gâao sìp","chín, mười"]]},{"t":"Luyện đánh vần với า","d":"Giữ nguyên nguyên âm า, đổi phụ âm đầu. Chú ý nhóm cao (ฝา ขา สา หา) cho thanh lên, nhóm giữa và thấp cho thanh ngang.","items":[["ปา","bpaa",""],["ฟา","faa",""],["ฝา","fǎa",""],["สา","sǎa",""],["ยา","yaa",""],["ฮา","haa",""],["ขา","khǎa",""],["คา","khaa",""],["ถา","thǎa",""],["นา","naa",""],["บา","baa",""],["ผา","phǎa",""],["ชา","chaa",""],["หา","hǎa",""],["ลา","laa",""],["กา","gaa",""],["จา","jaa",""],["ตา","dtaa",""],["ดา","daa",""],["อา","aa",""]]},{"t":"Luyện đánh vần với เ-า","d":"Cùng cách làm với vần เ-า (đọc “ao”).","items":[["เกา","gao",""],["เปา","bpao",""],["เจา","jao",""],["เตา","dtao",""],["เบา","bao",""],["เอา","ao",""]]}]},{"n":2,"th":"เรียนรู้คำ จำสระ","vi":"Học từ, nhớ nguyên âm (1)","desc":"Mười nguyên âm đơn đầu tiên cùng từ mẫu: อา อี อิ อึ อือ อุ อู เอ แอ โอ.","w":[["ปา","bpaa","động từ","ném",1],["มา","maa","động từ","đến",1],["ตา","dtaa","danh từ","mắt; ông ngoại",1],["ยา","yaa","danh từ","thuốc",1],["นา","naa","danh từ","ruộng",1],["ขา","khǎa","danh từ","chân",1],["หา","hǎa","động từ","tìm",1],["ปลา","bplaa","danh từ","con cá",1],["สี","sǐi","danh từ","màu",1],["ปี","bpii","danh từ","năm (thời gian)",1],["ดี","dii","tính từ","tốt",1],["ที่","thîi","danh từ","nơi, chỗ",1],["มีด","mîit","danh từ","con dao",1],["กิน","gin","động từ","ăn",1],["ปิด","bpìt","động từ","đóng",1],["ผิด","phìt","tính từ","sai",0],["ลึก","lʉ́k","tính từ","sâu",1],["มือ","mʉʉ","danh từ","bàn tay",1],["สุข","sùk","danh từ","hạnh phúc",1],["ปู","bpuu","danh từ","con cua",1],["หู","hǔu","danh từ","tai",1],["ดู","duu","động từ","xem",1],["เด็ก","dèk","danh từ","trẻ em",1],["เป็ด","bpèt","danh từ","con vịt",1],["เล่น","lêen","động từ","chơi",1],["เก็บ","gèp","động từ","nhặt; cất",1],["เท","thee","động từ","đổ",1],["แม่","mɛ̂ɛ","danh từ","mẹ",1],["แมว","mɛɛo","danh từ","con mèo",1],["แก้ว","gɛ̂ɛo","danh từ","cái ly",1],["โต","dtoo","tính từ","lớn",1],["โมง","moong","danh từ","giờ (đồng hồ)",1],["โต๊ะ","dtó","danh từ","cái bàn",1],["จาน","jaan","danh từ","cái đĩa",1],["งา","ngaa","danh từ","hạt mè; ngà",1],["ชา","chaa","danh từ","trà",1],["ทา","thaa","động từ","bôi",1],["ล้าง","láang","động từ","rửa",1],["ม้า","máa","danh từ","con ngựa",1],["ขาย","khǎai","động từ","bán",1],["ฝี","fǐi","danh từ","mụn nhọt",1],["ครีบ","khrîip","danh từ","vây cá",1],["ปี่","bpìi","danh từ","cây sáo",1],["ชี","chii","danh từ","nữ tu",1],["ซี","sii","danh từ","chữ C",1],["นี้","níi","đại từ","này",1],["หีบ","hìip","danh từ","cái rương",1],["บิน","bin","động từ","bay",1],["พริก","phrík","danh từ","ớt",1],["ติ","dtì","động từ","chê",1],["ซิ","sí","trợ từ","đi (thúc giục)",1],["วิชา","wí-chaa","danh từ","môn học",1],["ฉิ่ง","chìng","danh từ","chũm chọe",1],["นาฬิกา","naa-lí-gaa","danh từ","đồng hồ",0],["ตึก","dtʉ̀k","danh từ","tòa nhà",1],["ผึ้ง","phʉ̂ng","danh từ","con ong",1],["ถึง","thʉ̌ng","động từ","đến nơi",1],["บึง","bʉng","danh từ","đầm",1],["ขึ้น","khʉ̂n","động từ","lên",1],["อึ่งอ่าง","ʉ̀ng-àang","danh từ","ễnh ương",1],["ซื้อ","sʉ́ʉ","động từ","mua",1],["คือ","khʉʉ","động từ","là",1],["ฟืน","fʉʉn","danh từ","củi",1],["ยืน","yʉʉn","động từ","đứng",1],["พื้น","phʉ́ʉn","danh từ","sàn",1],["แกงจืด","gɛɛng-jʉ̀ʉt","danh từ","canh",1],["ลื่น","lʉ̂ʉn","tính từ","trơn",1],["ตุ่ม","dtùm","danh từ","cái chum",1],["ปลุก","bplùk","động từ","đánh thức",1],["ดุ","dù","tính từ","dữ",1],["ผุ","phù","tính từ","mục",1],["กุ้ง","gûng","danh từ","con tôm",1],["ฝุ่น","fùn","danh từ","bụi",1],["จูง","juung","động từ","dắt",1],["ปูน","bpuun","danh từ","xi măng",1],["งู","nguu","danh từ","con rắn",1],["ตู้","dtûu","danh từ","cái tủ",1],["ผู้หญิง","phûu-yǐng","danh từ","phụ nữ",1],["ผู้ชาย","phûu-chaai","danh từ","đàn ông",1],["ฝูง","fǔung","danh từ","bầy, đàn",1],["เกม","geem","danh từ","trò chơi",1],["เม่น","mên","danh từ","con nhím",1],["เพลง","phleeng","danh từ","bài hát",1],["เก๋ง","gěng","danh từ","xe con",1],["เค้ก","kéek","danh từ","bánh ngọt",1],["เข่ง","khèng","danh từ","cái giỏ tre",1],["เวที","wee-thii","danh từ","sân khấu",1],["กางเกง","gaang-geeng","danh từ","quần",1],["แก่","gɛ̀ɛ","tính từ","già",1],["แพ","phɛɛ","danh từ","bè",1],["แค","khɛɛ","phó từ","chỉ",1],["แห้ง","hɛ̂ɛng","tính từ","khô",1],["แป้ง","bpɛ̂ng","danh từ","bột",1],["แมงมุม","mɛɛng-mum","danh từ","con nhện",1],["กาแฟ","gaa-fɛɛ","danh từ","cà phê",1],["แว่นตา","wɛ̂n-dtaa","danh từ","kính mắt",1],["โบก","bòok","động từ","vẫy",1],["โป่ง","bpòong","tính từ","phồng",1],["โบ","boo","danh từ","cái nơ",1],["โซ่","sôo","danh từ","dây xích",1],["โค","khoo","danh từ","con bò",1],["ลูกโป่ง","lûuk-bpòong","danh từ","bóng bay",1],["ข้าวโพด","khâao-phôot","danh từ","bắp ngô",1],["แตงโม","dtɛɛng-moo","danh từ","dưa hấu",1],["โอ่ง","òong","danh từ","cái vại",1],["ปิ่นโต","bpìn-dtoo","danh từ","cặp lồng",1],["จิงโจ้","jing-jôo","danh từ","chuột túi",1],["โกโก้","goo-gôo","danh từ","ca cao",1]],"g":[{"t":"Ghép âm tiết: phụ âm đầu + nguyên âm + phụ âm cuối","d":"Một âm tiết gồm phụ âm đầu, nguyên âm và (có thể) phụ âm cuối. Ví dụ ก + า + น = กาน; ม + ี + ด = มีด.","ex":[["มือ","mʉʉ","bàn tay"],["มีด","mîit","con dao"]]},{"t":"Vị trí của nguyên âm","d":"Nguyên âm có thể đứng sau (อา), trên (อิ อี อึ อื), dưới (อุ อู), hoặc trước (เ แ โ ไ ใ) phụ âm đầu. Thứ tự đọc vẫn là phụ âm trước, nguyên âm sau.","ex":[["กา","gaa","con quạ"],["เก","gee","(âm mẫu)"]]},{"t":"Nguyên âm dài và ngắn","d":"Nguyên âm dài (อา อี อือ อู เอ แอ โอ) kéo dài hơn nguyên âm ngắn (อะ อิ อึ อุ). Độ dài ảnh hưởng đến thanh khi âm tiết kết thúc bằng p, t, k.","ex":[["ปิด","bpìt","đóng (ngắn)"],["มีด","mîit","con dao (dài)"]]}],"r":[{"t":"Nguyên âm ในบทนี้","d":"Nhìn hình dạng, nghe âm, rồi tìm từ chứa nguyên âm đó.","items":[["า","aa","(dài) ปลา"],["ี","ii","(dài) สี"],["ิ","i","(ngắn) กิน"],["ึ","ʉ","(ngắn) ลึก"],["ื","ʉʉ","(dài) มือ"],["ุ","u","(ngắn) สุข"],["ู","uu","(dài) ปู"],["เ","ee","(dài) เล่น"],["แ","ɛɛ","(dài) แม่"],["โ","oo","(dài) โต"]]}]},{"n":3,"th":"ชวนรู้เรื่องสระ","vi":"Cùng tìm hiểu nguyên âm (2)","desc":"Nguyên âm ghép เอีย เอือ, nguyên âm อำ, ไ- ใ- và เอา.","w":[["เสีย","sǐa","động từ","hỏng; mất",1],["เขียว","khǐao","tính từ","xanh lá",1],["เรียก","rîak","động từ","gọi",1],["เตียง","dtiang","danh từ","cái giường",1],["เที่ยว","thîao","động từ","đi chơi",1],["เหลือ","lʉ̌a","động từ","còn dư",1],["เมือง","mʉang","danh từ","thành phố; xứ",0],["เรือ","rʉa","danh từ","thuyền",1],["เหนือ","nʉ̌a","danh từ","phía bắc; trên",0],["เบื่อ","bʉ̀a","tính từ","chán",1],["เชื่อ","chʉ̂a","động từ","tin",0],["ทำ","tham","động từ","làm",1],["น้ำ","náam","danh từ","nước",1],["คำ","kham","danh từ","từ, chữ",1],["ดำ","dam","tính từ","đen",1],["จำ","jam","động từ","nhớ",1],["ไป","bpai","động từ","đi",1],["ไก่","gài","danh từ","con gà",1],["ไม้","máai","danh từ","gỗ; cây",1],["ใจ","jai","danh từ","tim; lòng",1],["ใหม่","mài","tính từ","mới",1],["ใคร","khrai","đại từ","ai",1],["ใส","sǎi","tính từ","trong (nước)",1],["เรา","rao","đại từ","chúng tôi",1],["เขา","khǎo","đại từ","anh ấy, cô ấy",1],["เอา","ao","động từ","lấy",1],["เจ้า","jâo","danh từ","chủ; ngài",1],["ข้าว","khâao","danh từ","cơm; gạo",1],["ขาว","khǎao","tính từ","trắng",1],["เก่า","gào","tính từ","cũ",1],["เตี่ย","dtìa","danh từ","bố (cách gọi gốc Hoa)",1],["เกี๊ยว","gíao","danh từ","sủi cảo",1],["เทียน","thian","danh từ","cây nến",1],["เฮีย","hia","danh từ","anh (cách gọi gốc Hoa)",1],["เขียง","khǐang","danh từ","cái thớt",1],["เปี้ยว","bpîao","danh từ","tên riêng (âm mẫu)",1],["เคียว","khiao","danh từ","cái liềm",1],["เปีย","bpia","danh từ","bím tóc",1],["เตี้ย","dtîa","tính từ","thấp",1],["เผือก","phʉ̀ak","danh từ","khoai môn",1],["เชือก","chʉ̂ak","danh từ","sợi dây",1],["เลือก","lʉ̂ak","động từ","chọn",1],["เนื้อ","nʉ́a","danh từ","thịt",1],["เสื้อ","sʉ̂a","danh từ","cái áo",1],["เลื่อย","lʉ̂ai","danh từ","cái cưa",1],["ตื่น","dtʉ̀ʉn","động từ","thức dậy",1],["ผีเสื้อ","phǐi-sʉ̂a","danh từ","con bướm",0],["เกลือ","glʉa","danh từ","muối",1],["เพียะ","phía","từ tượng thanh","chát (tiếng đánh)",1],["ขำ","khǎm","tính từ","buồn cười",1],["ยำ","yam","danh từ","món gỏi trộn",1],["ถ้ำ","thâm","danh từ","hang động",1],["กำแพง","gam-phɛɛng","danh từ","bức tường",0],["ค่ำ","khâm","danh từ","buổi tối",1],["ตำ","dtam","động từ","giã",1],["ไข่","khài","danh từ","quả trứng",1],["ไฝ","fǎi","danh từ","nốt ruồi",1],["ไถ","thǎi","động từ","cày",1],["ไห","hǎi","danh từ","cái hũ",1],["ลำไย","lam-yai","danh từ","nhãn",1],["กำไล","gam-lai","danh từ","vòng tay",1],["ไม้ไผ่","máai-phài","danh từ","tre",1],["ได้","dâai","trợ động từ","được",1],["ใด","dai","đại từ","nào",1],["ใน","nai","giới từ","trong",1],["ใบ","bai","danh từ","lá; tờ",1],["ใย","yai","danh từ","sợi tơ",1],["ใต้","dtâai","giới từ","dưới",1],["ใหญ่","yài","tính từ","to",1],["แจ่ม","jɛ̀m","tính từ","rõ ràng, sáng",1],["ใช้","chái","động từ","dùng",1],["ใกล้","glâi","tính từ","gần",1],["ใส่","sài","động từ","mặc; bỏ vào",1],["ร้าย","ráai","tính từ","dữ, xấu",1],["เกา","gao","động từ","gãi",1],["เงา","ngao","danh từ","cái bóng",1],["เตา","dtao","danh từ","cái bếp",1],["เทา","thao","tính từ","màu xám",1],["เน่า","nâo","tính từ","thối",1],["เผา","phǎo","động từ","đốt, nướng",1],["เสา","sǎo","danh từ","cái cột",1],["เต่า","dtào","danh từ","con rùa",1],["เท่า","thâo","giới từ","bằng",1],["เยอะ","yə́","tính từ","nhiều",1],["เลอะ","lə́","tính từ","dơ, lem",1],["เถอะ","thə̀","trợ từ","đi mà (thúc giục)",1],["เจอะ","jə̀","động từ","gặp",1],["เปื้อน","bpʉ̂an","động từ","dính bẩn",1],["เตารีด","dtao-rîit","danh từ","bàn ủi",1],["เก้าอี้","gâao-îi","danh từ","cái ghế",1],["ช่าง","châang","danh từ","thợ",1],["มาก","mâak","tính từ","nhiều",1],["ฟาด","fâat","động từ","quất, đập",1],["แรง","rɛɛng","tính từ","mạnh",1],["แน่น","nɛ̂n","tính từ","chặt",1],["ตัว","dtua","danh từ","con; cơ thể",1],["ผัวะ","phùa","từ tượng thanh","bốp",1],["จั๊วะ","júa","từ tượng thanh","(tiếng động mạnh)",1],["ฟูก","fûuk","danh từ","cái nệm",1],["มืด","mʉ̂ʉt","tính từ","tối",1],["โปรย","bprooi","động từ","rắc",1],["หนา","nǎa","tính từ","dày",1],["ถุง","thǔng","danh từ","cái túi",1],["โยน","yoon","động từ","ném",1],["บูด","bùut","tính từ","thiu",1],["แล่น","lɛ̂n","động từ","chạy (tàu, thuyền)",1],["ขนม","khà-nǒm","danh từ","bánh kẹo",1]],"g":[{"t":"Nguyên âm ghép เ-ีย, เ-ือ","d":"เ-ีย đọc “ia” và เ-ือ đọc “ʉa”. Hai âm này đều là nguyên âm đôi kéo dài, nên âm tiết kết thúc bằng p/t/k vẫn tính là vần chết dài.","ex":[["เรียน","rian","học"],["เรือ","rʉa","thuyền"]]},{"t":"ไ- và ใ-: cùng đọc “ai”","d":"Cả ไ và ใ đều đọc “ai”. Chỉ khoảng hai mươi từ viết ใ, nên cần học thuộc nhóm này (ใคร, ใจ, ใหม่, ใส, ใน, ให้, ใช้, ใหญ่…). Các từ còn lại dùng ไ.","ex":[["ใจ","jai","tim, lòng"],["ไป","bpai","đi"]]},{"t":"ำ đọc “am”","d":"Dấu ำ ghép từ ั (a) và ม (m), nên ทำ đọc “tham” chứ không phải “tha”.","ex":[["ทำ","tham","làm"],["น้ำ","náam","nước"]]},{"t":"เ-า đọc “ao”","d":"เอา, เรา, เขา đều đọc “ao”, vần sống ngắn.","ex":[["เราไป","rao bpai","Chúng ta đi"]]}],"r":[{"t":"Cặp dễ nhầm","d":"Cùng một chữ nhưng thanh khác nên nghĩa khác. Nghe thật kỹ rồi nhìn dấu và nhóm phụ âm.","items":[["ขาว","khǎao","trắng"],["ข้าว","khâao","cơm"],["เก่า","gào","cũ"],["เก้า","gâao","chín"],["ใหม่","mài","mới"],["ไม้","máai","gỗ"]]}]},{"n":4,"th":"สระไทย ใส่ใจจดจำ","vi":"Nguyên âm tiếng Thái, ghi nhớ kỹ","desc":"Nguyên âm ngắn, dạng rút gọn, dạng đổi hình và chữ ก็.","w":[["จะ","jà","phó từ","sẽ",1],["พระ","phrá","danh từ","nhà sư; Phật",1],["ผัก","phàk","danh từ","rau",1],["นก","nók","danh từ","con chim",1],["รถ","rót","danh từ","xe",1],["บ้าน","bâan","danh từ","nhà",1],["กับ","gàp","giới từ","với, cùng",1],["กัน","gan","phó từ","cùng nhau",1],["ฟัน","fan","danh từ","răng",1],["มัน","man","đại từ","nó",1],["ตั้ง","dtâng","động từ","đặt; dựng",1],["รัก","rák","động từ","yêu",1],["คน","khon","danh từ","người",1],["ลม","lom","danh từ","gió",1],["ตก","dtòk","động từ","rơi",1],["เห็น","hěn","động từ","thấy",1],["เล็ก","lék","tính từ","nhỏ",1],["เม็ด","mét","danh từ","hạt, viên",0],["เป็น","bpen","động từ","là",1],["เย็น","yen","tính từ","mát; buổi chiều",1],["แข็ง","khɛ̌ng","tính từ","cứng",1],["แพ้","phɛ́ɛ","động từ","thua",0],["แดง","dɛɛng","tính từ","đỏ",1],["เกาะ","gɔ̀","danh từ","hòn đảo",1],["ต้อง","dtɔ̂ɔng","trợ động từ","phải",1],["ยัง","yang","phó từ","vẫn, còn",1],["อยู่","yùu","động từ","ở; đang",1],["อยาก","yàak","động từ","muốn",1],["อย่า","yàa","phó từ","đừng",1],["อร่อย","à-rɔ̂ɔi","tính từ","ngon",0],["ก็","gɔ̂ɔ","liên từ","cũng; thì",1],["มะระ","má-rá","danh từ","khổ qua",1],["กระทะ","grà-thá","danh từ","cái chảo",1],["กะละมัง","gà-lá-mang","danh từ","cái thau",0],["ระฆัง","rá-khang","danh từ","cái chuông",0],["ถัง","thǎng","danh từ","cái xô",0],["คะน้า","khá-náa","danh từ","cải làn",1],["เกะกะ","gè-gà","tính từ","vướng víu",1],["เอะอะ","è-à","tính từ","ồn ào",1],["เละ","lé","tính từ","nhão, nát",1],["เฟะ","fé","tính từ","nát nhũn",1],["เตะ","dtè","động từ","đá",1],["ฟุตบอล","fút-bɔɔn","danh từ","bóng đá",1],["เป๊ะ","bpé","phó từ","chuẩn xác",1],["เบ็ด","bèt","danh từ","cần câu",1],["เข็ม","khěm","danh từ","cây kim",1],["เข็มขัด","khěm-khàt","danh từ","thắt lưng",1],["แกะ","gɛ̀","danh từ","con cừu",1],["แพะ","phɛ́","danh từ","con dê",1],["แคะ","khɛ́","động từ","móc, cậy",1],["แตะ","dtɛ̀","động từ","chạm",1],["แคระ","khrɛ́","tính từ","lùn",1],["แท็กซี่","thɛ́k-sîi","danh từ","taxi",1],["ซี่","sîi","danh từ","chiếc (nan, răng)",1],["เคาะ","khɔ́","động từ","gõ",1],["เงาะ","ngɔ́","danh từ","chôm chôm",1],["เจาะ","jɔ̀","động từ","khoan, đục",1],["เบาะ","bɔ̀","danh từ","đệm ghế",1],["ทะเลาะ","thá-lɔ́","động từ","cãi nhau",1],["ประตู","bprà-dtuu","danh từ","cửa",1],["ต้น","dtôn","danh từ","gốc; cây",1],["รัง","rang","danh từ","tổ",1],["คาง","khaang","danh từ","cằm",1],["จิ้ง","jîng","danh từ","(trong จิ้งจก) thằn lằn",1],["พู่","phûu","danh từ","cọ vẽ; tua",1],["ดินสอ","din-sɔ̌ɔ","danh từ","bút chì",1],["บ่อ","bɔ̀ɔ","danh từ","cái giếng",1],["คอ","khɔɔ","danh từ","cái cổ",1],["ลำคอ","lam-khɔɔ","danh từ","cổ họng",1],["ฆ้อง","khɔ́ɔng","danh từ","cái chiêng",1],["ห้องนอน","hɔ̂ɔng-nɔɔn","danh từ","phòng ngủ",1],["ละ","lá","trợ từ","thì sao, còn",1],["ขอ","khɔ̌ɔ","động từ","xin",1],["ดอกบัว","dɔ̀ɔk-bua","danh từ","hoa sen",0],["ถั่ว","thùa","danh từ","đậu",1],["ตั๋ว","dtǔa","danh từ","vé",1],["บวบ","bùap","danh từ","mướp",1],["สวย","sǔai","tính từ","đẹp",1],["สวน","sǔan","danh từ","vườn",1],["สวนครัว","sǔan-khrua","danh từ","vườn rau",1],["หอม","hǒɔm","tính từ","thơm",1],["ขด","khòt","động từ","cuộn",1],["พร","phɔɔn","danh từ","lời chúc phúc",1],["ทอง","thɔɔng","danh từ","vàng",1],["เออ","əə","thán từ","ờ",1],["ละเมอ","lá-məə","động từ","nói mớ",1],["ชะเง้อ","chá-ngə́ə","động từ","nghển cổ",1],["เฉย","chə̌əi","tính từ","im lặng, thờ ơ",1],["เมย","məəi","động từ","làm ngơ",1],["เฉยเมย","chə̌əi-məəi","tính từ","lạnh nhạt",1],["เพิ่ม","phə̂əm","động từ","thêm",1],["เปิด","bpə̀ət","động từ","mở",1],["เกิด","gə̀ət","động từ","sinh ra",1],["ล็อก","lɔ́k","động từ","khóa",1],["เล็บ","lép","danh từ","móng tay",1],["ง่วง","ngûang","tính từ","buồn ngủ",1],["บ๊วย","búai","danh từ","quả mơ muối",1],["ป่วย","bpùai","tính từ","ốm",0],["ศร","sɔ̌ɔn","danh từ","mũi tên",1]],"g":[{"t":"Nguyên âm ngắn มี ะ","d":"Nguyên âm ngắn thường có ะ ở cuối (อะ เอะ แอะ โอะ เอาะ). Khi có phụ âm cuối, ะ biến mất: กะ + น → กัน.","ex":[["จะ","jà","sẽ"],["กัน","gan","cùng nhau"]]},{"t":"Dạng rút gọn và đổi hình","d":"Khi có phụ âm cuối, nhiều nguyên âm đổi dạng: เ-ะ → เ-็; แ-ะ → แ-็; โ-ะ → -; เ-าะ → -็อ… Cần nhớ dạng này để đọc và viết chính xác.","ex":[["เห็น","hěn","thấy"],["เล็ก","lék","nhỏ"]]},{"t":"ก็ đọc “gɔ̂ɔ”","d":"Chữ ก็ là từ đặc biệt: viết như ก + ็ nhưng đọc “gɔ̂ɔ”, nghĩa là “cũng”, “thì”.","ex":[["เขาก็ไป","khǎo gɔ̂ɔ bpai","Anh ấy cũng đi"]]},{"t":"อ dẫn ย: อย่า อยู่ อยาก อย่าง","d":"Chỉ bốn từ này dùng อ đứng trước ย để ย thành nhóm giữa; อ không đọc.","ex":[["อย่าไป","yàa bpai","Đừng đi"]]}],"r":[{"t":"Ngắn và dài","d":"Thử đọc từng cặp để nghe sự khác biệt về độ dài.","items":[["กา","gaa","quạ"],["กะ","gà","(âm mẫu ngắn)"],["เก","gee","(âm mẫu dài)"],["เกะ","gè","(âm mẫu ngắn)"]]}]},{"n":5,"th":"ครอบครัวช้าง","vi":"Gia đình nhà voi","desc":"Từ vựng gia đình, tiếng kêu động vật và các từ hỏi lý do.","w":[["พ่อ","phɔ̂ɔ","danh từ","bố",1],["ลูก","lûuk","danh từ","con (cái)",1],["ปู่","bpùu","danh từ","ông nội",1],["ย่า","yâa","danh từ","bà nội",1],["ยาย","yaai","danh từ","bà ngoại",1],["ลุง","lung","danh từ","bác (trai)",1],["ป้า","bpâa","danh từ","bác, dì (gái, chị bố/mẹ)",1],["น้า","náa","danh từ","cậu, dì (em mẹ)",1],["อา","aa","danh từ","chú, cô (em bố)",1],["พี่","phîi","danh từ","anh, chị",1],["น้อง","nɔ́ɔng","danh từ","em",1],["หลาน","lǎan","danh từ","cháu",0],["ครอบครัว","khrɔ̂ɔp-khrua","danh từ","gia đình",1],["ช้าง","cháang","danh từ","con voi",1],["กล้วย","glûai","danh từ","chuối",1],["อ้อย","ɔ̂ɔi","danh từ","mía",1],["ต้นไม้","dtôn-máai","danh từ","cây cối",1],["นม","nom","danh từ","sữa",1],["มี","mii","động từ","có",1],["ไม่","mâi","phó từ","không",1],["ทำไม","tham-mai","câu hỏi","tại sao",0],["เพราะ","phrɔ́","liên từ","bởi vì",1],["ชอบ","chɔ̂ɔp","động từ","thích",1],["แม่ค้า","mɛ̂ɛ-kháa","danh từ","cô bán hàng",1],["โฮ่ง","hôong","từ tượng thanh","gâu (chó sủa)",0],["เหมียว","mǐao","từ tượng thanh","meo (mèo kêu)",1],["หาง","hǎang","danh từ","cái đuôi",1],["งวง","nguang","danh từ","cái vòi (voi)",1],["ดูแล","duu-lɛɛ","động từ","chăm sóc",1],["ดีใจ","dii-jai","tính từ","vui mừng",1],["ยาว","yaao","tính từ","dài",1],["ลูกช้าง","lûuk-cháang","danh từ","voi con",1],["ช้างน้อย","cháang-nɔ́ɔi","danh từ","voi nhỏ",1],["ชู","chuu","động từ","giơ lên",1],["ร้อง","rɔ́ɔng","động từ","kêu; hát",1],["แอ๊ก","ɛ́ɛk","từ tượng thanh","(tiếng voi con kêu)",1],["เอิ๊ก","ə́ək","từ tượng thanh","(tiếng kêu)",1],["จ้อง","jɔ̂ɔng","động từ","nhìn chằm chằm",1],["ลาน","laan","danh từ","sân",1],["ลำธาร","lam-thaan","danh từ","dòng suối",1],["เล่นน้ำ","lêen-náam","động từ","nghịch nước",1],["กระพรวน","grà-phruan","danh từ","cái chuông nhỏ",1],["กระดึง","grà-dung","danh từ","chuông lắc (đeo cổ trâu bò)",1],["กรุ๋งกริ๋ง","grǔng-grǐng","từ tượng thanh","leng keng",1],["โป๊กเป๊ก","bpóok-bpék","từ tượng thanh","lốc cốc",1],["ทันที","than-thii","phó từ","ngay lập tức",1],["หาย","hǎai","động từ","biến mất; khỏi",1],["หายใจ","hǎai-jai","động từ","thở",1],["เวลา","wee-laa","danh từ","thời gian, lúc",1],["ตาม","dtaam","động từ","theo",1],["กระเป๋า","grà-bpǎo","danh từ","cái túi, cặp",1],["หิ้ว","hîu","động từ","xách",1],["โบกมือ","bòok-mʉʉ","động từ","vẫy tay",1],["ยื่น","yʉ̂ʉn","động từ","đưa ra",1],["ไว้","wái","trợ từ","để, dùng để",1],["จับ","jàp","động từ","nắm, bắt",1],["พา","phaa","động từ","dẫn, đưa",1],["ถ้า","thâa","liên từ","nếu",1],["ความสุข","khwaam-sùk","danh từ","niềm hạnh phúc",1],["ทุกคน","thúk-khon","đại từ","mọi người",1],["ต่างคน","dtàang-khon","đại từ","mỗi người một nơi",1],["อย่างไร","yàang-rai","câu hỏi","như thế nào",1]],"g":[{"t":"มี và ไม่มี","d":"มี (mii) là “có”. Thêm ไม่ (mâi) phía trước để phủ định: ไม่มี = “không có”.","ex":[["ผมมีน้อง","phǒm mii nɔ́ɔng","Tôi có em"],["ฉันไม่มีลุง","chǎn mâi mii lung","Mình không có bác"]]},{"t":"Hỏi lý do: ทำไม – เพราะ","d":"ทำไม (tham-mai) hỏi “tại sao”; trả lời bắt đầu bằng เพราะ (phrɔ́) “bởi vì”.","ex":[["ทำไม","tham-mai","Tại sao?"]]},{"t":"Từ tượng thanh","d":"Tiếng kêu của động vật dùng để đọc vui và luyện thanh: โฮ่ง (chó), เหมียว (mèo).","ex":[["เหมียว","mǐao","meo"]]}],"r":[{"t":"Cách gọi người thân","d":"Thái phân biệt bên nội và bên ngoại, anh chị và em, nên từ xưng hô nhiều hơn tiếng Việt ở một vài chỗ.","items":[["ปู่","bpùu","ông nội"],["ย่า","yâa","bà nội"],["ตา","dtaa","ông ngoại"],["ยาย","yaai","bà ngoại"]]}]},{"n":6,"th":"เพลงร้อง ทำนองไทย","vi":"Bài hát và đồng dao","desc":"Từ chỉ định, từ hỏi, từ về thiên nhiên và động vật trong bài hát.","w":[["นี่","nîi","đại từ","đây",1],["นั่น","nân","đại từ","đó",1],["โน่น","nôon","đại từ","kia",0],["ของ","khɔ̌ɔng","danh từ","đồ, của",1],["อะไร","à-rai","câu hỏi","gì",1],["ไหน","nǎi","câu hỏi","nào; đâu",1],["เท่าไร","thâo-rai","câu hỏi","bao nhiêu",0],["เต้น","dtên","động từ","nhảy",1],["รำ","ram","động từ","múa",1],["ปรบ","bpròp","động từ","vỗ (tay)",0],["ดอกไม้","dɔ̀ɔk-máai","danh từ","bông hoa",1],["ดาว","daao","danh từ","ngôi sao",1],["จันทร์","jan","danh từ","mặt trăng",0],["ฟ้า","fáa","danh từ","bầu trời",1],["เมฆ","mêek","danh từ","mây",1],["ฝน","fǒn","danh từ","mưa",1],["หมู","mǔu","danh từ","con heo",1],["หมา","mǎa","danh từ","con chó",1],["วัว","wua","danh từ","con bò",0],["ควาย","khwaai","danh từ","con trâu",0],["กบ","gòp","danh từ","con ếch",1],["ลิง","ling","danh từ","con khỉ",1],["ลูกไก่","lûuk-gài","danh từ","gà con",1],["แม่ไก่","mɛ̂ɛ-gài","danh từ","gà mẹ",1],["ไข่ไก่","khài-gài","danh từ","trứng gà",1],["ไข่ดาว","khài-daao","danh từ","trứng ốp la",1],["กุ๊ก","gúk","từ tượng thanh","cục cục (gà kêu)",1],["เจี๊ยบ","jíap","từ tượng thanh","chiếp (gà con kêu)",1],["เลี้ยง","líang","động từ","nuôi",1],["จน","jon","liên từ","cho đến khi",1],["คุ้ย","khúi","động từ","bới",1],["ทำมาหากิน","tham-maa-hǎa-gin","động từ","kiếm sống",1],["ตามประสา","dtaam-bprà-sǎa","cụm từ","theo lẽ thường",0],["พิกุล","phí-gun","danh từ","hoa bồ kết",1],["บานเย็น","baan-yen","danh từ","hoa bốn giờ",1],["ละมุน","lá-mun","tính từ","mềm mại",1],["เอ๋ย","ə̌əi","thán từ","ơi (trong đồng dao)",1],["โยก","yôok","động từ","lắc lư",1],["ย้าย","yáai","động từ","dời",1],["แบ่งปัน","bɛ̀ng-bpan","động từ","chia sẻ",1],["สับเปลี่ยน","sàp-bplìan","động từ","đổi chỗ",1],["ฝนตก","fǒn-dtòk","động từ","mưa rơi",1],["แดด","dɛ̀ɛt","danh từ","nắng",1],["บ้าง","bâang","phó từ","một chút, vài",1],["บท","bòt","danh từ","bài; đoạn",1],["กล่อม","glɔ̀m","động từ","ru ngủ",1],["ตลอด","dtà-lɔ̀ɔt","phó từ","suốt",1]],"g":[{"t":"Chỉ định: นี่ นั่น โน่น","d":"นี่ (đây, gần), นั่น (đó, vừa tầm), โน่น (kia, xa). Dùng một mình hoặc đứng sau danh từ: บ้านนี้ = nhà này.","ex":[["นี่อะไร","nîi à-rai","Đây là gì?"],["นั่นปลา","nân bplaa","Đó là cá"]]},{"t":"Câu hỏi với ไหน","d":"ไหน (nǎi) hỏi “nào/đâu”. Đặt sau danh từ để chọn trong nhóm, hoặc dùng ที่ไหน “ở đâu”.","ex":[["ดาวไหน","daao nǎi","Ngôi sao nào?"]]},{"t":"Quyền sở hữu với ของ","d":"ของ (khɔ̌ɔng) vừa là “đồ vật” vừa là “của”: ของฉัน = của tôi.","ex":[["ของฉัน","khɔ̌ɔng chǎn","của tôi"]]}],"r":[{"t":"Hát theo nhịp","d":"Đồng dao Thái thường lặp lại âm và vần. Đọc chậm trước rồi tăng tốc.","items":[["ดาว","daao","sao"],["ฟ้า","fáa","trời"],["เมฆ","mêek","mây"],["ฝน","fǒn","mưa"]]}]},{"n":7,"th":"ใคร ทำอะไร","vi":"Ai làm gì","desc":"Động từ hằng ngày, bộ phận cơ thể và câu chủ ngữ + động từ.","w":[["นอน","nɔɔn","động từ","ngủ",1],["เดิน","dəən","động từ","đi bộ",1],["วิ่ง","wîng","động từ","chạy",1],["นั่ง","nâng","động từ","ngồi",1],["ว่ายน้ำ","wâai-náam","động từ","bơi",0],["วาด","wâat","động từ","vẽ",1],["อาบน้ำ","àap-náam","động từ","tắm",0],["แปรงฟัน","bpreeng-fan","động từ","đánh răng",0],["ช่วย","chûai","động từ","giúp",1],["ซ่อน","sɔ̂ɔn","động từ","giấu",0],["หัว","hǔa","danh từ","đầu",1],["เท้า","tháao","danh từ","bàn chân",1],["ปาก","bpàak","danh từ","miệng",0],["แขน","khɛ̌ɛn","danh từ","cánh tay",1],["ท้อง","thɔ́ɔng","danh từ","bụng",1],["เด็กชาย","dèk-chaai","danh từ","bé trai",0],["เด็กหญิง","dèk-yǐng","danh từ","bé gái",0],["อ่าน","àan","động từ","đọc",1],["เขียน","khǐan","động từ","viết",1],["ดื่ม","dʉ̀ʉm","động từ","uống",1],["ปลาทู","bplaa-thuu","danh từ","cá thu",1],["กระต่าย","grà-dtàai","danh từ","con thỏ",1],["รองเท้า","rɔɔng-tháao","danh từ","giày dép",1],["หนังสือ","nǎng-sʉ̌ʉ","danh từ","sách",1],["สีคราม","sǐi-khraam","danh từ","màu chàm",1],["ท้องฟ้า","thɔ́ɔng-fáa","danh từ","bầu trời",1],["ดม","dom","động từ","ngửi",1],["จิก","jìk","động từ","mổ",1],["หนอน","nɔ̌ɔn","danh từ","con sâu",1],["ทอด","thɔ̂ɔt","động từ","chiên",1],["กระดาน","grà-daan","danh từ","tấm bảng",1],["น้ำส้ม","náam-sôm","danh từ","nước cam",1],["ถู","thǔu","động từ","lau chùi",1],["ประธาน","bprà-thaan","danh từ","chủ ngữ",1],["กิริยา","gì-rí-yaa","danh từ","động từ (ngữ pháp)",1],["กรรม","gam","danh từ","tân ngữ",1],["ส่วน","sùan","danh từ","phần",1],["ประกอบ","bprà-gɔ̀ɔp","động từ","gồm, lắp ghép",1],["หมายเลข","mǎai-lêek","danh từ","số thứ tự",1],["ประโยค","bprà-yòok","danh từ","câu",1]],"g":[{"t":"Thứ tự câu: chủ ngữ + động từ + tân ngữ","d":"Câu Thái cơ bản giống tiếng Việt: ai + làm gì + cái gì. Không chia động từ theo thì hay ngôi.","ex":[["ผมกินข้าว","phǒm gin khâao","Tôi ăn cơm"],["เด็กอ่านเขียน","dèk àan khǐan","Bé đọc và viết"]]},{"t":"Câu hỏi: ใคร ทำ อะไร","d":"ใคร (khrai) hỏi người, อะไร (à-rai) hỏi vật hoặc việc. Từ hỏi đứng ở đúng vị trí của câu trả lời.","ex":[["ใครซื้อ","khrai sʉ́ʉ","Ai mua?"]]}],"r":[{"t":"Bộ phận cơ thể","d":"Chỉ vào từng bộ phận khi đọc để nhớ nhanh hơn.","items":[["หัว","hǔa","đầu"],["มือ","mʉʉ","tay"],["เท้า","tháao","chân"],["ปาก","bpàak","miệng"]]}]},{"n":8,"th":"อ่านแจกลูกเป็นทำนอง คำคล้องจองน่ารัก รู้จักดูการ์ตูน","vi":"Đánh vần theo điệu và từ vần","desc":"Đánh vần nhóm thanh (ปา ป่า ป้า ป๊า ป๋า), cặp từ vần và đọc truyện tranh.","w":[["ป่า","bpàa","danh từ","rừng",1],["ป๊า","bpáa","danh từ","ba (cách gọi thân)",1],["ป๋า","bpǎa","danh từ","ba (cách gọi thân)",1],["ข่า","khàa","danh từ","củ riềng",1],["ข้า","khâa","đại từ","ta (cổ)",1],["คา","khaa","động từ","kẹt, dính",1],["ค่า","khâa","danh từ","giá, phí",0],["ค้า","kháa","động từ","buôn bán",1],["จุ","jù","động từ","chứa",1],["ให้","hâi","động từ","cho",1],["บัว","bua","danh từ","hoa sen",1],["เฮ","hee","thán từ","hoan hô",1],["เต","dtee","danh từ","tên riêng, tên âm mẫu",1],["ทะเล","thá-lee","danh từ","biển",1],["งอแง","ngɔɔ-ngɛɛ","tính từ","mè nheo, hay khóc nhè",1],["แวะ","wɛ́","động từ","ghé qua",1],["กะเทาะ","gà-thɔ́","động từ","bóc vỏ cứng",1],["เฮฮา","hee-haa","động từ","cười ồ",1],["พะโล้","phá-lóo","danh từ","món heo hầm ngũ vị",1],["ผ้า","phâa","danh từ","vải",1],["ถั่วแระ","thùa-rɛ́","danh từ","đậu nành luộc",1],["โห่ร้อง","hòo-rɔ́ɔng","động từ","hò reo",1],["แล","lɛɛ","động từ","nhìn (văn thơ)",1],["แมวเหมียว","mɛɛo-mǐao","danh từ","mèo meo",1],["ลูกข่าง","lûuk-khàang","danh từ","con quay",1],["ว่าว","wâao","danh từ","con diều",1],["ลอย","lɔɔi","động từ","bay lơ lửng, nổi",1],["ยางลบ","yaang-lóp","danh từ","cục tẩy",1],["แกงไก่","gɛɛng-gài","danh từ","cà ri gà",1],["แข่ง","khɛ̀ng","động từ","thi đua",1],["วิ่งแข่ง","wîng-khɛ̀ng","động từ","chạy thi",1],["กระดิ่ง","grà-dìng","danh từ","cái chuông nhỏ",1],["คุณปู่","khun-bpùu","danh từ","ông nội (kính trọng)",1],["แก่นแก้ว","gɛ̀n-gɛ̂ɛo","danh từ","tên nhân vật",1],["เดือดร้อน","dʉ̀at-rɔ́ɔn","tính từ","gặp khó khăn",1],["ตะวัน","dtà-wan","danh từ","mặt trời",1],["ข้อ","khɔ̂ɔ","danh từ","mục, câu (trong bài tập)",1],["ไอ้","âi","đại từ","thằng (thân mật, có thể thô)",1],["ปีก","bpìik","danh từ","cánh",1]],"g":[{"t":"Đọc nhóm thanh: ปา ป่า ป้า ป๊า ป๋า","d":"Giữ nguyên phụ âm và nguyên âm, đổi dấu thanh để nghe đủ năm thanh. Nhóm giữa (ป) dùng được cả bốn dấu.","ex":[["ป่า","bpàa","rừng"],["ป้า","bpâa","bác gái"]]},{"t":"Nhóm cao và nhóm thấp đổi thanh khác nhau","d":"ขา ข่า ข้า (nhóm cao) cho rise, low, fall. คา ค่า ค้า (nhóm thấp) cho mid, fall, high. Cùng dấu nhưng thanh khác vì khác nhóm.","ex":[["ข่า","khàa","củ riềng"],["ค่า","khâa","giá, phí"]]},{"t":"Từ vần (คำคล้องจอง)","d":"Từ vần có nguyên âm và phụ âm cuối giống nhau, như สี–ดี, ปู–หู, ทา–มา, ใจ–ให้, บัว–หัว. Đọc thành cặp để nhớ vần.","ex":[["สี","sǐi","màu"],["ดี","dii","tốt"]]}],"r":[{"t":"Cặp từ vần","d":"Đọc thành tiếng và nhấn vào phần vần giống nhau.","items":[["สี","sǐi","màu"],["ดี","dii","tốt"],["ปู","bpuu","cua"],["หู","hǔu","tai"],["ทา","thaa","bôi"],["มา","maa","đến"],["บัว","bua","sen"],["หัว","hǔa","đầu"]]}]},{"n":9,"th":"เครื่องหมายสัญลักษณ์","vi":"Ký hiệu và biển báo","desc":"Biển báo thường gặp, từ cấm đoán và phương hướng.","w":[["ห้าม","hâam","động từ","cấm",1],["เข้า","khâo","động từ","vào",1],["ออก","ɔ̀ɔk","động từ","ra",1],["ทางเข้า","thaang-khâo","danh từ","lối vào",0],["ทางออก","thaang-ɔ̀ɔk","danh từ","lối ra",0],["ซ้าย","sáai","danh từ","trái",1],["ขวา","khwǎa","danh từ","phải",1],["ตรง","dtrong","tính từ","thẳng",1],["หยุด","yùt","động từ","dừng",1],["ระวัง","rá-wang","động từ","cẩn thận",1],["อันตราย","an-dtà-raai","tính từ","nguy hiểm",0],["ปลอดภัย","bplɔ̀ɔt-phai","tính từ","an toàn",0],["ห้องน้ำ","hɔ̂ɔng-náam","danh từ","nhà vệ sinh",1],["ชาย","chaai","danh từ","nam",1],["หญิง","yǐng","danh từ","nữ",1],["ไฟ","fai","danh từ","đèn; lửa",1],["ไฟแดง","fai-dɛɛng","danh từ","đèn đỏ",0],["ไฟเขียว","fai-khǐao","danh từ","đèn xanh",0],["ไฟเหลือง","fai-lʉ̌ang","danh từ","đèn vàng",0],["ทางม้าลาย","thaang-máa-laai","danh từ","vạch kẻ qua đường",1],["เครื่องหมาย","khrʉ̂ang-mǎai","danh từ","ký hiệu",1],["อ้าว","âao","thán từ","ôi, ủa",0],["โอ๊ย","óoi","thán từ","ối",1],["ว้าว","wáao","thán từ","ồ",0],["ทิ้งขยะ","thíng-khà-yà","động từ","vứt rác",0],["ข้าม","khâam","động từ","băng qua",1],["เหม่อ","mə̀ə","động từ","đờ đẫn",1],["มอง","mɔɔng","động từ","nhìn",1],["ข้าง","khâang","danh từ","bên",1],["อีก","ìik","phó từ","nữa",1],["เมื่อ","mʉ̂a","liên từ","khi",1],["หาก","hàak","liên từ","nếu như",1],["ยวดยาน","yûat-yaan","danh từ","phương tiện",1],["หลาย","lǎai","số từ","nhiều",1],["อด","òt","động từ","nhịn",1],["ตัดหน้า","dtàt-nâa","động từ","cắt ngang trước mặt",0],["รถยนต์","rót-yon","danh từ","ô tô",1],["เลี้ยว","líao","động từ","rẽ",1],["สัญญาณ","sǎn-yaan","danh từ","tín hiệu",1],["จราจร","jà-raa-jɔɔn","danh từ","giao thông",1],["ภาพ","phâap","danh từ","hình ảnh",1],["ป้าย","bpâai","danh từ","biển, bảng",1],["จุด","jùt","danh từ","điểm",1],["ล้างมือ","láang-mʉʉ","động từ","rửa tay",1],["ว้าย","wáai","thán từ","á",1],["อุ๊ย","úi","thán từ","ôi",1],["โอ้โฮ","ôo-hoo","thán từ","ôi chao",1],["ด้วย","dûai","giới từ","cùng; bằng",1],["หล่น","lòn","động từ","rơi",1],["เรื่อง","rʉ̂ang","danh từ","chuyện",1],["จัง","jang","phó từ","lắm",1],["ชุด","chút","danh từ","bộ đồ",1],["นำ","nam","động từ","mang, dẫn",1],["สัตว์","sàt","danh từ","con vật",1],["สัตว์เลี้ยง","sàt-líang","danh từ","thú nuôi",1],["อาหาร","aa-hǎan","danh từ","thức ăn",1],["เครื่องดื่ม","khrʉ̂ang-dʉ̀ʉm","danh từ","đồ uống",1],["รับประทาน","ráp-bprà-thaan","động từ","dùng bữa (lịch sự)",1],["ออกกำลังกาย","ɔ̀ɔk-gam-lang-gaai","động từ","tập thể dục",1],["ห้องสมุด","hɔ̂ɔng-sà-mùt","danh từ","thư viện",1],["สนาม","sà-nǎam","danh từ","sân",1]],"g":[{"t":"ห้าม và อย่า","d":"ห้าม (hâam) là lời cấm trên biển báo hoặc quy định; อย่า (yàa) là lời khuyên hay nhắc nhở thân mật. Cả hai đặt trước động từ.","ex":[["ห้ามเข้า","hâam khâo","Cấm vào"],["อย่าไป","yàa bpai","Đừng đi"]]},{"t":"Thán từ thể hiện cảm xúc","d":"อ้าว, โอ๊ย, ว้าว diễn tả ngạc nhiên, đau, thích thú. Dấu thanh trên thán từ cho biết cách ngân.","ex":[["ว้าว","wáao","ồ!"]]},{"t":"Phương hướng: ซ้าย ขวา ตรง","d":"ไป + hướng: ไปซ้าย (đi trái), ไปขวา (đi phải), ตรงไป (đi thẳng).","ex":[["ไปซ้าย","bpai sáai","Đi bên trái"]]}],"r":[{"t":"Đèn giao thông","d":"Ba màu đèn đi cùng ba từ rất hay gặp.","items":[["แดง","dɛɛng","đỏ (dừng)"],["เหลือง","lʉ̌ang","vàng (chậm)"],["เขียว","khǐao","xanh (đi)"]]}]},{"n":10,"th":"ร้องเล่น เต้นกัน","vi":"Hát, chơi, nhảy","desc":"Câu đố อะไรเอ่ย, trò chơi, thứ tự và kể chuyện.","w":[["ทาย","thaai","động từ","đoán",1],["ตอบ","dtɔ̀ɔp","động từ","trả lời",1],["ถูก","thùuk","tính từ","đúng",1],["ชนะ","chá-ná","động từ","thắng",1],["ก่อน","gɔ̀ɔn","phó từ","trước",1],["หลัง","lǎng","phó từ","sau",1],["แล้ว","lɛ́ɛo","phó từ","rồi",1],["ต่อ","dtɔ̀ɔ","động từ","tiếp",1],["ครั้ง","khráng","danh từ","lần",1],["เสร็จ","sèt","động từ","xong",0],["เริ่ม","rə̂əm","động từ","bắt đầu",0],["เริ่มต้น","rə̂əm-dtôn","động từ","khởi đầu",0],["จบ","jòp","động từ","kết thúc",0],["ลำดับ","lam-dàp","danh từ","thứ tự",1],["เล่าเรื่อง","lâo-rʉ̂ang","động từ","kể chuyện",1],["อะไรเอ่ย","à-rai-ə̀əi","câu hỏi","cái gì nhỉ (mở đầu câu đố)",1],["สนุก","sà-nùk","tính từ","vui",1],["ปริศนา","bprìt-sà-nǎa","danh từ","câu đố",1],["คำทาย","kham-thaai","danh từ","câu đố",1],["ซุกซน","súk-son","tính từ","tinh nghịch",1],["เล้า","láo","danh từ","chuồng gà",1],["นักหนา","nák-nǎa","phó từ","rất",1],["น่ากลัว","nâa-glua","tính từ","đáng sợ",1],["เหลือง","lʉ̌ang","tính từ","màu vàng",1],["ปราดเปรียว","bpràat-bpriao","tính từ","nhanh nhẹn",1],["สิงโต","sǐng-dtoo","danh từ","sư tử",0],["ขน","khǒn","danh từ","lông",1],["เขี้ยว","khîao","danh từ","răng nanh",1],["จิ๊บ","jíp","từ tượng thanh","chíp (chim hót)",1],["สร้าง","sâang","động từ","xây dựng",1],["จ้ำจี้","jâm-jîi","danh từ","trò đếm để chọn (đồng dao)",1],["ผลไม้","phǒn-lá-máai","danh từ","trái cây",1],["แตงไทย","dtɛɛng-thai","danh từ","dưa gang",1],["น้อยหน่า","nɔ́ɔi-nàa","danh từ","mãng cầu",1],["มังคุด","mang-khút","danh từ","măng cụt",1],["มะนาว","má-naao","danh từ","chanh",1],["มะไฟ","má-fai","danh từ","trái mơ Thái",1],["ส้มโอ","sôm-oo","danh từ","bưởi",1],["มะพร้าว","má-phráao","danh từ","dừa",1],["มะกรูด","má-grûut","danh từ","chanh lá cam",1],["ละมุด","lá-mút","danh từ","hồng xiêm",1],["พุทรา","phút-saa","danh từ","táo ta",1],["ไชโย","chai-yoo","thán từ","hoan hô",1],["พายเรือ","phaai-rʉa","động từ","chèo thuyền",1],["อกแอ่น","òk-ɛ̀n","tính từ","ưỡn ngực",1],["หาปลา","hǎa-bplaa","động từ","bắt cá",0],["วันหนึ่ง","wan-nʉ̀ng","phó từ","một ngày nọ",0],["น้ำใจ","nám-jai","danh từ","tấm lòng",1],["ไมตรี","mai-dtrii","danh từ","tình thân thiện",1],["เคราะห์","khró","danh từ","vận rủi",1],["แย่ง","yɛ̂ɛng","động từ","giành",1],["ห่าน","hàan","danh từ","con ngỗng",1],["หงส์","hǒng","danh từ","thiên nga",1],["หิ่งห้อย","hìng-hɔ̂ɔi","danh từ","đom đóm",1],["หลงทาง","lǒng-thaang","động từ","lạc đường",1],["ชายหาด","chaai-hàat","danh từ","bãi biển",1],["อบรม","òp-rom","động từ","giáo dục, huấn luyện",1],["คนพาล","khon-phaan","danh từ","kẻ côn đồ",1],["ขนุน","khà-nǔn","danh từ","mít",1]],"g":[{"t":"Câu đố: อะไรเอ่ย","d":"Câu đố Thái mở đầu bằng mô tả rồi hỏi “อะไรเอ่ย” (cái gì nhỉ). Người chơi trả lời bằng danh từ.","ex":[["ตัวเลข","dtua lêek","Con số"]]},{"t":"Thứ tự bằng ก่อน – แล้ว – หลัง","d":"ก่อน (trước), แล้ว (rồi), หลัง (sau) giúp kể việc theo thứ tự: อาบน้ำก่อน แล้วกิน.","ex":[["กินก่อน","gin gɔ̀ɔn","Ăn trước"]]},{"t":"Bắt đầu và kết thúc","d":"เริ่ม (bắt đầu) và จบ (kết thúc) đi với danh từ chỉ trò chơi hay câu chuyện.","ex":[["เริ่มเล่น","rə̂əm lêen","Bắt đầu chơi"]]}],"r":[{"t":"Chơi đoán từ","d":"Một người nói nghĩa, người kia đoán từ Thái.","items":[["ปลา","bplaa","cá"],["แมว","mɛɛo","mèo"],["ไก่","gài","gà"],["ช้าง","cháang","voi"]]}]}];
 var KEY='so-tay-tieng-thai-v1';
 var DB=(function(){
   try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);
-    return {custom:Array.isArray(o.custom)?o.custom:[],known:(o.known&&typeof o.known==='object')?o.known:{},saved:(o.saved&&typeof o.saved==='object')?o.saved:{},cdone:(o.cdone&&typeof o.cdone==='object')?o.cdone:{}}}}catch(e){}
-  return {custom:[],known:{},saved:{},cdone:{}};
+    return {custom:Array.isArray(o.custom)?o.custom:[],known:(o.known&&typeof o.known==='object')?o.known:{},saved:(o.saved&&typeof o.saved==='object')?o.saved:{},cdone:(o.cdone&&typeof o.cdone==='object')?o.cdone:{},rate:(o.rate&&typeof o.rate==='object')?o.rate:{}}}}catch(e){}
+  return {custom:[],known:{},saved:{},cdone:{},rate:{}};
 })();
 function save(){try{localStorage.setItem(KEY,JSON.stringify(DB))}catch(e){}}
 
@@ -707,6 +823,32 @@ function speak(text){
   catch(e){toast('Không phát được âm thanh.')}
 }
 
+/* ---------- Sound effects (Web Audio, no files) ---------- */
+var AC=null;
+function ac(){try{if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(C)AC=new C()}if(AC&&AC.state==='suspended')AC.resume()}catch(e){AC=null}return AC}
+function tone(c,t,f0,f1,dur,type,vol){
+  var o=c.createOscillator(),g=c.createGain();o.type=type;o.frequency.setValueAtTime(f0,t);
+  if(f1&&f1!==f0)o.frequency.exponentialRampToValueAtTime(f1,t+dur);
+  g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+0.012);g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+  o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+dur+0.02);
+}
+function noise(c,t,dur,vol,cut){
+  var n=Math.floor(c.sampleRate*dur),b=c.createBuffer(1,n,c.sampleRate),d=b.getChannelData(0);
+  for(var i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,2);
+  var s=c.createBufferSource(),f=c.createBiquadFilter(),g=c.createGain();s.buffer=b;f.type='lowpass';f.frequency.value=cut;
+  g.gain.value=vol;s.connect(f);f.connect(g);g.connect(c.destination);s.start(t);
+}
+function sfx(kind){
+  var c=ac();if(!c)return;var t=c.currentTime+0.01;
+  try{
+    if(kind==='tut'){tone(c,t,1100,1000,0.07,'triangle',0.22)}
+    else if(kind==='ding'){tone(c,t,988,988,0.5,'sine',0.28);tone(c,t,1976,1976,0.3,'sine',0.08);tone(c,t+0.3,784,784,0.8,'sine',0.28);tone(c,t+0.3,1568,1568,0.5,'sine',0.08)}
+    else if(kind==='pop'){tone(c,t,500,1300,0.14,'square',0.12)}
+    else if(kind==='boom'){noise(c,t,0.4,0.8,600);tone(c,t,120,40,0.4,'sine',0.6)}
+    else if(kind==='bomb'){tone(c,t,1500,180,0.85,'sine',0.2);noise(c,t+0.85,0.9,0.9,500);tone(c,t+0.85,90,35,0.8,'sine',0.7)}
+  }catch(e){}
+}
+
 /* ---------- Icons ---------- */
 function ico(d,s){s=s||18;return '<svg viewBox="0 0 24 24" width="'+s+'" height="'+s+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+d+'</svg>'}
 var I={
@@ -722,6 +864,7 @@ var NI={
  notebook:ico('<path d="M6 3h12v18l-6-4-6 4z"/><path d="M12 7v5M9.5 9.5h5"/>',22),
  cards:ico('<rect x="3" y="7" width="14" height="13" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/>',22),
  quiz:ico('<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',22),
+ blast:ico('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',22),
  alpha:ico('<path d="M5 20 12 4l7 16M8.5 14h7"/>',22),
  tones:ico('<path d="M3 15c3-8 6-8 9 0s6 8 9 0"/>',22),
  book:ico(BOOK,24),
@@ -731,10 +874,10 @@ var NI={
 };
 
 /* ---------- Navigation ---------- */
-var NAV=[['home','Trang chủ'],['course','Khóa học'],['vocab','Từ vựng'],['notebook','Sổ tay'],['cards','Thẻ nhớ'],['quiz','Trắc nghiệm'],['alpha','Chữ cái'],['tones','Thanh điệu']];
+var NAV=[['home','Trang chủ'],['course','Khóa học'],['vocab','Từ vựng'],['notebook','Sổ tay'],['cards','Thẻ nhớ'],['quiz','Trắc nghiệm'],['blast','Card Blast'],['alpha','Chữ cái'],['tones','Thanh điệu']];
 var HEAD={
  notebook:['Sổ tay từ vựng','Từ của bạn kèm phiên âm và câu ví dụ. Từ bạn thêm được lưu trong trình duyệt này.'],
- cards:['Thẻ nhớ','Lật thẻ, nghe phát âm, rồi tự chấm xem mình đã nhớ chưa.'],
+ blast:['Card Blast','Chữ Thái rơi xuống. Chọn nghĩa đúng trước khi nó chạm đáy.'],
  quiz:['Trắc nghiệm','Mỗi lượt tối đa 10 câu. Chọn bộ từ và kiểu bài bạn muốn luyện.'],
  alpha:['Chữ cái','Đủ 44 phụ âm và các nguyên âm tiếng Thái, mỗi chữ có từ mẫu để nghe.'],
  tones:['Thanh điệu','Năm thanh, bảng quy tắc đầy đủ và công cụ kiểm tra thanh của một âm tiết.']
@@ -780,14 +923,16 @@ function viewHome(){
    }).join('')+'</div>';
 }
 function render(){
+  if(BL.raf&&S.tab!=='blast'){blStop();BL.state='idle'}
   syncSide();
   var v=$('#view');
   v.setAttribute('aria-labelledby','tab-'+S.tab);
-  var f={course:viewCourse,home:viewHome,vocab:viewVocab,notebook:viewNotebook,cards:viewCards,quiz:viewQuiz,alpha:viewAlpha,tones:viewTones}[S.tab];
+  var f={blast:viewBlast,course:viewCourse,home:viewHome,vocab:viewVocab,notebook:viewNotebook,cards:viewCards,quiz:viewQuiz,alpha:viewAlpha,tones:viewTones}[S.tab];
   var h=HEAD[S.tab];
   if(S.tab==='vocab')h=['Từ vựng '+S.level.toUpperCase(),LESSONS[S.level].desc];
   v.innerHTML=(h?'<header class="vhead"><h2><mark>'+h[0]+'</mark></h2><p>'+h[1]+'</p></header>':'')+f();
   if(S.tab==='notebook')updateList();
+  if(S.tab==='cards')fcAuto();
 }
 function scopeOpts(){
   return [['nb','Sổ tay của tôi ('+nbWords().length+' từ)'],['a1','Từ vựng A1 ('+LW.a1.length+' từ)'],['a2','Từ vựng A2 ('+LW.a2.length+' từ)'],['k','Khóa học lớp 1, tất cả ('+LW.k.length+' từ)']].concat(COURSE.map(function(L){return ['k'+L.n,'Khóa học · Bài '+L.n+' ('+L.w.length+' từ)']})).map(function(o){
@@ -881,27 +1026,70 @@ function deckWords(){
   return ws;
 }
 function viewCards(){
-  var ws=deckWords();
-  var top='<div class="fc-top"><div class="scopebar"><label for="fcscope">Bộ từ</label><select id="fcscope">'+scopeOpts()+'</select></div>'+
-    '<label class="chk"><input type="checkbox" id="fc-only"'+(S.fc.only?' checked':'')+'> Chỉ ôn từ chưa nhớ</label>'+
-    '<button class="btn" data-a="fcShuffle">Xáo trộn thẻ</button></div>';
+  var o=fco(),ws=deckWords(),all=scopeWords();
+  var scope='<select id="fcscope" class="fcsel" aria-label="Bộ từ">'+scopeOpts()+'</select>';
+  var chk='<label class="chk"><input type="checkbox" id="fc-only"'+(S.fc.only?' checked':'')+'> Chỉ ôn từ chưa nhớ</label>';
   if(!ws.length){
-    return top+'<div class="empty">'+(scopeWords().length?'Bạn đã đánh dấu nhớ hết các từ trong bộ này. Bỏ chọn “Chỉ ôn từ chưa nhớ” để xem lại toàn bộ, hoặc <button class="chip" data-a="resetKnown">đặt lại trạng thái đã nhớ</button>':'Bộ từ này đang trống. Hãy thêm từ vào sổ tay hoặc chọn bộ từ khác.')+'</div>';
+    return '<div class="fc-top"><div class="scopebar"><label for="fcscope">Bộ từ</label>'+scope+'</div>'+chk+'</div>'+
+     '<div class="empty">'+(all.length?'Bạn đã đánh dấu nhớ hết các từ trong bộ này. Bỏ chọn “Chỉ ôn từ chưa nhớ” để xem lại toàn bộ, hoặc <button class="chip" data-a="resetKnown">đặt lại trạng thái đã nhớ</button>':'Bộ từ này đang trống. Hãy thêm từ vào sổ tay hoặc chọn bộ từ khác.')+'</div>';
   }
   if(S.fc.i>=ws.length)S.fc.i=0;
-  var w=ws[S.fc.i];
-  var face=S.fc.flip
-   ? '<span class="rom big">'+romHTML(w.rom)+'</span><span class="line" style="justify-content:center"><span class="pill">'+esc(w.pos||'từ')+'</span><span class="vi" style="font-size:1.3rem">'+esc(w.vi)+'</span></span>'+
-     (w.ex&&w.ex.th?'<span class="exb"><span class="th" lang="th">'+esc(w.ex.th)+'</span>'+(w.ex.rom?'<span class="rom">'+romHTML(w.ex.rom)+'</span>':'')+(w.ex.vi?'<span class="vi">'+esc(w.ex.vi)+'</span>':'')+'</span>':'')
-   : '<span class="th big" lang="th">'+esc(w.th)+'</span><span class="hint">Chạm vào thẻ để xem phiên âm và nghĩa</span>';
-  return top+'<div class="qhead" style="margin-bottom:8px"><span>Thẻ '+(S.fc.i+1)+' / '+ws.length+'</span><span>'+knownIn(scopeWords())+' từ đã nhớ</span></div>'+
-   '<button class="fcard" data-a="fcFlip" aria-label="Thẻ từ. Chạm để lật">'+face+'</button>'+
-   '<div class="fc-ctrl">'+
-    '<button class="btn" data-a="fcPrev">Trước</button>'+
-    '<button class="btn" data-a="say" data-t="'+esc(w.th)+'">'+I.sound+' Nghe</button>'+
-    '<button class="btn no" data-a="fcNo">Chưa nhớ</button>'+
-    '<button class="btn ok" data-a="fcYes">Đã nhớ</button>'+
-    '<button class="btn" data-a="fcNext">Sau</button></div>';
+  var w=ws[S.fc.i],n=ws.length,fl=S.fc.flip,thFront=o.front==='th';
+  var kn=0,rv=0,un=0;all.forEach(function(x){var r=DB.rate[x.id];if(DB.known[x.id])kn++;else if(r&&r<3)rv++;else un++});
+  var tag=w.lv==='k'?'Bài '+(w.topic+1):(typeof w.topic==='string'?w.topic:'');
+  var body;
+  if(!fl){
+    body=thFront
+     ? '<span class="fp-lab">TIẾNG THÁI</span><span class="th fp-th" lang="th">'+esc(w.th)+'</span>'+(o.rom?'<span class="fp-rom">'+romHTML(w.rom)+'</span>':'')
+     : '<span class="fp-lab">TIẾNG VIỆT</span><span class="fp-vi">'+esc(w.vi)+'</span>';
+    body+='<span class="fp-hint">Bấm thẻ hoặc Space để lật</span>';
+  }else{
+    body='<span class="fp-lab">ĐÁP ÁN</span><span class="th fp-th s" lang="th">'+esc(w.th)+'</span><span class="fp-rom">'+romHTML(w.rom)+'</span>'+
+      '<span class="line" style="justify-content:center"><span class="pill">'+esc(w.pos||'từ')+'</span><span class="fp-vi s">'+esc(w.vi)+'</span></span>'+
+      (o.ex&&w.ex&&w.ex.th?'<span class="exb"><span class="th" lang="th">'+esc(w.ex.th)+'</span>'+(w.ex.rom?'<span class="rom">'+romHTML(w.ex.rom)+'</span>':'')+(w.ex.vi?'<span class="vi">'+esc(w.ex.vi)+'</span>':'')+'</span>':'');
+  }
+  var num=('0'+(S.fc.i+1)).slice(-2);
+  var paper='<div class="fcpaper"><button class="fpflip" data-a="fcFlip" aria-label="Thẻ từ. Chạm để lật"><span class="fpbody">'+body+'</span></button>'+
+    '<button class="fpsnd" data-a="say" data-t="'+esc(w.th)+'" aria-label="Nghe phát âm">'+I.sound+'</button>'+
+    '<div class="fptags">'+(tag?'<span class="ftag">'+esc(tag)+'</span>':'')+'<span class="ftag o">'+esc(w.pos||'từ')+'</span>'+(DB.known[w.id]?'<span class="ftag ok">Đã nhớ</span>':'')+'</div>'+
+    '<span class="fpnum" aria-hidden="true">'+num+'</span></div>';
+  var RT=[[1,'Quên'],[2,'Mơ hồ'],[3,'Nhớ'],[4,'Nhớ rồi']];
+  var side='<div class="fcside"><div class="fchead">'+scope+'<span class="fcnum">Thẻ '+(S.fc.i+1)+'/'+n+'</span></div>'+
+    '<h2 class="fctitle">Lật thẻ.</h2><p class="fcdesc">Nhớ nghĩa rồi lật thẻ, chấm mức độ nhớ.</p>'+
+    '<div class="prog"><i style="width:'+Math.round((S.fc.i+1)/n*100)+'%"></i></div>'+
+    '<div class="fcstats"><span class="st ok">Đã nhớ <b>'+kn+'</b></span><span class="st rv">Cần ôn <b>'+rv+'</b></span><span class="st">Chưa nhớ <b>'+un+'</b></span></div>'+
+    '<div class="fcrate" role="group" aria-label="Chấm mức độ nhớ">'+RT.map(function(r){
+      return '<button class="rt r'+r[0]+(DB.rate[w.id]===r[0]?' on':'')+'" data-a="fcRate" data-r="'+r[0]+'"><span class="rd">'+r[0]+'</span><span class="rl">'+r[1]+'</span></button>'}).join('')+'</div>'+
+    '<div class="fcnav"><button class="btn icon" data-a="fcPrev" aria-label="Thẻ trước">'+BACK+'</button>'+
+    '<button class="btn dark" data-a="fcFlip">Lật thẻ <kbd>Space</kbd></button>'+
+    '<button class="btn icon" data-a="fcNext" aria-label="Thẻ sau">'+CHEV+'</button></div>'+chk+'</div>';
+  var OPTS=[['front','Mặt trước: '+(thFront?'Thái':'Việt'),true],['rom','Phiên âm',o.rom],['ex','Ví dụ',o.ex],['auto','Tự đọc',o.auto],['shuffle','Trộn',false],['color','Màu',false],['big','Phóng to',o.big]];
+  var opts='<div class="fcopts" role="group" aria-label="Tùy chỉnh"><span class="fcopt-t">Tùy chỉnh</span>'+OPTS.map(function(x){
+    return '<button class="chip" data-a="fcOpt" data-k="'+x[0]+'"'+(x[0]==='front'||x[0]==='shuffle'||x[0]==='color'?'':' aria-pressed="'+!!x[2]+'"')+'>'+x[1]+'</button>'}).join('')+'</div>';
+  var MD=[['cards','Lật thẻ','Tự chấm mức nhớ'],['quiz','Quiz','Chọn 1 trong 4 đáp án'],['listen','Nghe','Nghe rồi chọn chữ Thái'],['blast','Card Blast','Chữ rơi, bấm đáp án'],['soon1','Gõ phiên âm','Sắp ra mắt'],['soon2','Tổng hợp','Sắp ra mắt']];
+  var modes='<div class="fcmodes"><h3>Chế độ học</h3><div class="mrow">'+MD.map(function(m){
+    var soon=m[0].indexOf('soon')===0;
+    return '<button class="mcard'+(m[0]==='cards'?' on':'')+(soon?' soon':'')+'" data-a="fcMode" data-m="'+m[0]+'"'+(soon?' disabled':'')+'><strong>'+m[1]+'</strong><small>'+m[2]+'</small></button>'}).join('')+'</div></div>';
+  return '<div class="fcstage'+(o.big?' big':'')+'" data-c="'+(o.color%4)+'"><div class="fcgrid">'+paper+side+'</div>'+opts+'</div>'+modes;
+}
+var FCO_KEY='so-tay-fco-v1';
+function fco(){
+  if(!S.fc.o){S.fc.o={front:'th',rom:true,ex:true,auto:false,color:0,big:false};
+    try{var r=JSON.parse(localStorage.getItem(FCO_KEY)||'null');if(r&&typeof r==='object')for(var k in r)S.fc.o[k]=r[k]}catch(e){}}
+  return S.fc.o;
+}
+function fcoSave(){try{localStorage.setItem(FCO_KEY,JSON.stringify(S.fc.o))}catch(e){}}
+function fcRate(r){
+  var ws=deckWords();if(!ws.length)return;
+  var w=ws[Math.min(S.fc.i,ws.length-1)];
+  DB.rate[w.id]=r;if(r>=3)DB.known[w.id]=true;else delete DB.known[w.id];
+  save();sfx('tut');S.fc.flip=false;
+  if(r>=3&&S.fc.only){var n=deckWords().length;if(S.fc.i>=n)S.fc.i=0;render()}else fcMove(1);
+}
+function fcAuto(){
+  var o=fco();if(!o.auto)return;var ws=deckWords();if(!ws.length)return;
+  var w=ws[Math.min(S.fc.i,ws.length-1)],key=(o.front==='th'||S.fc.flip)?w.id:'';
+  if(key&&key!==S.fc.spk){S.fc.spk=key;setTimeout(function(){speak(w.th)},150)}
 }
 function fcMove(d){var n=deckWords().length;if(!n)return;S.fc.i=(S.fc.i+d+n)%n;S.fc.flip=false;render()}
 function fcMark(yes){
@@ -916,13 +1104,16 @@ function fcMark(yes){
 var MODES=[
  ['meaning','Thái → Việt','Nhìn chữ Thái, chọn nghĩa đúng.'],
  ['thai','Việt → Thái','Đọc nghĩa tiếng Việt, chọn chữ Thái đúng.'],
- ['tone','Thanh điệu','Nhìn và nghe một từ, chọn thanh điệu. Chỉ dùng từ một âm tiết.']
+ ['tone','Thanh điệu','Nhìn và nghe một từ, chọn thanh điệu. Chỉ dùng từ một âm tiết.'],
+ ['listen','Nghe và chọn chữ Thái','Nghe phát âm rồi chọn chữ Thái đúng trong 4 đáp án.'],
+ ['minpair','Nghe phân biệt thanh','Nghe rồi chọn đúng từ trong các từ chỉ khác thanh điệu, ví dụ ขา, ข่า, ข้า.']
 ];
-function pool(mode){var p=scopeWords();if(mode==='tone')p=p.filter(function(w){return sylls(w.rom).length===1});return p}
+function pool(mode){var p=scopeWords();if(mode==='minpair'){var allp=p;p=p.filter(function(w){return minSibs(w,allp).length>0})}if(mode==='tone')p=p.filter(function(w){return sylls(w.rom).length===1});return p}
 function makeQs(mode){
   var p=pool(mode),n=Math.min(10,p.length),picks=shuffle(p).slice(0,n),all=scopeWords();
   return picks.map(function(w){
     if(mode==='tone'){return {id:w.id,opts:TONE_KEYS.slice(),ans:TONE_KEYS.indexOf(toneOf(w.rom))}}
+    if(mode==='minpair'){var sb=shuffle(minSibs(w,all)).slice(0,3),mo=shuffle([w].concat(sb));return {id:w.id,opts:mo.map(function(x){return x.id}),ans:mo.indexOf(w)}}
     var others=shuffle(all.filter(function(x){return x.id!==w.id})).slice(0,3);
     var opts=shuffle([w].concat(others));
     return {id:w.id,opts:opts.map(function(x){return x.id}),ans:opts.indexOf(w)};
@@ -931,7 +1122,7 @@ function makeQs(mode){
 function viewQuiz(){
   var Q=S.quiz;
   if(!Q.started){
-    var need=Q.mode==='tone'?3:4,ok=pool(Q.mode).length>=need;
+    var need=Q.mode==='tone'?3:Q.mode==='minpair'?2:4,ok=pool(Q.mode).length>=need;
     return '<div class="sec"><div class="scopebar"><label for="qscope">Bộ từ</label><select id="qscope">'+scopeOpts()+'</select></div>'+
     '<h2>Chọn kiểu bài tập</h2><div class="modes">'+MODES.map(function(m){
       return '<button class="mode" data-a="qMode" data-m="'+m[0]+'" aria-pressed="'+(Q.mode===m[0])+'"><strong>'+m[1]+'</strong><small>'+m[2]+'</small></button>';
@@ -948,13 +1139,14 @@ function viewQuiz(){
   }
   var q=Q.qs[Q.i],w=byId(q.id),answered=Q.picked!==null,mode=Q.mode;
   var prompt;
-  if(mode==='thai')prompt='<span class="ask">Chữ Thái nào có nghĩa là</span><span class="big-vi">'+esc(w.vi)+'</span>';
+  if(mode==='listen'||mode==='minpair')prompt=LPROMPT(w,mode);
+  else if(mode==='thai')prompt='<span class="ask">Chữ Thái nào có nghĩa là</span><span class="big-vi">'+esc(w.vi)+'</span>';
   else prompt='<span class="ask">'+(mode==='tone'?'Từ này mang thanh điệu nào?':'Từ này có nghĩa là gì?')+'</span><span class="th" lang="th">'+esc(w.th)+'</span>'+
      '<button class="btn" data-a="say" data-t="'+esc(w.th)+'">'+I.sound+' Nghe</button>';
   var opts=q.opts.map(function(o,i){
     var cls='opt',inner;
     if(mode==='tone')inner='<span class="optsvg t-'+o+'">'+contour(o)+'</span><span><strong>'+TONES[o].vi+'</strong> <small class="dash">('+TONES[o].en+')</small></span>';
-    else if(mode==='thai')inner='<span class="th" lang="th">'+esc(byId(o).th)+'</span>';
+    else if(mode==='thai'||mode==='listen'||mode==='minpair')inner='<span class="th" lang="th">'+esc(byId(o).th)+'</span>';
     else inner='<span>'+esc(byId(o).vi)+'</span>';
     if(answered){if(i===q.ans)cls+=' ok';else if(i===Q.picked)cls+=' bad'}
     return '<button class="'+cls+'" data-a="qPick" data-i="'+i+'" aria-disabled="'+answered+'">'+inner+'</button>';
@@ -1132,6 +1324,88 @@ function viewCLesson(){
    (n<COURSE.length?'<button class="btn" data-a="cOpen" data-n="'+(n+1)+'">Bài '+(n+1)+' '+CHEV+'</button>':'<span></span>')+'</div>';
 }
 
+/* ---------- Listening helpers ---------- */
+function tbase(r){return String(r).normalize('NFD').replace(/[̀́̂̌]/g,'').toLowerCase()}
+function minSibs(w,all){return all.filter(function(x){return x.id!==w.id&&x.th!==w.th&&tbase(x.rom)===tbase(w.rom)})}
+function LPROMPT(w,mode){
+  return '<span class="ask">'+(mode==='minpair'?'Nghe kỹ thanh điệu rồi chọn đúng từ':'Nghe và chọn chữ Thái đúng')+'</span><span class="listen-ic" aria-hidden="true">'+I.sound+'</span>'+
+    '<button class="btn primary" data-a="say" data-t="'+esc(w.th)+'">'+I.sound+' Nghe lại</button>';
+}
+function autoSay(){
+  var Q=S.quiz;if(!Q.started||Q.done||(Q.mode!=='listen'&&Q.mode!=='minpair'))return;
+  var w=byId(Q.qs[Q.i].id);if(w)setTimeout(function(){speak(w.th)},220);
+}
+/* ---------- Card Blast ---------- */
+var BL={state:'idle',raf:0};
+function blStop(){if(BL.raf){cancelAnimationFrame(BL.raf);BL.raf=0}}
+function viewBlast(){
+  if(BL.state==='play'){
+    return '<div class="bl-hud"><span>Điểm <b id="bl-score">'+BL.score+'</b></span><span id="bl-lives" aria-label="Mạng còn lại">'+blLives()+'</span><span>Từ <b id="bl-n">'+(BL.n+1)+'</b>/'+BL.total+'</span></div>'+
+     '<div class="bl-arena" id="bl-arena"><div class="bl-word" id="bl-word" lang="th"></div><div class="bl-floor"></div></div>'+
+     '<div class="opts bl-opts" id="bl-opts"></div><p class="meta" style="margin-top:8px">Bấm đáp án hoặc phím 1 đến 4 trước khi chữ chạm đáy.</p>';
+  }
+  if(BL.state==='end'){
+    return '<div class="sec"><h2>'+(BL.lives>0?'Hoàn thành':'Hết mạng')+'</h2><div class="score">'+BL.score+' điểm</div>'+
+     '<p class="note">Bắn hạ '+BL.hits+' trên '+BL.n+' từ'+(BL.wrong.length?'. Các từ cần ôn:':'. Không sai từ nào.')+'</p>'+
+     (BL.wrong.length?'<div class="wrong">'+BL.wrong.map(function(id){var w=byId(id);if(!w)return '';
+       return '<div class="it"><span class="th" lang="th">'+esc(w.th)+'</span><span class="rom">'+romHTML(w.rom)+'</span><span>'+esc(w.vi)+'</span></div>'}).join('')+'</div>':'')+
+     '<div class="actions"><button class="btn primary" data-a="blStart">Chơi lại</button><button class="btn" data-a="blReset">Đổi bộ từ</button></div></div>';
+  }
+  var n=scopeWords().length;
+  return '<div class="sec"><div class="scopebar"><label for="blscope">Bộ từ</label><select id="blscope">'+scopeOpts()+'</select></div>'+
+   '<h2>Chữ rơi xuống, bạn bắn hạ</h2><p class="note">Một từ Thái rơi từ trên xuống. Chọn nghĩa đúng trước khi nó chạm đáy. Có 3 mạng, chữ rơi nhanh dần.</p>'+
+   '<div class="actions"><button class="btn primary" data-a="blStart"'+(n>=4?'':' disabled')+'>Bắt đầu</button><span class="meta" style="margin:0">'+(n>=4?Math.min(15,n)+' từ trong lượt này':'Bộ từ này chưa đủ 4 từ.')+'</span></div></div>';
+}
+function blLives(){var s='';for(var i=0;i<3;i++)s+='<span class="'+(i<BL.lives?'hp':'hp off')+'">●</span>';return s}
+function blStart(){
+  var p=shuffle(scopeWords());if(p.length<4)return;
+  BL={state:'play',all:scopeWords(),pool:p.slice(0,15),total:Math.min(15,p.length),n:0,score:0,hits:0,lives:3,cur:null,y:0,last:0,raf:0,wrong:[],locked:false,streak:0,bad:{}};
+  S.tab='blast';render();blNext();BL.last=performance.now();BL.raf=requestAnimationFrame(blTick);
+}
+function blNext(){
+  if(BL.n>=BL.total){blEnd();return}
+  var w=BL.pool[BL.n];BL.cur=w;BL.y=0;BL.bad={};BL.locked=false;
+  var others=shuffle(BL.all.filter(function(x){return x.id!==w.id&&x.vi!==w.vi})).slice(0,3);
+  BL.opts=shuffle([w].concat(others));
+  var el=$('#bl-word');if(el){el.textContent=w.th;el.className='bl-word';el.style.top='0px'}
+  var o=$('#bl-opts');if(o)o.innerHTML=BL.opts.map(function(x,i){return '<button class="opt" data-a="blPick" data-i="'+i+'"><span class="k">'+(i+1)+'</span><span>'+esc(x.vi)+'</span></button>'}).join('');
+  var nn=$('#bl-n');if(nn)nn.textContent=BL.n+1;
+}
+function blHud(){var s=$('#bl-score');if(s)s.textContent=BL.score;var l=$('#bl-lives');if(l)l.innerHTML=blLives()}
+function blTick(t){
+  if(BL.state!=='play')return;
+  var dt=Math.min(.05,(t-BL.last)/1000);BL.last=t;
+  var ar=$('#bl-arena'),el=$('#bl-word');
+  if(ar&&el&&!BL.locked){
+    var speed=42+BL.n*5;BL.y+=speed*dt;
+    var floor=ar.clientHeight-el.offsetHeight-6;el.style.top=Math.min(BL.y,floor)+'px';
+    if(BL.y>=floor)blMiss();
+  }
+  BL.raf=requestAnimationFrame(blTick);
+}
+function blMiss(){
+  if(BL.locked)return;BL.locked=true;sfx('boom');BL.lives--;BL.streak=0;BL.wrong.push(BL.cur.id);blHud();
+  var el=$('#bl-word');if(el)el.className='bl-word miss';
+  var o=document.querySelectorAll('#bl-opts .opt');BL.opts.forEach(function(x,i){if(x.id===BL.cur.id&&o[i])o[i].classList.add('ok')});
+  setTimeout(function(){if(BL.state!=='play')return;if(BL.lives<=0)blEnd();else{BL.n++;blNext()}},900);
+}
+function blPick(i){
+  if(BL.state!=='play'||BL.locked||BL.bad[i])return;
+  var x=BL.opts[i];if(!x)return;
+  var btns=document.querySelectorAll('#bl-opts .opt');
+  if(x.id===BL.cur.id){
+    BL.locked=true;sfx('pop');BL.hits++;BL.streak++;BL.score+=10+Math.min(BL.streak,5)*2;blHud();
+    if(btns[i])btns[i].classList.add('ok');
+    var el=$('#bl-word');if(el)el.className='bl-word hit';
+    setTimeout(function(){if(BL.state!=='play')return;BL.n++;blNext()},420);
+  }else{
+    sfx('boom');BL.bad[i]=true;BL.streak=0;BL.lives--;if(BL.wrong.indexOf(BL.cur.id)<0)BL.wrong.push(BL.cur.id);
+    if(btns[i]){btns[i].classList.add('bad');btns[i].setAttribute('aria-disabled','true')}
+    blHud();if(BL.lives<=0){BL.locked=true;setTimeout(blEnd,500)}
+  }
+}
+function blEnd(){blStop();BL.state='end';render();window.scrollTo(0,0)}
+
 /* ---------- Events ---------- */
 document.addEventListener('click',function(e){
   var el=e.target.closest('[data-a]');if(!el)return;
@@ -1155,6 +1429,9 @@ document.addEventListener('click',function(e){
       var lw=byId(d.id);if(!lw||DB.saved[d.id])break;
       DB.custom.push({id:'u'+Date.now().toString(36)+Math.floor(Math.random()*1000),th:lw.th,rom:lw.rom,vi:lw.vi,pos:lw.pos,src:lw.id});
       DB.saved[d.id]=true;save();keepScroll(render);toast('Đã lưu “'+lw.th+'” vào sổ tay.');break;
+    case 'blStart':blStart();break;
+    case 'blPick':blPick(parseInt(d.i,10));break;
+    case 'blReset':blStop();BL.state='idle';render();break;
     case 'cSkill':S.course.skill=d.sk;keepScroll(render);break;
     case 'cLSkill':S.course.skill=d.sk;keepScroll(render);break;
     case 'cOpen':S.course.view='lesson';S.course.n=parseInt(d.n,10);S.tab='course';render();window.scrollTo(0,0);break;
@@ -1167,22 +1444,34 @@ document.addEventListener('click',function(e){
     case 'reviewCards':S.scope=S.level;S.fc={deck:[],i:0,flip:false,only:false};S.tab='cards';render();window.scrollTo(0,0);break;
     case 'reviewQuiz':S.scope=S.level;S.quiz.started=false;S.quiz.done=false;S.tab='quiz';render();window.scrollTo(0,0);break;
     case 'fcFlip':S.fc.flip=!S.fc.flip;render();break;
-    case 'fcPrev':fcMove(-1);break;
-    case 'fcNext':fcMove(1);break;
-    case 'fcYes':fcMark(true);break;
-    case 'fcNo':fcMark(false);break;
+    case 'fcRate':fcRate(parseInt(d.r,10));break;
+    case 'fcOpt':var oo=fco(),kk=d.k;
+      if(kk==='front'){oo.front=oo.front==='th'?'vi':'th';S.fc.flip=false}
+      else if(kk==='shuffle'){S.fc.deck=shuffle(scopeWords().map(function(w){return w.id}));S.fc.i=0;S.fc.flip=false}
+      else if(kk==='color')oo.color=(oo.color+1)%4;
+      else oo[kk]=!oo[kk];
+      fcoSave();render();break;
+    case 'fcMode':
+      if(d.m==='quiz'){S.quiz.started=false;S.quiz.done=false;S.tab='quiz'}
+      else if(d.m==='listen'){S.quiz.mode='listen';S.quiz.started=false;S.quiz.done=false;S.tab='quiz'}
+      else if(d.m==='blast'){BL.state='idle';S.tab='blast'}
+      render();window.scrollTo(0,0);break;
+    case 'fcPrev':sfx('tut');fcMove(-1);break;
+    case 'fcNext':sfx('tut');fcMove(1);break;
+    case 'fcYes':sfx('tut');fcMark(true);break;
+    case 'fcNo':sfx('tut');fcMark(false);break;
     case 'fcShuffle':S.fc.deck=shuffle(scopeWords().map(function(w){return w.id}));S.fc.i=0;S.fc.flip=false;render();break;
     case 'resetKnown':scopeWords().forEach(function(w){delete DB.known[w.id]});save();S.fc.only=false;S.fc.i=0;render();break;
     case 'qMode':S.quiz.mode=d.m;render();break;
-    case 'qStart':var m=S.quiz.mode;S.quiz={mode:m,started:true,done:false,qs:makeQs(m),i:0,score:0,picked:null,wrong:[]};render();break;
+    case 'qStart':var m=S.quiz.mode;S.quiz={mode:m,started:true,done:false,qs:makeQs(m),i:0,score:0,picked:null,wrong:[]};render();autoSay();break;
     case 'qReset':S.quiz.started=false;S.quiz.done=false;render();break;
     case 'qPick':
       var Q=S.quiz;if(Q.picked!==null)break;
       Q.picked=parseInt(d.i,10);var qq=Q.qs[Q.i];
-      if(Q.picked===qq.ans)Q.score++;else Q.wrong.push(qq.id);
+      if(Q.picked===qq.ans){Q.score++;sfx('ding')}else{Q.wrong.push(qq.id);sfx('bomb')}
       render();break;
     case 'qNext':
-      var Q2=S.quiz;Q2.i++;Q2.picked=null;if(Q2.i>=Q2.qs.length)Q2.done=true;render();window.scrollTo(0,0);break;
+      var Q2=S.quiz;Q2.i++;Q2.picked=null;if(Q2.i>=Q2.qs.length)Q2.done=true;render();window.scrollTo(0,0);autoSay();break;
     case 'aFilter':S.alpha=d.f;keepScroll(render);break;
     case 'vFilter':S.vf=d.f;keepScroll(render);break;
     case 'tc':S.tc[d.k]=d.v;keepScroll(render);break;
@@ -1198,6 +1487,7 @@ document.addEventListener('change',function(e){
   if(t.id==='flt'){S.filter=t.value;updateList()}
   else if(t.id==='fc-only'){S.fc.only=t.checked;S.fc.i=0;S.fc.flip=false;render();var c=$('#fc-only');if(c)c.focus()}
   else if(t.id==='fcscope'){S.scope=t.value;S.fc={deck:[],i:0,flip:false,only:false};render();var s1=$('#fcscope');if(s1)s1.focus()}
+  else if(t.id==='blscope'){S.scope=t.value;render();var s3=$('#blscope');if(s3)s3.focus()}
   else if(t.id==='qscope'){S.scope=t.value;S.quiz.started=false;S.quiz.done=false;render();var s2=$('#qscope');if(s2)s2.focus()}
 });
 document.addEventListener('submit',function(e){
@@ -1214,10 +1504,13 @@ document.addEventListener('submit',function(e){
   toast('Đã thêm “'+th+'” vào sổ tay.');
 });
 document.addEventListener('keydown',function(e){
+  if(S.tab==='blast'&&BL.state==='play'&&/^[1-4]$/.test(e.key)){blPick(parseInt(e.key,10)-1);return}
   if(S.tab!=='cards')return;
   var tag=(e.target&&e.target.tagName)||'';
   if(tag==='INPUT'||tag==='SELECT'||tag==='TEXTAREA')return;
   if(e.key==='ArrowRight'){fcMove(1)}else if(e.key==='ArrowLeft'){fcMove(-1)}
+  else if(e.key===' '&&tag!=='BUTTON'){e.preventDefault();S.fc.flip=!S.fc.flip;render()}
+  else if(/^[1-4]$/.test(e.key)){fcRate(parseInt(e.key,10))}
 });
 
 buildSide();
@@ -1225,5 +1518,4 @@ render();
 })();
 
 </script>
-
 </body></html>
